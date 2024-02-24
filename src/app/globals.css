@@ -3,31 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #1F1F1F;
+  --secondary-color: #343434;
+  --tertiary-color: #009f71;
+  --quaternary-color: #00bb86;
+  --quinary-color: #FFFFFF;
+  --text-color: #7e7e7e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.text-normal {
+  color: var(--text-color);
+  font-size: 1rem;
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--primary-color);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.btn-primary {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color );
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.35rem;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--quinary-color);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.35rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--quaternary-color);
+  color: var(--quinary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--quaternary-color);
+  color: var(--primary-color);
 }
