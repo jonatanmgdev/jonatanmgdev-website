@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import '@/styles/globalicons.css';
 import { Header } from "@/components";
+import Footer from "@/components/Footer";
 
 const defaultFont = Inter({ subsets: ["latin"] });
+const codeFont = Source_Code_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jonatan Montesdeoca - Full Stack Developer",
@@ -18,12 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={defaultFont.className}>
+    <html lang="es">
+      <body className={`${defaultFont.className} ${codeFont.className}`}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="flex min-h-screen flex-col items-center justify-between">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

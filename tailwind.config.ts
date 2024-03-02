@@ -54,12 +54,22 @@ const config: Config = {
             transform: "translateY(0)",
           },
         },
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }  
+        },
       },
       animation: {
-        slidein: "slidein 1s ease 100ms",
-        slideinLeft: "slideinLeft 1s ease 100ms",
-        slideinRight: "slideinRight 1s ease 100ms",
-        slideinDown: "slideinDown 1s ease 100ms",
+        slidein: "slidein 1s ease 1000ms",
+        slideinLeft: "slideinLeft 1s ease 1000ms",
+        slideinRight: "slideinRight 1s ease 1000ms",
+        slideinDown: "slideinDown 1s ease 1000ms",
+        typing: "typing 2s steps(28) "
       },
     },
   },
