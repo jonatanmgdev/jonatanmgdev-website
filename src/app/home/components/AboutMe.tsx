@@ -1,11 +1,12 @@
 "use server";
 
+import CustomButton from "@/components/CustomButton";
 import Spotlight, { SpotlightCard } from "@/components/Spotlight";
 
 export default async function AboutMeComponent() {
   return (
     <section className="bg-[--primary-color]">
-      <div className="relative isolate overflow-hidden px-6 py-24 sm:py-40 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden px-6 py-24 sm:py-36 lg:overflow-visible lg:px-0">
         <div className="py-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="md:flex md:justify-between gap-8">
@@ -13,12 +14,12 @@ export default async function AboutMeComponent() {
                 <div className="flex">
                   <div className="flex w-max ">
                     <p className="animate-typing overflow-hidden whitespace-nowrap text-xl font-semibold leading-7 text-[--tertiary-color]">
-                      {"<AboutMeComponent />"}
+                      {"Un buen tipo, eso dice typescript..."}
                     </p>
                   </div>
                 </div>
                 <h2 className="animate-slideinLeft mt-2">
-                  Conoce más sobre mí
+                  Descubre más sobre mí
                 </h2>
                 <div className="animate-slideinLeft mt-6">
                   <p>
@@ -39,13 +40,11 @@ export default async function AboutMeComponent() {
                     interés en ser un desarrollador Full-stack.
                   </p>
                 </div>
-                <button type="button" className="btn-primary shrink-0 mt-6">
-                  Descargar CV
-                </button>
+                <CustomButton text={"Descargar CV"} className="btn-primary mt-6" />
               </div>
               <div className="md:w-1/2 animate-slideinRight">
                 <Spotlight>
-                  <SpotlightCard className="card-primary">
+                  <SpotlightCard className="card-primary shadow-lg rounded-lg">
                     <div className="flex h-full items-center justify-start">
                       <div className="items-start justify-start">
                         <div className="flex">

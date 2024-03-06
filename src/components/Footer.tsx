@@ -31,9 +31,9 @@ export default async function Footer() {
         </div>
         <hr className="my-6 border-[--secondary-color]  sm:mx-auto lg:my-8" />
         <div className="animate-slideinLeft sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            Jonatan Montesdeoca González - Full Stack Developer
-          </span>
+          <p className="text-sm sm:text-center">
+            2024 - Made with ♥ love in Canary Islands, Spain.
+          </p>
           <div className="animate-slideinRight flex mt-4 sm:justify-center sm:mt-0">
             <a
               href="#"
