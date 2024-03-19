@@ -12,6 +12,10 @@
   --text-secondary-color: #ededed;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .text-normal {
   color: var(--text-color);
   font-size: 1rem;
@@ -118,8 +122,58 @@ body {
   font-family: "Source Code Pro", monospace !important;
 }
 
-/* Testimonial */
-.testimonial-primary {
+.card-secondary {
+  font-family: "Source Code Pro", monospace;
+  background-color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+}
+
+.card-secondary:hover {
+  border: var(--quaternary-color) 1px solid;
+}
+
+.card-secondary p {
+  font-family: "inter" !important;
+}
+
+/* Soft Skill */
+.soft-skill-card-primary {
+  font-family: "inter";
+  background-color: var(--secondary-color);
+  border: var(--secondary-color) 1px solid;
+  padding: 1rem;
+}
+
+.soft-skill-card-primary:hover {
+  border: var(--quaternary-color) 1px solid;
+}
+
+.soft-skill-card-primary p {
+  font-family: "inter" !important;
+  font-weight: 500;
+}
+
+
+/* Tech Skill */
+
+.tech-skill-card-primary {
+  font-family: "inter";
+  background-color: var(--secondary-color);
+  border: var(--secondary-color) 1px solid;
+  padding: 1rem;
+}
+
+.tech-skill-card-primary:hover {
+  border: var(--quaternary-color) 1px solid;
+}
+
+.tech-skill-card-primary p {
+  font-family: "inter" !important;
+  font-weight: 500;
+}
+
+/* Experience */
+.my-experience-primary {
   font-family: "inter";
   background-color: var(--secondary-color);
   border: var(--secondary-color) 1px solid;
@@ -127,11 +181,11 @@ body {
 }
 
 
-.testimonial-primary:hover {
+.my-experience-primary:hover {
   border: var(--quaternary-color) 1px solid;
 }
 
-.testimonial-primary p {
+.my-experience-primary p {
   font-family: "inter"  !important;
 }
 

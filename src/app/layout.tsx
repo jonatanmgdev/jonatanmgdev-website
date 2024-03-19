@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import '@/styles/globalicons.css';
-import { Header } from "@/components";
-import Footer from "@/components/Footer";
-
+import "@/styles/globalicons.css";
+import { Footer, Header } from "@/components/layout";
 const defaultFont = Inter({ subsets: ["latin"] });
 const codeFont = Source_Code_Pro({ subsets: ["latin"] });
 
@@ -23,9 +21,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${defaultFont.className} ${codeFont.className}`}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between">
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

@@ -26,7 +26,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
   return (
     <input
       type={type}
-      className={`w-full p-5 border border-[--primary-color] focus:border-[--tertiary-color] rounded-md outline-none bg-[${backgroundColor}] text-[--text-color] placeholder-[--text-color] ${className}`}
+      className={`w-full p-5 border border-[--primary-color] focus:border-[--tertiary-color] rounded-lg outline-none bg-[${backgroundColor}] text-[--text-color] placeholder-[--text-color] ${className}`}
       placeholder={placeholder}
       value={value}
       onChange={onChange}

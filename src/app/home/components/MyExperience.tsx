@@ -4,18 +4,14 @@ import Spotlight, { SpotlightCard } from "@/components/Spotlight";
 
 export default async function MyExperienceComponent() {
   return (
-    <section className="bg-[--primary-color]">
+    <section id="experience-section" className="bg-[--primary-color]">
       <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-20 lg:px-12 lg:py-20 xl:px-0 xl:pt-28">
-        <div>
+        <div className="mb-16">
           <div className="text-center">
             <h2>Mi experiencia</h2>
-            <p className="mt-6">
-              Esta es mi andadura, siempre buscando proyectos con los que
-              aprender y seguir disfrutando de mi trabajo.
-            </p>
-            <p className="text-center italic text-[--tertiary-color]">
-              'La única forma de hacer un gran trabajo es amar lo que haces',
-              Steve Jobs.
+            <p className="font-semibold text-[--tertiary-color] mt-2">
+              { `'La única forma de hacer un gran trabajo es amar lo que haces' -
+              Steve Jobs`}
             </p>
           </div>
         </div>
@@ -38,7 +34,7 @@ export default async function MyExperienceComponent() {
 
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
                 <Spotlight>
-                  <SpotlightCard className="testimonial-primary rounded-lg shadow-lg">
+                  <SpotlightCard className="my-experience-primary rounded-lg shadow-lg">
                     <div className="h-full items-center justify-start">
                       <div className="flex items-center justify-between space-x-2 mb-1">
                         <div>
@@ -101,7 +97,7 @@ export default async function MyExperienceComponent() {
 
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
                 <Spotlight>
-                  <SpotlightCard className="testimonial-primary rounded-lg shadow-lg">
+                  <SpotlightCard className="my-experience-primary rounded-lg shadow-lg">
                     <div className="h-full items-center justify-start">
                       <div className="flex items-center justify-between space-x-2 mb-1">
                         <div>
@@ -128,15 +124,16 @@ export default async function MyExperienceComponent() {
                       <div className="flex items-starts justify-start">
                         <ul className="list-disc list-inside marker:text-[--tertiary-color]">
                           <li>
-                            Desarrollo y mantenimiento de  webs con Wordpress y Prestashop.
+                            Desarrollo y mantenimiento de webs con Wordpress y
+                            Prestashop.
                           </li>
                           <li>
                             Desarrollo y mantenimiento de apps con Flutter.
                           </li>
+                          <li>Gestión de equipos de trabajo.</li>
                           <li>
-                            Gestión de equipos de trabajo.
+                            Servicios de branding y marketing para empresas.
                           </li>
-                          <li>Servicios de branding y marketing para empresas.</li>
                         </ul>
                       </div>
                     </div>
@@ -162,7 +159,7 @@ export default async function MyExperienceComponent() {
 
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
                 <Spotlight>
-                  <SpotlightCard className="testimonial-primary rounded-lg shadow-lg">
+                  <SpotlightCard className="my-experience-primary rounded-lg shadow-lg">
                     <div className="h-full items-center justify-start">
                       <div className="flex items-center justify-between space-x-2 mb-1">
                         <div>
@@ -189,10 +186,12 @@ export default async function MyExperienceComponent() {
                       <div className="flex items-starts justify-start">
                         <ul className="list-disc list-inside marker:text-[--tertiary-color]">
                           <li>
-                            Desarrollo de aplicación para gafas de realidad mixta con Unity.
+                            Desarrollo de aplicación para gafas de realidad
+                            mixta con Unity.
                           </li>
                           <li>
-                            Conexión del bridge de Philips Hue con la aplicación.
+                            Conexión del bridge de Philips Hue con la
+                            aplicación.
                           </li>
                           <li>
                             Diseño de la interfaz de usuario de la aplicación.
@@ -222,7 +221,7 @@ export default async function MyExperienceComponent() {
 
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
                 <Spotlight>
-                  <SpotlightCard className="testimonial-primary rounded-lg shadow-lg">
+                  <SpotlightCard className="my-experience-primary rounded-lg shadow-lg">
                     <div className="h-full items-center justify-start">
                       <div className="flex items-center justify-between space-x-2 mb-1">
                         <div>
@@ -248,15 +247,11 @@ export default async function MyExperienceComponent() {
                       </div>
                       <div className="flex items-starts justify-start">
                         <ul className="list-disc list-inside marker:text-[--tertiary-color]">
-                          <li>
-                            Desarrollo y mantenimiento de web con Drupal.
-                          </li>
+                          <li>Desarrollo y mantenimiento de web con Drupal.</li>
                           <li>
                             Desarrollo y mantenimiento de web con HTML / CSS.
                           </li>
-                          <li>
-                            Informático de soporte en oficina.
-                          </li>
+                          <li>Informático de soporte en oficina.</li>
                           <li>Montaje y mantenimiento de equipos.</li>
                         </ul>
                       </div>
@@ -279,8 +274,8 @@ export default async function MyExperienceComponent() {
               </div>
 
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
-              <Spotlight>
-                  <SpotlightCard className="testimonial-primary rounded-lg shadow-lg">
+                <Spotlight>
+                  <SpotlightCard className="my-experience-primary rounded-lg shadow-lg">
                     <div className="h-full items-center justify-start">
                       <div className="flex items-center justify-between space-x-2 mb-1">
                         <div>
@@ -307,14 +302,13 @@ export default async function MyExperienceComponent() {
                       <div className="flex items-starts justify-start">
                         <ul className="list-disc list-inside marker:text-[--tertiary-color]">
                           <li>
-                          Desarrollo y mantenimiento de web con Wordpress.
+                            Desarrollo y mantenimiento de web con Wordpress.
                           </li>
                           <li>
-                             Gestión de equipos de trabajo y ayudante de dirección.
+                            Gestión de equipos de trabajo y ayudante de
+                            dirección.
                           </li>
-                          <li>
-                            Técnico de sonido y grabación.
-                          </li>
+                          <li>Técnico de sonido y grabación.</li>
                           <li>
                             Configuración de redes locales con windows server.
                           </li>

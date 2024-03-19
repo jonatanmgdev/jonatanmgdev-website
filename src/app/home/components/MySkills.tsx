@@ -1,22 +1,31 @@
 "use server";
 
 import SkillCard from "@/components/SkillCard";
-import IconNodeJS from "@/components/svgs/IconNodeJS";
-import IconDocker from "@/components/svgs/IconDocker";
-import IconFigma from "@/components/svgs/IconFigma";
-import IconFlutter from "@/components/svgs/IconFlutter";
-import IconGithub from "@/components/svgs/IconGithub";
-import IconHTML from "@/components/svgs/IconHTML";
-import IconMaterialUI from "@/components/svgs/IconMaterialUI";
-import IconPhotoshop from "@/components/svgs/IconPhotoshop";
-import IconTailwindCSS from "@/components/svgs/IconTailwindCSS";
-import IconPostgreSQL from "@/components/svgs/IconPostgreSQL";
-import IconTypescript from "@/components/svgs/IconTypescript";
-import IconWordpress from "@/components/svgs/IconWordpress";
+import IconNodeJS from "@assets/icons/IconNodeJS";
+import IconDocker from "@assets/icons/IconDocker";
+import IconFigma from "@assets/icons/IconFigma";
+import IconFlutter from "@assets/icons/IconFlutter";
+import IconGithub from "@assets/icons/IconGithub";
+import IconHTML from "@assets/icons/IconHTML";
+import IconMaterialUI from "@assets/icons/IconMaterialUI";
+import IconPhotoshop from "@assets/icons/IconPhotoshop";
+import IconTailwindCSS from "@assets/icons/IconTailwindCSS";
+import IconPostgreSQL from "@assets/icons/IconPostgreSQL";
+import IconTypescript from "@assets/icons/IconTypescript";
+import IconWordpress from "@assets/icons/IconWordpress";
+import SoftSkillCard from "@/components/SoftSkillCard";
+import IconTeamWork from "@assets/icons/IconTeamWork";
+import IconEmpathy from "@assets/icons/IconEmpathy";
+import IconEmotionalIntelligence from "@assets/icons/IconEmotionalIntelligence";
+import IconCommunication from "@assets/icons/IconCommunication";
+import IconConflitctResolution from "@assets/icons/IconConflitctResolution";
+import IconActiveListening from '../../../../public/assets/icons/iconActiveListening';
+import IconTimeManagment from "@assets/icons/IconTimeManagment";
+import IconSelfLearning from "@assets/icons/IconSelfLearning";
 
 export default async function MySkillsComponent() {
   return (
-    <section className="bg-[--primary-color]">
+    <section id="skills-section" className="bg-[--primary-color]">
       <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-20 lg:px-12 lg:py-20 xl:px-0 xl:pt-28">
         <div>
           <div className="flex">
@@ -33,6 +42,11 @@ export default async function MySkillsComponent() {
           </p>
         </div>
         <div className="my-8">
+        <div className="grid my-auto">
+            <p className="text-xl font-semibold leading-7 text-[--text-color] mt-4 mb-4">
+              Tech skills
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center my-auto gap-6">
             <SkillCard skillName="Typescript" svg={IconTypescript(35)} skillValue={7} />
             <SkillCard skillName="Next.js" svg={IconDocker(35)} skillValue={8} />
@@ -46,6 +60,21 @@ export default async function MySkillsComponent() {
             <SkillCard skillName="PostgreSQL" svg={IconPostgreSQL(35)} skillValue={5}/>
             <SkillCard skillName="Figma" svg={IconFigma(35)} skillValue={5} />
             <SkillCard skillName="Github" svg={IconGithub(35)} skillValue={4} />
+          </div>
+          <div className="grid my-auto">
+            <p className="text-xl font-semibold leading-7 text-[--text-color] mt-8 mb-4">
+              Soft Skills
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 justify-center items-center my-auto gap-6">
+            <SoftSkillCard skillName={"Trabajo en equipo"} svg={IconTeamWork(40)} />
+            <SoftSkillCard skillName={"Empatía"} svg={IconEmpathy(40)} />
+            <SoftSkillCard skillName={"Intelecto emocional"} svg={IconEmotionalIntelligence(40)} />
+            <SoftSkillCard skillName={"Comunicación"} svg={IconCommunication(40)} />
+            <SoftSkillCard skillName={"Resolución de conflictos"} svg={IconConflitctResolution(40)} />
+            <SoftSkillCard skillName={"Escucha activa"} svg={IconActiveListening(40)} />
+            <SoftSkillCard skillName={"Manejo del tiempo"} svg={IconTimeManagment(40)} />
+            <SoftSkillCard skillName={"Auto-aprendizaje"} svg={IconSelfLearning(40)} />
           </div>
         </div>
       </div>
