@@ -8,7 +8,6 @@ function IconTailwindCSS(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 15 15"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <path
         fill="currentColor"

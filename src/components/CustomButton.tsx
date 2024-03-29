@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 
 interface CustomButtonProps {
@@ -6,7 +6,8 @@ interface CustomButtonProps {
   disabled?: boolean;
   className?: string;
   id?: string;
-  href: string;
+  href?: string;
+  onClickFunc?: () => void;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
@@ -14,12 +15,10 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   className,
   id,
   text,
-  href
+  href,
+  onClickFunc
 }) => {
 
-  const handleClick = () => {
-    window.location.href = href;
-  };
 
   return (
     <button
@@ -29,7 +28,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       disabled={disabled}
       id={id}
       className={`p-3 shrink-0 rounded-md ${className}`}
-      onClick={handleClick}
+      onClick={onClickFunc}
     >
       {text}
     </button>

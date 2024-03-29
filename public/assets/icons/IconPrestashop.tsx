@@ -8,7 +8,6 @@ function IconPrestashop(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 14 14"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <path
         fill="currentColor"

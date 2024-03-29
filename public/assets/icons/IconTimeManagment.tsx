@@ -8,7 +8,6 @@ function IconTimeManagment(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 465.2 465.2"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <g>
         <path

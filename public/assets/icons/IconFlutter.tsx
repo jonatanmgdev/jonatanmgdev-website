@@ -8,7 +8,6 @@ function IconFlutter(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 32 32"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <path
         fill="currentColor"

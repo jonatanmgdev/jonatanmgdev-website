@@ -8,7 +8,6 @@ function IconLinkedin(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 490.732 490.732"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <path
         fill="currentColor"

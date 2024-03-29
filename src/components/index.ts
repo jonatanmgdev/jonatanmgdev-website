@@ -1,1 +1,14 @@
-export { default as Header } from './layout/Header';
+export { default as CircleIndicatorsProgress } from './CircleIndicatorsProgress';
+export { default as ContentSlider } from './ContentSlider';
+export { default as CustomButton } from './CustomButton';
+export { default as CustomInput } from './CustomInput';
+export { default as CustomList } from './CustomList';
+export { default as CustomModal } from './CustomModal';
+export { default as CustomTextarea } from './CustomTextarea';
+export { default as ExperienceCard } from './ExperienceCard';
+export { default as JsonCodeSimulator } from './JsonCodeSimulator';
+export { default as SkillCard } from './SkillCard';
+export { default as SoftSkillCard } from './SoftSkillCard';
+export { default as Spotlight } from './Spotlight';
+export { default as YoutubeModal } from './YoutubeModal';
+export * from './layout';

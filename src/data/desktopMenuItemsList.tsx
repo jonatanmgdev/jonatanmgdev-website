@@ -1,7 +1,7 @@
 import { MenuItem } from "@/types";
 import LogoComponent from "../../public/logo/logoComponent";
 
-export const desktopMenuItems: MenuItem[] = [
+export const desktopMenuItemsList: MenuItem[] = [
   { label: "Inicio", href: "#welcome-section" },
   { label: "Sobre mi", href: "#aboutme-section" },
   { label: "Experiencia", href: "#experience-section" },

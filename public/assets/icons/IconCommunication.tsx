@@ -8,7 +8,6 @@ function IconCommunication(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 475.73 475.73"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <path
         fill="currentColor"

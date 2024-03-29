@@ -10,7 +10,7 @@ const CircleIndicatorProgress: React.FC<CircleIndicatorProgressProps> = ({ value
     for (let i = 1; i <= 10; i++) {
       const indicatorClass = i <= value ? 'bg-[--tertiary-color]' : 'bg-[--primary-color]';
       indicators.push(
-        <span key={i} className={`w-3 h-3 me-2 rounded-full mx-3 sm:mx-2 md:mx-1 xl:mx-2  ${indicatorClass}`}></span>
+        <span key={i} className={`w-4 h-4 sm:w-4.5 sm:h-4.5 mx-1 md:mx-1 lg:mx-1.2 rounded-full ${indicatorClass}`}></span>
       );
     }
     return indicators;

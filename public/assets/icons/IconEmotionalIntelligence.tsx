@@ -8,7 +8,6 @@ function IconEmotionalIntelligence(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 512 512"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <path
         fill="currentColor"

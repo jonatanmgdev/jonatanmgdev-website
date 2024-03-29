@@ -8,7 +8,6 @@ function IconTypescript(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 16 16"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
       <path
         fill="currentColor"

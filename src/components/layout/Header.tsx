@@ -5,7 +5,7 @@ import CustomButton from "../CustomButton";
 import LogoComponent from "../../../public/logo/logoComponent";
 import { useScrollDirection } from "@/hooks";
 import { generateMenuItems } from "@/utils";
-import { desktopMenuItems } from "@/data";
+import { desktopMenuItemsList } from "@/data";
 
 /*
   Author: [Jonatan Montesdeoca González]
@@ -17,7 +17,7 @@ export default function Header() {
   // Get scroll direction
   const scrollDirection = useScrollDirection();
   // Generate menu items and memoize for performance improvement
-  const memoizedMenuItems = useMemo(() => generateMenuItems(desktopMenuItems), [desktopMenuItems]);
+  const memoizedMenuItems = useMemo(() => generateMenuItems(desktopMenuItemsList), [desktopMenuItemsList]);
 
   return (
     <header>  

@@ -8,7 +8,6 @@ function IconConflitctResolution(size: number) {
       height={size}
       fill="none"
       viewBox="0 0 2080 1500"
-      className="text-[--quinary-color] hover:text-[--quaternary-color]"
     >
         <path
           fill="currentColor" 

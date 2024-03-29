@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import "@/styles/globalicons.css";
 import { Footer, Header } from "@/components/layout";
 const defaultFont = Inter({ subsets: ["latin"] });
 const codeFont = Source_Code_Pro({ subsets: ["latin"] });

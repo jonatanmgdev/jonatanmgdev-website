@@ -107,6 +107,16 @@ body {
 
 /* Cards */
 
+.card{
+  background-color: var(--secondary-color);
+  border: var(--secondary-color) 1px solid;
+  padding: 1rem;
+}
+
+.card:hover {
+  border: var(--quaternary-color) 1px solid;
+}
+
 .card-primary {
   font-family: "Source Code Pro", monospace;
   background-color: var(--secondary-color);
@@ -119,7 +129,7 @@ body {
 }
 
 .card-primary p {
-  font-family: "Source Code Pro", monospace !important;
+  font-family: "Source Code Pro", monospace;
 }
 
 .card-secondary {
@@ -133,7 +143,7 @@ body {
 }
 
 .card-secondary p {
-  font-family: "inter" !important;
+  font-family: "inter";
 }
 
 /* Soft Skill */
@@ -149,7 +159,7 @@ body {
 }
 
 .soft-skill-card-primary p {
-  font-family: "inter" !important;
+  font-family: "inter";
   font-weight: 500;
 }
 
