@@ -20,7 +20,6 @@ import {
   IconTypescript,
   IconWordpress,
 } from "@assets/icons";
-import IconLink from "@assets/icons/IconLink";
 import PortfolioCard from "@/components/PortfolioCard";
 
 export default async function PortfolioSectionComponent() {
