@@ -3,7 +3,7 @@ export { default as IconCheck } from './IconCheck';
 export { default as IconCode } from './IconCode';
 export { default as IconCommunication } from './IconCommunication';
 export { default as IconConflitctResolution } from './IconConflitctResolution';
-export { default as IconDocker } from './IconDocker';
+export { default as IconNextJS } from './IconNextJS';
 export { default as IconEmotionalIntelligence } from './IconEmotionalIntelligence';
 export { default as IconEmpathy } from './IconEmpathy';
 export { default as IconFigma } from './IconFigma';

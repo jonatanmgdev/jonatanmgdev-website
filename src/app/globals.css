@@ -96,8 +96,8 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: var(--quaternary-color);
-  color: var(--quinary-color);
+  background-color: var(--quinary-color);
+  color: var(--primary-color);
 }
 
 .btn-secondary:hover {
@@ -118,7 +118,6 @@ body {
 }
 
 .card-primary {
-  font-family: "Source Code Pro", monospace;
   background-color: var(--secondary-color);
   border: var(--secondary-color) 1px solid;
   padding: 1rem;
@@ -128,8 +127,8 @@ body {
   border: var(--quaternary-color) 1px solid;
 }
 
-.card-primary p {
-  font-family: "Source Code Pro", monospace;
+.card-primary * {
+  font-family: "Inter", monospace;
 }
 
 .card-secondary {
@@ -206,4 +205,19 @@ body {
   transition: stroke-dashoffset 0.35s;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+}
+
+.swiper-scrollbar {
+  background: rgba(0, 255, 0, 0.1);
+  height: 8px;
+  border-radius: 10px;
+  position: absolute;
+  left: 1%;
+  top: 40px;
+  bottom: 10px;
+}
+
+.swiper-scrollbar-drag {
+  background: rgba(255, 2, 2, 0.986);
+  border-radius: 10px;
 }

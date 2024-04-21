@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { Inter, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "@/components/layout";
+import { register } from 'swiper/element/bundle';
+
 const defaultFont = Inter({ subsets: ["latin"] });
 const codeFont = Source_Code_Pro({ subsets: ["latin"] });
+register();
 
 export const metadata: Metadata = {
   title: "Jonatan Montesdeoca - Full Stack Developer",

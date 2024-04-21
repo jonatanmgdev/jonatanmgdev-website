@@ -1,4 +1,5 @@
 import React from "react";
+import { UseFormRegisterReturn } from "react-hook-form";
 
 interface CustomInputProps {
   backgroundColor: string;
@@ -10,6 +11,9 @@ interface CustomInputProps {
   className?: string;
   id?: string;
   name?: string;
+  alt?: string;
+  required?: boolean;
+  register?: UseFormRegisterReturn;
 }
 
 const CustomInput: React.FC<CustomInputProps> = ({
@@ -21,10 +25,14 @@ const CustomInput: React.FC<CustomInputProps> = ({
   disabled,
   className,
   id,
+  alt,
   name,
+  required,
+  register
 }) => {
   return (
     <input
+      alt={alt}
       type={type}
       className={`w-full p-5 border border-[--primary-color] focus:border-[--tertiary-color] rounded-lg outline-none bg-[${backgroundColor}] text-[--text-color] placeholder-[--text-color] ${className}`}
       placeholder={placeholder}
@@ -33,6 +41,8 @@ const CustomInput: React.FC<CustomInputProps> = ({
       disabled={disabled}
       id={id}
       name={name}
+      required={required}
+      {...register}
     />
   );
 };

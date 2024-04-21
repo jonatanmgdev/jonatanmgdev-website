@@ -1,6 +1,6 @@
 import React from "react";
 
-function IconDocker(size: number) {
+function IconNextJS(size: number) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ function IconDocker(size: number) {
   );
 }
 
-export default IconDocker;
+export default IconNextJS;

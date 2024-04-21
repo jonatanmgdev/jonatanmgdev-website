@@ -11,4 +11,6 @@ export { default as SkillCard } from './SkillCard';
 export { default as SoftSkillCard } from './SoftSkillCard';
 export { default as Spotlight } from './Spotlight';
 export { default as YoutubeModal } from './YoutubeModal';
+export { default as EmailMessageContactForm } from './emails/EmailMessageContactForm';
+export { default as ContactForm } from './forms/ContactForm';
 export * from './layout';

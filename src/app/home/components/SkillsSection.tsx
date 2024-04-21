@@ -1,10 +1,9 @@
-"use client";
+"use server";
 import { SkillCard, SoftSkillCard } from "@/components";
 import {
   IconActiveListening,
   IconCommunication,
   IconConflitctResolution,
-  IconDocker,
   IconEmotionalIntelligence,
   IconEmpathy,
   IconFigma,
@@ -12,6 +11,7 @@ import {
   IconGithub,
   IconHTML,
   IconMaterialUI,
+  IconNextJS,
   IconNodeJS,
   IconPhotoshop,
   IconPostgreSQL,
@@ -23,7 +23,7 @@ import {
   IconWordpress,
 } from "@assets/icons";
 
-export default function SkillsSectionComponent() {
+export default async function SkillsSectionComponent() {
   return (
     <section id="skills-section">
       <div>
@@ -51,7 +51,7 @@ export default function SkillsSectionComponent() {
             svg={IconTypescript(35)}
             skillValue={7}
           />
-          <SkillCard skillName="Next.js" svg={IconDocker(35)} skillValue={8} />
+          <SkillCard skillName="Next.js" svg={IconNextJS(35)} skillValue={8} />
           <SkillCard skillName="Node.js" svg={IconNodeJS(35)} skillValue={5} />
           <SkillCard
             skillName="Tailwind CSS"
