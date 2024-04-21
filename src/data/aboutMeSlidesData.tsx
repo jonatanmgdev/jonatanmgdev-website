@@ -11,7 +11,7 @@ export const slidesTitles = [
 ];
 
 export const slidesContents = [
-  <CustomList listOfElements={musicItemsList} />,
-  <CustomList listOfElements={hobbiesItemsList} />,
-  <CustomList listOfElements={moviesItemsList} />,
+  <CustomList listOfElements={musicItemsList} key="musicItemsList" />,
+  <CustomList listOfElements={hobbiesItemsList} key="hobbiesItemsList" />,
+  <CustomList listOfElements={moviesItemsList} key="moviesItemsList" />,
 ];

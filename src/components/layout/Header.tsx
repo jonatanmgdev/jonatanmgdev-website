@@ -17,7 +17,7 @@ export default function Header() {
   // Get scroll direction
   const scrollDirection = useScrollDirection();
   // Generate menu items and memoize for performance improvement
-  const memoizedMenuItems = useMemo(() => generateMenuItems(desktopMenuItemsList), [desktopMenuItemsList]);
+  const memoizedMenuItems = useMemo(() => generateMenuItems(desktopMenuItemsList), []);
 
   return (
     <header>  
