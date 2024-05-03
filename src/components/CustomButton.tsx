@@ -21,8 +21,18 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   onClickFunc
 }) => {
 
+  const handleClick = () => {
+    if (onClickFunc) {
+      onClickFunc();
+    }
+    if (href) {
+      window.location.href = href;
+    }
+  };
+
 
   return (
+
     <button
       type={type}
       title={text}
@@ -30,7 +40,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       disabled={disabled}
       id={id}
       className={`p-3 shrink-0 rounded-md ${className}`}
-      onClick={onClickFunc}
+      onClick={handleClick}
     >
       {text}
     </button>

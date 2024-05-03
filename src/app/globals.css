@@ -2,15 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  h1 {
+    @apply text-5xl font-inter font-bold text-[--tertiary-color];
+  }
+  h2 {
+    @apply text-4xl font-inter font-bold text-white;
+  }
+  h3 {
+    @apply text-3xl font-inter font-semibold text-white;
+  }
+  h4 {
+    @apply text-2xl font-inter font-semibold text-white;
+  }
+  h5 {
+    @apply text-xl font-inter font-semibold text-white;
+  }
+  h6 {
+    @apply text-lg font-inter font-semibold text-white;
+  }
+  p {
+    @apply text-base font-inter font-medium text-neutral-light;
+  }
+  a {
+    @apply text-base font-inter text-neutral-light hover:text-accent-dark;
+  }
+  li {
+    @apply text-base font-inter text-neutral-light hover:text-accent-dark font-bold;
+  }
+  span {
+    @apply text-neutral-light;
+  }
+  button {
+    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark;
+  }
+}
+
 :root {
   --primary-color: #1c1c1c;
   --secondary-color: #232323;
   --tertiary-color: #009f71;
-  --quaternary-color: #00bb86;
+  --quaternary-color: #020202;
   --quinary-color: #ededed;
   --text-color: #7b7b7b;
   --text-secondary-color: #ededed;
 }
+
+
+
 
 html {
   scroll-behavior: smooth;
@@ -21,75 +61,27 @@ html {
   font-size: 1rem;
 }
 
-p {
-  font-family: "inter";
-  color: var(--text-color);
-}
-
-a {
-  font-family: "inter";
-  color: var(--tertiary-color);
-}
-
-a:hover {
-  color: var(--quaternary-color);
-}
-
-li {
-  font-family: "inter";
-  color: var(--text-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "inter";
-  font-weight: 600;
-  color: var(--text-secondary-color);
-}
-
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.8em;
-}
-
-h4 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 1.2em;
-}
-
-h6 {
-  font-size: 1em;
-}
 
 body {
   background-color: var(--primary-color);
 }
 
+
+#contact-section {
+  background-image: url("../assets/images/contact-section-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
 /* Buttons */
 
 .btn-primary {
-  font-family: "inter";
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   font-weight: 700;
 }
 
 .btn-secondary {
-  font-family: "inter";
   background-color: var(--secondary-color);
   color: var(--quinary-color);
   font-weight: 700;
@@ -107,7 +99,7 @@ body {
 
 /* Cards */
 
-.card{
+/* .card{
   background-color: var(--secondary-color);
   border: var(--secondary-color) 1px solid;
   padding: 1rem;
@@ -127,27 +119,17 @@ body {
   border: var(--quaternary-color) 1px solid;
 }
 
-.card-primary * {
-  font-family: "Inter", monospace;
-}
-
 .card-secondary {
-  font-family: "Source Code Pro", monospace;
   background-color: var(--primary-color);
   border: var(--primary-color) 1px solid;
 }
 
 .card-secondary:hover {
   border: var(--quaternary-color) 1px solid;
-}
-
-.card-secondary p {
-  font-family: "inter";
-}
+} */
 
 /* Soft Skill */
 .soft-skill-card-primary {
-  font-family: "inter";
   background-color: var(--secondary-color);
   border: var(--secondary-color) 1px solid;
   padding: 1rem;
@@ -158,7 +140,6 @@ body {
 }
 
 .soft-skill-card-primary p {
-  font-family: "inter";
   font-weight: 500;
 }
 
@@ -166,7 +147,6 @@ body {
 /* Tech Skill */
 
 .tech-skill-card-primary {
-  font-family: "inter";
   background-color: var(--secondary-color);
   border: var(--secondary-color) 1px solid;
   padding: 1rem;
@@ -177,13 +157,11 @@ body {
 }
 
 .tech-skill-card-primary p {
-  font-family: "inter" !important;
   font-weight: 500;
 }
 
 /* Experience */
 .my-experience-primary {
-  font-family: "inter";
   background-color: var(--secondary-color);
   border: var(--secondary-color) 1px solid;
   padding: 1rem;
@@ -192,10 +170,6 @@ body {
 
 .my-experience-primary:hover {
   border: var(--quaternary-color) 1px solid;
-}
-
-.my-experience-primary p {
-  font-family: "inter"  !important;
 }
 
 
@@ -220,4 +194,9 @@ body {
 .swiper-scrollbar-drag {
   background: rgba(255, 2, 2, 0.986);
   border-radius: 10px;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }

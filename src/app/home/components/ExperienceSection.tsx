@@ -4,7 +4,7 @@ import { experienceDataList } from "@/data/experienceDataList";
 
 export default async function ExperienceSectionComponent() {
   return (
-    <section id="experience-section">
+    <section>
       <div className="mb-14">
         <div className="text-center">
           <h2>Mi experiencia</h2>

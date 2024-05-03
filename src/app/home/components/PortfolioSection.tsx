@@ -24,7 +24,7 @@ import PortfolioCard from "@/components/PortfolioCard";
 
 export default async function PortfolioSectionComponent() {
   return (
-    <section id="portfolio-section">
+    <section>
       <div className="mx-auto px-6 max-w-6xl text-gray-500 pb-8">
         <div className="flex">
           <div className="flex w-full justify-center items-center ">

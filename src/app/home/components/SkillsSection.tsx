@@ -25,7 +25,7 @@ import {
 
 export default async function SkillsSectionComponent() {
   return (
-    <section id="skills-section">
+    <section>
       <div>
         <div className="flex">
           <div className="flex w-max ">

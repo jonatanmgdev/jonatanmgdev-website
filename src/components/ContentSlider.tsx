@@ -21,7 +21,7 @@ const ContentSlider: React.FC<CarouselProps> = ({
 
   return (
     <Spotlight>
-      <SpotlightCard className={`card shadow-lg rounded-lg ${className}`}>
+      <SpotlightCard className={`bg-neutral-medium p-6 shadow-lg rounded-lg ${className}`}>
         <div
           id="carouselExampleCaptions"
           className="relative"

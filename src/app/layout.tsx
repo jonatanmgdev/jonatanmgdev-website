@@ -1,12 +1,28 @@
 import type { Metadata } from "next";
-import { Inter, Source_Code_Pro } from "next/font/google";
-import "./globals.css";
+import { Inter, Source_Code_Pro, Roboto } from "next/font/google";
 import { Footer, Header } from "@/components/layout";
-import { register } from 'swiper/element/bundle';
+import "./globals.css";
 
-const defaultFont = Inter({ subsets: ["latin"] });
-const codeFont = Source_Code_Pro({ subsets: ["latin"] });
-register();
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  fallback: ['Helvetica', 'sans-serif'],
+})
+
+const sourceCodePro = Source_Code_Pro({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-source-code-pro',
+  fallback: ['Courier New', 'Courier', 'monospace'],
+})
+ 
+const roboto = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'],
+  subsets: ['latin'],
+  variable: "--roboto-font",
+  fallback: ['Helvetica', 'sans-serif'],
+});
 
 export const metadata: Metadata = {
   title: "Jonatan Montesdeoca - Full Stack Developer",
@@ -20,10 +36,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${defaultFont.className} ${codeFont.className}`}>
+    <html lang="es" className={`${inter.variable} ${sourceCodePro.variable} ${roboto.variable}`}>
+      <body>
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
