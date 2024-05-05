@@ -8,15 +8,15 @@ export const experienceDataList: ExperienceData[] = [
     ubication: "Las Palmas de G.C.",
     description: (
       <>
-        <ul className="list-disc list-inside marker:text-[--tertiary-color]">
-          <li>Desarrollo y mantenimiento de web con PHP, CSS y JavaScript.</li>
+        <ul>
+          <li>Desarrollo web con PHP, CSS y JavaScript.</li>
           <li>
-            Desarrollo y mantenimiento de web con Next.js 14, Tailwind CSS y
+            Desarrollo web con Next.js 14, Tailwind CSS y
             Typescript.
           </li>
           <li>Gestión de bases de datos PostgreSQL.</li>
           <li>Uso de Gitlab, Figma y Postman Api.</li>
-          <li>Desarrollo de aplicación móvil con Flutter.</li>
+          <li>Desarrollo móvil con Flutter.</li>
         </ul>
       </>
     ),
@@ -29,9 +29,9 @@ export const experienceDataList: ExperienceData[] = [
     ubication: "Las Palmas de G.C.",
     description: (
       <>
-        <ul className="list-disc list-inside marker:text-[--tertiary-color]">
+        <ul>
           <li>
-            Instalación de terminales de punto de venta, impresoras de tickets y
+            Instalación de tpvs, impresoras de tickets y
             cajones de monedas.
           </li>
           <li>Mantenimiento y reparación de equipos informáticos.</li>
@@ -50,7 +50,7 @@ export const experienceDataList: ExperienceData[] = [
     ubication: "Las Palmas de G.C.",
     description: (
       <>
-        <ul className="list-disc list-inside marker:text-[--tertiary-color]">
+        <ul>
           <li>Revisión de instalaciones de redes informáticas.</li>
           <li>
             Elaboración de informes sobre las instalaciones de red supervisadas.
@@ -69,7 +69,7 @@ export const experienceDataList: ExperienceData[] = [
     ubication: "Las Palmas de G.C.",
     description: (
       <>
-        <ul className="list-disc list-inside marker:text-[--tertiary-color]">
+        <ul>
           <li>
             Desarrollo de aplicación para gafas de realidad mixta con Unity.
           </li>
@@ -88,7 +88,7 @@ export const experienceDataList: ExperienceData[] = [
     ubication: "Fuenlabrada, Madrid",
     description: (
       <>
-        <ul className="list-disc list-inside marker:text-[--tertiary-color]">
+        <ul>
           <li>Desarrollo y mantenimiento de web con Drupal.</li>
           <li>Desarrollo y mantenimiento de web con HTML / CSS.</li>
           <li>Informático de soporte en oficina.</li>
@@ -105,9 +105,9 @@ export const experienceDataList: ExperienceData[] = [
     ubication: "Las Palmas de G.C.",
     description: (
       <>
-        <ul className="list-disc list-inside marker:text-[--tertiary-color]">
+        <ul>
           <li>Desarrollo y mantenimiento de web con Wordpress.</li>
-          <li>Desarrollo de aplicación móvil con Flutter.</li>
+          <li>Desarrollo móvil con Flutter.</li>
           <li>Gestión de equipos de trabajo y ayudante de dirección.</li>
           <li>Técnico de sonido y grabación.</li>
           <li>Configuración de redes locales con windows server.</li>

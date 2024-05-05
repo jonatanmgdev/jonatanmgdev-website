@@ -28,7 +28,7 @@ export default async function PortfolioSectionComponent() {
       <div className="mx-auto px-6 max-w-6xl text-gray-500 pb-8">
         <div className="flex">
           <div className="flex w-full justify-center items-center ">
-            <p className="overflow-hidden whitespace-nowrap text-xl font-semibold leading-7 text-[--tertiary-color]">
+            <p className="overflow-hidden whitespace-nowrap text-xl font-semibold leading-7 text-primary-dark">
               Mis granitos de arena
             </p>
           </div>
@@ -96,18 +96,18 @@ export default async function PortfolioSectionComponent() {
           <div className="col-span-full lg:col-span-3 overflow-hidden relative">
             <Spotlight className="w-full h-full">
               <SpotlightCard className="h-full">
-                <div className="rounded-xl w-full h-full card-primary shadow-lg p-8">
+                <div className="rounded-xl w-full h-full bg-neutral-medium border border-neutral-medium hover:border-primary-dark shadow-lg p-8">
                   <div className="grid sm:grid-cols-2">
                     <div className="flex flex-col justify-between relative z-10 space-y-12 lg:space-y-6">
-                      <div className="justify-center relative aspect-square rounded-full size-8 flex text-white border border-[--quaternary-color] before:absolute before:-inset-2 before:border before:border-[--quaternary-color] before:rounded-full">
+                      <div className="justify-center relative aspect-square rounded-full size-8 flex border border-neutral-light">
                         <span className="content-center h-full">
                           {IconCode(20)}
                         </span>
                       </div>
                       <div className="space-y-2">
-                        <h3 className="text-sm text-[--quaternary-color] transition">
+                        <h4 className="text-primary-dark transition">
                           En desarrollo
-                        </h3>
+                        </h4>
                         <h2 className="text-lg text-white transition">
                           Lesmestur.com
                         </h2>
@@ -117,7 +117,7 @@ export default async function PortfolioSectionComponent() {
                         </p>
                       </div>
                     </div>
-                    <div className="overflow-hidden relative mt-6 sm:mt-auto h-fit -mb-[34px] -mr-[34px] sm:ml-6 py-6 p-6 border border-[--quaternary-color] rounded-tl-lg">
+                    <div className="overflow-hidden relative mt-6 sm:mt-auto h-fit -mb-[34px] -mr-[34px] sm:ml-6 py-6 p-6 border border-primary-dark rounded-tl-3xl">
                       <Image
                         src={lesmesLogo}
                         alt="Portfolio"
@@ -132,18 +132,18 @@ export default async function PortfolioSectionComponent() {
           <div className="col-span-full lg:col-span-3 overflow-hidden relative">
             <Spotlight className="w-full h-full">
               <SpotlightCard className="h-full">
-                <div className="rounded-xl w-full h-full card-primary shadow-lg p-8">
+                <div className="rounded-xl w-full h-full bg-neutral-medium border border-neutral-medium hover:border-primary-dark shadow-lg p-8">
                   <div className="grid sm:grid-cols-2">
                     <div className="flex flex-col justify-between relative z-10 space-y-12 lg:space-y-6">
-                      <div className="justify-center relative aspect-square rounded-full size-8 flex text-white border border-[--quaternary-color] before:absolute before:-inset-2 before:border before:border-[--quaternary-color] before:rounded-full">
+                      <div className="justify-center relative aspect-square rounded-full size-8 flex border border-neutral-light">
                         <span className="content-center h-full">
                           {IconCode(20)}
                         </span>
                       </div>
                       <div className="space-y-2">
-                        <h3 className="text-sm text-[--quaternary-color] transition">
+                      <h4 className="text-primary-dark transition">
                           En desarrollo
-                        </h3>
+                        </h4>
                         <h2 className="text-lg text-white transition">
                           Ventajon.com
                         </h2>
@@ -153,7 +153,7 @@ export default async function PortfolioSectionComponent() {
                         </p>
                       </div>
                     </div>
-                    <div className="overflow-hidden relative mt-6 sm:mt-auto h-fit -mb-[34px] -mr-[34px] sm:ml-6 py-6 p-6 border border-[--quaternary-color] rounded-tl-lg">
+                    <div className="overflow-hidden relative mt-6 sm:mt-auto h-fit -mb-[34px] -mr-[34px] sm:ml-6 py-6 p-6 border border-primary-dark rounded-tl-3xl">
                       <Image
                         src={ventajonLogo}
                         alt="Portfolio"

@@ -8,7 +8,17 @@ export default async function ExperienceSectionComponent() {
       <div className="mb-14">
         <div className="text-center">
           <h2>Mi experiencia</h2>
-          <p className="font-semibold text-[--tertiary-color] mt-2">
+          <div className="flex flex-col py-4">
+            <p className="mt-2">
+              Actualmente tengo mi foco en el desarrollo de soluciones digitales
+              con librerías y frameworks como React.js, Next.js, Node.js, Nest.js...
+            </p>
+            <p className="mt-2">
+              Busco oportunidades que me permitan seguir creciendo como
+              profesional y aprender nuevas tecnologías.
+            </p>
+          </div>
+          <p className="font-semibold text-primary-dark">
             {`'Dichoso el que le gusta las dulzuras del trabajo sin ser su esclavo' -
               Benito Pérez Galdós`}
           </p>

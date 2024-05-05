@@ -11,6 +11,7 @@ import {
 import { IconCheck } from "@assets/icons";
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import CustomCheckbox from "../CustomCheckbox";
 
 type ContactFormInput = {
   name: string;
@@ -46,10 +47,10 @@ export default function ContactUsForm() {
     setIsModalOpen(false);
   };
 
-
   async function onSubmit(formData: ContactFormInput) {
-    if(captcha){
-      console.log('Recaptcha verificado');
+    if (captcha) {
+      console.log("Recaptcha verificado");
+      console.log(formData);
     }
     //  setContactData(formData);
     //  await fetch("/api/send", {
@@ -77,7 +78,7 @@ export default function ContactUsForm() {
           <CustomInput
             alt="nombre"
             id="name"
-            backgroundColor="--primary-color"
+            className="bg-neutral-deep"
             placeholder="Nombre"
             type="text"
             required={true}
@@ -86,7 +87,7 @@ export default function ContactUsForm() {
           <CustomInput
             alt="apellidos"
             id="surnames"
-            backgroundColor="--primary-color"
+            className="bg-neutral-deep"
             placeholder="Apellidos"
             type="text"
             required={true}
@@ -95,7 +96,7 @@ export default function ContactUsForm() {
           <CustomInput
             alt="email"
             id="email"
-            backgroundColor="--primary-color"
+            className="bg-neutral-deep"
             placeholder="E-mail"
             type="email"
             required={true}
@@ -104,29 +105,37 @@ export default function ContactUsForm() {
           <CustomInput
             alt="teléfono"
             id="phone"
-            backgroundColor="--primary-color"
+            className="bg-neutral-deep"
             placeholder="Teléfono"
             type="text"
             required={true}
             register={register("phone")}
           />
         </div>
-        <div className="grid my-5">
+        <div className="grid my-4 gap-2">
           <CustomTextarea
             title="Ingrese aquí su mensaje..."
-            backgroundColor={"--primary-color"}
-            className="mb-4"
+            className="mb-4 bg-neutral-deep"
             placeholder={"Su mensaje..."}
             rows={4}
             required={true}
             register={register("message")}
           />
-          <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!} onChange={setCaptcha} />
+          <CustomCheckbox
+            labelText={<p>Acepto los <a href="https://www.tusitio.com/términos-y-condiciones">términos y condiciones</a>.</p>}
+            isChecked={true}
+            className="mb-4"
+          />
+          <ReCAPTCHA
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+            onChange={setCaptcha}
+          />
           <CustomButton
+            id="submit-btn"
             type="submit"
+            className="bg-neutral-dark mt-4"
             disabled={isSubmitting}
-            text={"Enviar mensaje"}
-            className="mt-5 btn-primary"
+            text={"Enviar formulario"}
           />
         </div>
       </form>

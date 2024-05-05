@@ -24,13 +24,13 @@ const JsonCodeSimulator: React.FC<JsonCodeSimulatorProps> = ({ data, comment }) 
             </p>
             {data.map((item, index) => (
               <p key={index} className="items-start">
-                <span className="ml-4 text-[--quinary-color]">
+                <span className="ml-4 text-white">
                   {item.key + ":"}
                 </span>
-                <span className="ml-2 text-[--tertiary-color]">
+                <span className="ml-2 text-primary-dark">
                   {'"' + item.value + '"'}
                 </span>
-                <span className="text-[--quinary-color]">{","}</span>
+                <span className="text-white">{","}</span>
               </p>
             ))}
             <p className="items-start">

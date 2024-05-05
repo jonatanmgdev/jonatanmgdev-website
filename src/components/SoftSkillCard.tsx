@@ -1,5 +1,5 @@
 import React from "react";
-import Spotlight, { SpotlightCard } from "./Spotlight";
+import  { Spotlight, SpotlightCard } from "./Spotlight";
 
 interface SoftSkillCardProps {
   skillName: string;
@@ -8,12 +8,12 @@ interface SoftSkillCardProps {
 
 const SoftSkillCard: React.FC<SoftSkillCardProps> = ({ skillName, svg }) => {
   return (
-    <Spotlight className="h-full min-h-[140px]">
-      <SpotlightCard className="h-full">
-        <div className="flex flex-col h-full soft-skill-card-primary shadow-lg rounded-lg items-center justify-center gap-2">
-          <div className="flex text-[--quinary-color] hover:text-[--quaternary-color]">{svg}</div>
+    <Spotlight>
+      <SpotlightCard>
+        <div className="flex flex-col bg-neutral-medium shadow-lg rounded-lg items-center justify-center min-h-[100px] p-4 gap-2">
+          <div className="text-white hover:text-accent-dark">{svg}</div>
           <div className="items-center justify-center">
-            <p className="text-[--quinary-color] text-center">{skillName}</p>
+            <p className="text-white text-center">{skillName}</p>
           </div>
         </div>
       </SpotlightCard>

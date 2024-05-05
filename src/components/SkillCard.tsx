@@ -1,29 +1,23 @@
 import React from "react";
-import Spotlight, { SpotlightCard } from "./Spotlight";
-import CircleIndicatorProgress from "./CircleIndicatorsProgress";
+import { Spotlight, SpotlightCard } from "./Spotlight";
 
 interface SkillCardProps {
   skillName: string;
   svg: React.JSX.Element;
-  skillValue: number;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ skillName, svg, skillValue }) => {
+const SkillCard: React.FC<SkillCardProps> = ({
+  skillName,
+  svg,
+}) => {
   return (
     <Spotlight>
       <SpotlightCard>
-        <div className="flex flex-col sm:flex-row tech-skill-card-primary shadow-lg rounded-lg items-center justify-center gap-2">
-          <div className="text-[--quinary-color] hover:text-[--quaternary-color]">
-            {svg}
-          </div>
-          <div className="sm:ml-2">
-            <div className="mb-2">
-              <p className="text-center sm:text-left text-[--quinary-color] ml-2">{skillName}</p>
-            </div>
-            <div>
-              <CircleIndicatorProgress value={skillValue} />
-            </div>
-          </div>
+        <div className="flex flex-col bg-neutral-medium shadow-lg rounded-lg items-center justify-center min-h-[100px] p-4 gap-2">
+          <div className="text-white hover:text-accent-dark">{svg}</div>
+          <p className="text-center sm:text-left text-white ml-2">
+            {skillName}
+          </p>
         </div>
       </SpotlightCard>
     </Spotlight>

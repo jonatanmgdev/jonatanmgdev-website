@@ -2,7 +2,6 @@ import React from "react";
 import { UseFormRegisterReturn } from "react-hook-form";
 
 interface CustomTextareaProps {
-  backgroundColor: string;
   placeholder: string;
   rows?: number;
   value?: string;
@@ -16,7 +15,6 @@ interface CustomTextareaProps {
 }
 
 const CustomTextarea: React.FC<CustomTextareaProps> = ({
-  backgroundColor,
   placeholder,
   value,
   onChange,
@@ -30,7 +28,7 @@ const CustomTextarea: React.FC<CustomTextareaProps> = ({
 }) => {
   return (
     <textarea
-      className={`w-full p-5 border border-[--primary-color] focus:border-[--tertiary-color] rounded-lg outline-none bg-[${backgroundColor}] text-[--text-color] placeholder-[--text-color]   ${className}`}
+      className={`${className}`}
       placeholder={placeholder}
       title={title}
       value={value}

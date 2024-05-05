@@ -32,14 +32,13 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 
 
   return (
-
     <button
       type={type}
       title={text}
       role="button"
       disabled={disabled}
       id={id}
-      className={`p-3 shrink-0 rounded-md ${className}`}
+      className={className}
       onClick={handleClick}
     >
       {text}

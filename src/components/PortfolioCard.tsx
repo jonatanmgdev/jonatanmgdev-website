@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Spotlight, { SpotlightCard } from "./Spotlight";
+import  { Spotlight, SpotlightCard } from "./Spotlight";
 import Image from "next/image";
 import IconLink from "@assets/icons/IconLink";
 
@@ -18,7 +18,7 @@ const PortfolioCard: React.FC<PortfolioData> = ({ title, companyName, descriptio
     return (
         <Spotlight className="w-full h-full">
           <SpotlightCard className="h-full">
-            <div className="w-full h-full rounded-xl card-primary shadow-lg p-8">
+            <div className="w-full h-full rounded-xl bg-neutral-medium shadow-lg p-8">
               <div className="relative overflow-hidden rounded-xl text-white shadow-lg">
                 <Image
                   src={imageSrc} 

@@ -5,7 +5,7 @@
 
 @layer base {
   h1 {
-    @apply text-5xl font-inter font-bold text-[--tertiary-color];
+    @apply text-5xl font-inter font-bold text-white;
   }
   h2 {
     @apply text-4xl font-inter font-bold text-white;
@@ -29,174 +29,34 @@
     @apply text-base font-inter text-neutral-light hover:text-accent-dark;
   }
   li {
-    @apply text-base font-inter text-neutral-light hover:text-accent-dark font-bold;
+    @apply text-base font-inter text-neutral-light hover:text-accent-dark;
   }
   span {
     @apply text-neutral-light;
   }
+  button[type] {
+    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark disabled:bg-neutral-light p-4 rounded-lg;
+  }
   button {
-    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark;
+    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark disabled:bg-neutral-light p-4 rounded-lg;
+  }
+  ul {
+    @apply list-disc list-inside marker:text-accent-dark;
+  }
+  textarea {
+    @apply w-full p-5 border-2 border-neutral-medium focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-neutral-light placeholder-primary-dark;
+  }
+  input {
+    @apply w-full p-5 border-2 border-neutral-medium focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-neutral-light placeholder-primary-dark;
   }
 }
-
-:root {
-  --primary-color: #1c1c1c;
-  --secondary-color: #232323;
-  --tertiary-color: #009f71;
-  --quaternary-color: #020202;
-  --quinary-color: #ededed;
-  --text-color: #7b7b7b;
-  --text-secondary-color: #ededed;
-}
-
-
-
 
 html {
   scroll-behavior: smooth;
 }
 
-.text-normal {
-  color: var(--text-color);
-  font-size: 1rem;
-}
-
-
-body {
-  background-color: var(--primary-color);
-}
-
-
-#contact-section {
+#skills-section {
   background-image: url("../assets/images/contact-section-bg.png");
   background-size: cover;
   background-position: center;
-}
-
-/* Buttons */
-
-.btn-primary {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-.btn-secondary {
-  background-color: var(--secondary-color);
-  color: var(--quinary-color);
-  font-weight: 700;
-}
-
-.btn-primary:hover {
-  background-color: var(--quinary-color);
-  color: var(--primary-color);
-}
-
-.btn-secondary:hover {
-  background-color: var(--quaternary-color);
-  color: var(--primary-color);
-}
-
-/* Cards */
-
-/* .card{
-  background-color: var(--secondary-color);
-  border: var(--secondary-color) 1px solid;
-  padding: 1rem;
-}
-
-.card:hover {
-  border: var(--quaternary-color) 1px solid;
-}
-
-.card-primary {
-  background-color: var(--secondary-color);
-  border: var(--secondary-color) 1px solid;
-  padding: 1rem;
-}
-
-.card-primary:hover {
-  border: var(--quaternary-color) 1px solid;
-}
-
-.card-secondary {
-  background-color: var(--primary-color);
-  border: var(--primary-color) 1px solid;
-}
-
-.card-secondary:hover {
-  border: var(--quaternary-color) 1px solid;
-} */
-
-/* Soft Skill */
-.soft-skill-card-primary {
-  background-color: var(--secondary-color);
-  border: var(--secondary-color) 1px solid;
-  padding: 1rem;
-}
-
-.soft-skill-card-primary:hover {
-  border: var(--quaternary-color) 1px solid;
-}
-
-.soft-skill-card-primary p {
-  font-weight: 500;
-}
-
-
-/* Tech Skill */
-
-.tech-skill-card-primary {
-  background-color: var(--secondary-color);
-  border: var(--secondary-color) 1px solid;
-  padding: 1rem;
-}
-
-.tech-skill-card-primary:hover {
-  border: var(--quaternary-color) 1px solid;
-}
-
-.tech-skill-card-primary p {
-  font-weight: 500;
-}
-
-/* Experience */
-.my-experience-primary {
-  background-color: var(--secondary-color);
-  border: var(--secondary-color) 1px solid;
-  padding: 1rem;
-}
-
-
-.my-experience-primary:hover {
-  border: var(--quaternary-color) 1px solid;
-}
-
-
-/* Progress Circle */
-.progress-ring__circle {
-  stroke-dasharray: 400, 400;
-  transition: stroke-dashoffset 0.35s;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-}
-
-.swiper-scrollbar {
-  background: rgba(0, 255, 0, 0.1);
-  height: 8px;
-  border-radius: 10px;
-  position: absolute;
-  left: 1%;
-  top: 40px;
-  bottom: 10px;
-}
-
-.swiper-scrollbar-drag {
-  background: rgba(255, 2, 2, 0.986);
-  border-radius: 10px;
-}
-
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
 }

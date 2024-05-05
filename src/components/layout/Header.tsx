@@ -1,6 +1,6 @@
 "use client";
 import { useMemo } from "react";
-import Spotlight, { SpotlightCard } from "../Spotlight";
+import { Spotlight, SpotlightCard } from "../Spotlight";
 import CustomButton from "../CustomButton";
 import LogoComponent from "../../../public/logo/logoComponent";
 import { useScrollDirection } from "@/hooks";
@@ -24,10 +24,10 @@ export default function Header() {
       <div className="hidden lg:flex w-full fixed z-[500] p-6">
         <nav className={`max-w-screen-xl mx-auto relative z-10 ${ scrollDirection === "down" ? "-top-96" : "top-0"} transition-all duration-1000`}>
           <Spotlight>
-            <SpotlightCard className={`bg-neutral-dark border-2 border-primary-dark hover:border-primary-medium  animate-slidein shadow-lg rounded-full`}>
+            <SpotlightCard className={`bg-neutral-deep shadow-lg shadow-primary-medium/10 border-2 border-neutral-dark hover:border-primary-medium  animate-slidein rounded-full`}>
               <div className="py-4 md:px-4 lg:px-8 xl:px-16">
                 {/* List of menu items */}
-                <ul className="flex flex-row items-center lg:gap-10 md:gap-8">
+                <ul className="list-none font-semibold flex flex-row items-center lg:gap-10 md:gap-8">
                   {memoizedMenuItems}
                 </ul>
               </div>

@@ -25,7 +25,7 @@ export default async function WelcomeSectionComponent() {
               {"_"}
             </p>
           </div>
-          <h1 className="mt-2">Jonatan Montesdeoca</h1>
+          <h1 className="mt-2 text-primary-dark">Jonatan Montesdeoca</h1>
           <h5 className="mt-2">Desarrollador Full Stack</h5>
           <p className="mt-4">
             Diseño y desarrollo soluciones digitales a medida, mi enfoque se

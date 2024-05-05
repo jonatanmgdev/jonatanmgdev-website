@@ -2,7 +2,6 @@ import React from "react";
 import { UseFormRegisterReturn } from "react-hook-form";
 
 interface CustomInputProps {
-  backgroundColor: string;
   placeholder: string;
   type: string;
   value?: string;
@@ -17,7 +16,6 @@ interface CustomInputProps {
 }
 
 const CustomInput: React.FC<CustomInputProps> = ({
-  backgroundColor,
   placeholder,
   type,
   value,
@@ -34,7 +32,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
     <input
       alt={alt}
       type={type}
-      className={`w-full p-5 border border-[--primary-color] focus:border-[--tertiary-color] rounded-lg outline-none bg-[${backgroundColor}] text-[--text-color] placeholder-[--text-color] ${className}`}
+      className={`${className}`}
       placeholder={placeholder}
       value={value}
       onChange={onChange}
