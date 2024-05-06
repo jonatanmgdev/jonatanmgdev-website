@@ -15,7 +15,7 @@ interface CustomTextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement
 
 type Ref = HTMLTextAreaElement;
 
-export const CustomTextarea = forwardRef<Ref, CustomTextareaProps> ((props, ref) =>  {
+const CustomTextarea = forwardRef<Ref, CustomTextareaProps> ((props, ref) =>  {
 
   const {
     placeholder,
@@ -45,3 +45,7 @@ export const CustomTextarea = forwardRef<Ref, CustomTextareaProps> ((props, ref)
     />
   );
 });
+
+CustomTextarea.displayName = "CustomTextarea";
+
+export default CustomTextarea;

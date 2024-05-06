@@ -16,7 +16,7 @@ interface CustomInputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 type Ref = HTMLInputElement;
 
-export const CustomInput = forwardRef<Ref, CustomInputProps> ((props, ref) => {
+const CustomInput = forwardRef<Ref, CustomInputProps> ((props, ref) => {
 
   const {
     placeholder,
@@ -47,3 +47,7 @@ export const CustomInput = forwardRef<Ref, CustomInputProps> ((props, ref) => {
     />
   );
 });
+
+CustomInput.displayName = "CustomInput";
+
+export default CustomInput;

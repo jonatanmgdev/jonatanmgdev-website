@@ -1,9 +1,9 @@
 export { default as CircleIndicatorsProgress } from './CircleIndicatorsProgress';
 export { default as CustomButton } from './CustomButton';
 export { default as CustomCheckbox } from './CustomCheckbox';
-export * from './CustomInput';
+export { default as CustomInput } from './CustomInput';
 export { default as CustomModal } from './CustomModal';
-export * from './CustomTextarea';
+export { default as CustomTextarea } from './CustomTextarea';
 export { default as ExperienceCard } from './ExperienceCard';
 export { default as JsonCodeSimulator } from './JsonCodeSimulator';
 export { default as PortfolioCard } from './PortfolioCard';
