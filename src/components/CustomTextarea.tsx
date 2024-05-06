@@ -1,11 +1,10 @@
-import React from "react";
+import React, { forwardRef, TextareaHTMLAttributes } from "react";
 import { UseFormRegisterReturn } from "react-hook-form";
 
-interface CustomTextareaProps {
+interface CustomTextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement>{
   placeholder: string;
   rows?: number;
   value?: string;
-  onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   disabled?: boolean;
   className?: string;
   id?: string;
@@ -14,21 +13,27 @@ interface CustomTextareaProps {
   register?: UseFormRegisterReturn;
 }
 
-const CustomTextarea: React.FC<CustomTextareaProps> = ({
-  placeholder,
-  value,
-  onChange,
-  disabled,
-  className,
-  id,
-  title,
-  rows,
-  required,
-  register
-}) => {
+type Ref = HTMLTextAreaElement;
+
+export const CustomTextarea = forwardRef<Ref, CustomTextareaProps> ((props, ref) =>  {
+
+  const {
+    placeholder,
+    rows,
+    value,
+    onChange,
+    disabled,
+    className,
+    id,
+    title,
+    required,
+    register
+  } = props;
+
   return (
     <textarea
       className={`${className}`}
+      ref={ref}
       placeholder={placeholder}
       title={title}
       value={value}
@@ -37,9 +42,6 @@ const CustomTextarea: React.FC<CustomTextareaProps> = ({
       id={id}
       rows={rows}
       required={required}
-      {...register}
     />
   );
-};
-
-export default CustomTextarea;
+});

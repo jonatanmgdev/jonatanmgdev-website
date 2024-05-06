@@ -1,11 +1,10 @@
-import React from "react";
+import React, { forwardRef, InputHTMLAttributes } from "react";
 import { UseFormRegisterReturn } from "react-hook-form";
 
-interface CustomInputProps {
+interface CustomInputProps extends InputHTMLAttributes<HTMLInputElement> {
   placeholder: string;
   type: string;
   value?: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
   className?: string;
   id?: string;
@@ -15,23 +14,28 @@ interface CustomInputProps {
   register?: UseFormRegisterReturn;
 }
 
-const CustomInput: React.FC<CustomInputProps> = ({
-  placeholder,
-  type,
-  value,
-  onChange,
-  disabled,
-  className,
-  id,
-  alt,
-  name,
-  required,
-  register
-}) => {
+type Ref = HTMLInputElement;
+
+export const CustomInput = forwardRef<Ref, CustomInputProps> ((props, ref) => {
+
+  const {
+    placeholder,
+    type,
+    value,
+    onChange,
+    disabled,
+    className,
+    id,
+    name,
+    alt,
+    required,
+  } = props;
+  
   return (
     <input
       alt={alt}
       type={type}
+      ref={ref}
       className={`${className}`}
       placeholder={placeholder}
       value={value}
@@ -40,9 +44,6 @@ const CustomInput: React.FC<CustomInputProps> = ({
       id={id}
       name={name}
       required={required}
-      {...register}
     />
   );
-};
-
-export default CustomInput;
+});

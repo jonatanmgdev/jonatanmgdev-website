@@ -14,6 +14,7 @@ export default async function AboutMeSectionComponent() {
             height={500}
             src={jonatanMontesdeocaImage.src}
             alt={`imagen de la canción Big Poppa`}
+            priority
           />
         </div>
         <div className="md:w-4/6 items-center justify-center animate-slideinLeft">

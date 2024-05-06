@@ -1,17 +1,18 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import CustomInput from "../CustomInput";
 import {
   CustomButton,
+  CustomInput,
   CustomModal,
   CustomTextarea,
   JsonCodeSimulator,
 } from "..";
 import { IconCheck } from "@assets/icons";
 import { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 import CustomCheckbox from "../CustomCheckbox";
+import dynamic from "next/dynamic";
+const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"));
 
 type ContactFormInput = {
   name: string;
@@ -31,6 +32,8 @@ export default function ContactUsForm() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [captcha, setCaptcha] = useState<string | null>();
+  const [recaptchaNeeded, setRecaptchaNeeded] = useState(false);
+
   const [contactData, setContactData] = useState<ContactFormInput>({
     name: "",
     surnames: "",
@@ -45,6 +48,10 @@ export default function ContactUsForm() {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  const handleFieldChange = (fieldName: keyof ContactFormInput) => {
+    setRecaptchaNeeded(true);
   };
 
   async function onSubmit(formData: ContactFormInput) {
@@ -83,6 +90,7 @@ export default function ContactUsForm() {
             type="text"
             required={true}
             register={register("name")}
+            onChange={() => handleFieldChange("name")}
           />
           <CustomInput
             alt="apellidos"
@@ -92,6 +100,7 @@ export default function ContactUsForm() {
             type="text"
             required={true}
             register={register("surnames")}
+            onChange={() => handleFieldChange("surnames")}
           />
           <CustomInput
             alt="email"
@@ -101,6 +110,7 @@ export default function ContactUsForm() {
             type="email"
             required={true}
             register={register("email")}
+            onChange={() => handleFieldChange("email")}
           />
           <CustomInput
             alt="teléfono"
@@ -110,6 +120,7 @@ export default function ContactUsForm() {
             type="text"
             required={true}
             register={register("phone")}
+            onChange={() => handleFieldChange("phone")}
           />
         </div>
         <div className="grid my-4 gap-2">
@@ -120,16 +131,27 @@ export default function ContactUsForm() {
             rows={4}
             required={true}
             register={register("message")}
+            onChange={() => handleFieldChange("message")}
           />
           <CustomCheckbox
-            labelText={<p>Acepto los <a href="https://www.tusitio.com/términos-y-condiciones">términos y condiciones</a>.</p>}
+            labelText={
+              <p>
+                Acepto los{" "}
+                <a href="https://www.tusitio.com/términos-y-condiciones">
+                  términos y condiciones
+                </a>
+                .
+              </p>
+            }
             isChecked={true}
             className="mb-4"
           />
-          <ReCAPTCHA
-            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-            onChange={setCaptcha}
-          />
+          {recaptchaNeeded && (
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+              onChange={setCaptcha}
+            />
+          )}
           <CustomButton
             id="submit-btn"
             type="submit"
