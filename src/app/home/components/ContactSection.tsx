@@ -8,7 +8,7 @@ export default async function ContactSectionComponent() {
         <p className=" flex text-xl font-semibold leading-7 text-primary-dark">
           ¿Hablamos?
         </p>
-        <h3 className="flex animate-slideinLeft">¡Envíame un mensaje!</h3>
+        <h3 className="flex">¡Envíame un mensaje!</h3>
       </div>
       <ContactUsForm />
     </section>

@@ -8,25 +8,26 @@ export default async function WelcomeSectionComponent() {
   return (
     <section>
       <div className="flex-row-reverse md:flex md:justify-between items-center gap-6">
-        <div className="animate-slideinRight md:w-1/2 flex items-center justify-center">
+        <div className="md:w-1/2 flex items-center justify-center">
           <Image
             src={jonatanCircleAvatar}
             alt={"Imagen de Jonatan Montesdeoca"}
             className="w-[200]"
             width={400}
+            height={400}
           />
         </div>
-        <div className="animate-slideinLeft md:w-1/2 mb-4 md:mb-0">
+        <div className="md:w-1/2 mb-4 md:mb-0">
           <div className="flex w-max">
-            <p className="animate-typing overflow-hidden whitespace-nowrap text-2xl font-semibold text-primary-dark">
+            <p className="overflow-hidden whitespace-nowrap text-2xl font-semibold text-primary-dark">
               {"> ¡Hola! Me llamo"}
             </p>
-            <p className="animate-pulse text-4xl font-semibold leading-7 text-primary-dark">
+            <p className="text-4xl font-semibold leading-7 text-primary-dark">
               {"_"}
             </p>
           </div>
           <h1 className="mt-2 text-primary-dark">Jonatan Montesdeoca</h1>
-          <h5 className="mt-2">Desarrollador Full Stack</h5>
+          <h4 className="mt-2">Desarrollador Full Stack</h4>
           <p className="mt-4">
             Diseño y desarrollo soluciones digitales a medida, mi enfoque se
             orienta hacia la implementación de proyectos con tecnologías relacionadas con javascript tanto en el frontend como en el backend. Soy bastante meticuloso con
@@ -42,6 +43,7 @@ export default async function WelcomeSectionComponent() {
               <div className="flex justify-center items-center  gap-4">
                 <a
                   className="text-neutral-light hover:text-accent-dark"
+                  aria-label="Acceder a mi cuenta en Youtube"
                   href="https://www.youtube.com/@jonatanmgdev"
                 >
                   {IconYoutube(35)}
@@ -49,6 +51,7 @@ export default async function WelcomeSectionComponent() {
                 </a>
                 <a
                   className="text-neutral-light hover:text-accent-dark"
+                  aria-label="Acceder a mi cuenta en Github"
                   href="https://github.com/jonatanmgdev"
                 >
                   {IconGithub(35)}
@@ -56,6 +59,7 @@ export default async function WelcomeSectionComponent() {
                 </a>
                 <a
                   className="text-neutral-light hover:text-accent-dark"
+                  aria-label="Acceder a mi cuenta en Linkedin"
                   href="https://www.linkedin.com/in/jonatanmgdev/"
                 >
                   {IconLinkedin(35)}

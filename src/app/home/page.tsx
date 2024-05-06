@@ -1,4 +1,3 @@
-import welcomeSectionBackground from "@assets/images/welcome-section-bg.png";
 import {
   WelcomeSection,
   PortfolioSection,
@@ -13,7 +12,6 @@ export default function Home() {
     <div className="flex flex-col w-full">
       <div
         className="bg-neutral-dark bg-no-repeat bg-cover bg-center"
-        style={{ backgroundImage: `url('${welcomeSectionBackground.src}')` }}
       >
         <div id="welcome-section" className="relative overflow-hidden lg:overflow-visible py-[4rem] sm:py-[14rem]">
           <div className="container p-4">

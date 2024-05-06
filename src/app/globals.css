@@ -49,6 +49,9 @@
   input {
     @apply w-full p-5 border-2 border-neutral-medium focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-neutral-light placeholder-primary-dark;
   }
+  html {
+    @apply bg-neutral-dark;
+  }
 }
 
 html {
@@ -57,6 +60,12 @@ html {
 
 #skills-section {
   background-image: url("../assets/images/contact-section-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#welcome-section {
+  background-image: url("../assets/images/welcome-section-bg.webp");
   background-size: cover;
   background-position: center;
 }

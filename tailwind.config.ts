@@ -96,52 +96,9 @@ const config: Config = {
             transform: "translateY(0)",
           },
         },
-        slideinLeft: {
-          from: {
-            opacity: "0",
-            transform: "translateX(-10px)",
-          },
-          to: {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
-        },
-        slideinRight: {
-          from: {
-            opacity: "0",
-            transform: "translateX(+10px)",
-          },
-          to: {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
-        },
-        slideinDown: {
-          from: {
-            opacity: "0",
-            transform: "translateY(+10px)",
-          },
-          to: {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
-        },
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden",
-          },
-          "100%": {
-            width: "100%",
-          },
-        },
       },
       animation: {
         slidein: "slidein 2s ease 1000ms",
-        slideinLeft: "slideinLeft 2s ease 1000ms",
-        slideinRight: "slideinRight 2s ease 1000ms",
-        slideinDown: "slideinDown 2s ease 1000ms",
-        typing: "typing 4s steps(28) ",
       },
     },
   },

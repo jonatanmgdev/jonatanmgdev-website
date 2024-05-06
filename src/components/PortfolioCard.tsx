@@ -23,8 +23,8 @@ const PortfolioCard: React.FC<PortfolioData> = ({ title, companyName, descriptio
                 <Image
                   src={imageSrc} 
                   alt={title} 
-                  width={1470} 
-                  height={980}
+                  width={450} 
+                  height={300}
                   className="w-full h-full object-cover"
                 />
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -37,7 +37,7 @@ const PortfolioCard: React.FC<PortfolioData> = ({ title, companyName, descriptio
               <div className="mt-6 text-center relative z-10 space-y-2">
                 <h2 className="text-lg text-white transition flex-row flex justify-center align-middle content-center">
                   {title} - {companyName} 
-                  <a href={url} className="ml-1">{IconLink(20)}</a>
+                  <a  aria-label={`Acceder al enlace del portfolio ${title}`} href={url} className="ml-1">{IconLink(20)}</a>
                 </h2>
                 <p className="text-secondary">{description}</p>
               </div>

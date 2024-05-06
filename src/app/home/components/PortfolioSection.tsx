@@ -34,7 +34,7 @@ export default async function PortfolioSectionComponent() {
           </div>
         </div>
         <div className="flex w-full justify-center items-center">
-          <h2 className="animate-slideinLeft justify-center mt-2">
+          <h2 className="justify-center mt-2">
             Últimos proyectos
           </h2>
         </div>
@@ -105,10 +105,10 @@ export default async function PortfolioSectionComponent() {
                         </span>
                       </div>
                       <div className="space-y-2">
-                        <h4 className="text-primary-dark transition">
+                        <p className="text-primary-dark font-semibold text-2xl">
                           En desarrollo
-                        </h4>
-                        <h2 className="text-lg text-white transition">
+                        </p>
+                        <h2 className="text-lg text-white">
                           Lesmestur.com
                         </h2>
                         <p className="text-secondary">
@@ -120,7 +120,9 @@ export default async function PortfolioSectionComponent() {
                     <div className="overflow-hidden relative mt-6 sm:mt-auto h-fit -mb-[34px] -mr-[34px] sm:ml-6 py-6 p-6 border border-primary-dark rounded-tl-3xl">
                       <Image
                         src={lesmesLogo}
-                        alt="Portfolio"
+                        width={620}
+                        height={620}
+                        alt="Logotipo de Lesmestur"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -141,10 +143,10 @@ export default async function PortfolioSectionComponent() {
                         </span>
                       </div>
                       <div className="space-y-2">
-                      <h4 className="text-primary-dark transition">
+                      <h4 className="text-primary-dark font-semibold text-2xl">
                           En desarrollo
                         </h4>
-                        <h2 className="text-lg text-white transition">
+                        <h2 className="text-lg text-white">
                           Ventajon.com
                         </h2>
                         <p className="text-secondary">
@@ -156,7 +158,9 @@ export default async function PortfolioSectionComponent() {
                     <div className="overflow-hidden relative mt-6 sm:mt-auto h-fit -mb-[34px] -mr-[34px] sm:ml-6 py-6 p-6 border border-primary-dark rounded-tl-3xl">
                       <Image
                         src={ventajonLogo}
-                        alt="Portfolio"
+                        width={620}
+                        height={620}
+                        alt="Logotipo de Ventajon"
                         className="w-full h-full object-cover"
                       />
                     </div>

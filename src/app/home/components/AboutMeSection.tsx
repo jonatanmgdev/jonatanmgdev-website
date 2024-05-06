@@ -7,7 +7,7 @@ export default async function AboutMeSectionComponent() {
   return (
     <section>
       <div className="md:flex md:justify-between items-center gap-8 mb-4">
-        <div className="md:w-2/6 flex justify-center animate-slideinRight mb-4 md:mb-0">
+        <div className="md:w-2/6 flex justify-center mb-4 md:mb-0">
           <Image
             className="rounded-2xl shadow-md border-4 border-primary-dark hover:border-accent-dark"
             width={375}
@@ -17,7 +17,7 @@ export default async function AboutMeSectionComponent() {
             priority
           />
         </div>
-        <div className="md:w-4/6 items-center justify-center animate-slideinLeft">
+        <div className="md:w-4/6 items-center justify-center">
           <div className="flex flex-col mb-4">
             <h2 className="mt-2">Sobre mí</h2>
             <p className="font-semibold text-primary-dark">

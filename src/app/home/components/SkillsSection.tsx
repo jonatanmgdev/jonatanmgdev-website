@@ -29,12 +29,12 @@ export default async function SkillsSectionComponent() {
       <div>
         <div className="flex">
           <div className="flex w-max ">
-            <p className="animate-typing overflow-hidden whitespace-nowrap text-xl font-semibold leading-7 text-primary-dark">
+            <p className="overflow-hidden whitespace-nowrap text-xl font-semibold leading-7 text-primary-dark">
               Teconologías y skills
             </p>
           </div>
         </div>
-        <h2 className="animate-slideinLeft my-2">Mis Habilidades</h2>
+        <h2 className="my-2">Mis Habilidades</h2>
         <p>
           Dedico tiempo al aprendizaje de nuevas tecnologías, con clara
           predilección por javascript y sus frameworks.
