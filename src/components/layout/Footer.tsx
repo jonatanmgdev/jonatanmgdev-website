@@ -1,5 +1,3 @@
-"use client";
-
 import { IconGithub, IconLinkedin, IconYoutube } from "@/assets/icons";
 
 export default function Footer() {

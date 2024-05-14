@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import  { Spotlight, SpotlightCard } from "./Spotlight";
+import  { Spotlight, SpotlightCard } from "../../../../components/Spotlight";
 import Image from "next/image";
 import IconLink from "@assets/icons/IconLink";
 
@@ -16,9 +16,9 @@ export interface PortfolioData {
 
 const PortfolioCard: React.FC<PortfolioData> = ({ title, companyName, description, imageSrc, icons, url, type }) => {
     return (
-        <Spotlight className="w-full h-full">
-          <SpotlightCard className="h-full">
-            <div className="w-full h-full rounded-xl bg-neutral-medium shadow-lg p-8">
+        <Spotlight>
+          <SpotlightCard>
+            <div className="card-primary p-8 w-full h-full">
               <div className="relative overflow-hidden rounded-xl text-white shadow-lg">
                 <Image
                   src={imageSrc} 
@@ -29,7 +29,7 @@ const PortfolioCard: React.FC<PortfolioData> = ({ title, companyName, descriptio
                 />
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
                 <div className="!absolute top-4 right-4 p-2 bg-[#00bb86] bg-opacity-60 rounded-lg">
-                  <p className="text-white text-center text-xs uppercase">
+                  <p className="text-white text-center text-xs">
                     {type}
                   </p>
                 </div>

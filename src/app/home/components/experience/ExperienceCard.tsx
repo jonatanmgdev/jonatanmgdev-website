@@ -1,5 +1,5 @@
 import React from "react";
-import { Spotlight, SpotlightCard } from "./Spotlight";
+import { Spotlight, SpotlightCard } from "../../../../components/Spotlight";
 import { IconCheck, IconHome, IconLocation } from "@assets/icons";
 
 export interface ExperienceCardProps {
@@ -36,10 +36,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceData }) => {
           )}
           <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
             <Spotlight>
-              <SpotlightCard className="bg-neutral-medium rounded-lg shadow-lg p-4">
+              <SpotlightCard className="card-primary p-4">
                 <div className="h-full items-center justify-start">
-                  <div className="w-max bg-neutral-deep rounded-lg p-2 my-1 sm:mt-0">
-                    <p className="text-sm font-bold text-white">
+                  <div className="w-max rounded-lg my-1 sm:mt-0">
+                    <p className="text-sm font-medium text-neutral-light">
                       {experience.dates}
                     </p>
                   </div>

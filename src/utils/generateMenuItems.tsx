@@ -1,13 +1,16 @@
+"use client";
 import { MenuItem } from "@/types/MenuItem";
-import Link from "next/link";
 
-export function generateMenuItems(menuItems: MenuItem[]): JSX.Element[] {
+export function generateMenuItems<FC>(menuItems: MenuItem[]): JSX.Element[] {
   return menuItems.map((item, index) => {
     return (
-      <li key={index} className="relative max-w-fit justify-center">
-        <Link href={item.href} className="justify-center items-center">
+      <li key={index} >
+        <a
+          href={item.href}
+          className="flex"
+        >
           {item.label}
-        </Link>
+        </a>
       </li>
     );
   });

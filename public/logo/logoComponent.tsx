@@ -8,7 +8,7 @@ import React from 'react';
 
 const LogoComponent = React.memo(() => {
   return (
-    <div className="w-max flex items-center">
+    <div className="flex items-center">
       <p className="font-semibold text-2xl text-white">
         Jonatanmg
       </p>

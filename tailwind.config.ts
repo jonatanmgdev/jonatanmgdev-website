@@ -12,7 +12,7 @@ const config: Config = {
         primary: {
           light: "#33CC99",
           medium: "#02B87B",
-          dark: "#009966",
+          dark: "#00B377",
           deep: "#00764F",
         },
         accent: {
@@ -23,15 +23,21 @@ const config: Config = {
         },
         neutral: {
           light: "#BDBDBD",
-          medium: "#161616",
+          medium: "#0D0D0D",
           dark: "#0F0F0F",
-          deep: "#0A0A0A",
+          deep: "#080808",
         },
       },
       container: {
         center: true,
         padding: {
-          DEFAULT: "0rem",
+          xs: "1rem",
+          sm: "1rem",
+          md: "1rem",
+          lg: "1rem",
+          xl: "1rem",
+          "2xl": "1rem",
+          "3xl": "1rem",
         },
         screens: {
           sm: "640px",
@@ -43,6 +49,7 @@ const config: Config = {
         },
       },
       screens: {
+        xs: "320px",
         sm: "640px",
         md: "768px",
         lg: "1024px",
@@ -51,8 +58,16 @@ const config: Config = {
         "3xl": "1600px",
       },
       fontSize: {
-        sm: "0.8rem",
-        base: "1rem",
+        sm: ["0.8rem", {
+          lineHeight: '1.5rem',
+          letterSpacing: '-0.01em',
+          fontWeight: '500',
+        }],
+        base: ["1rem", {
+          lineHeight: '1.5rem',
+          letterSpacing: '-0.01em',
+          fontWeight: '500',
+        }],
         xl: "1.25rem",
         '2xl': ['1.563rem', {
           lineHeight: '2rem',
@@ -81,9 +96,9 @@ const config: Config = {
         sourceCodePro: "var(--font-source-code-pro)",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "welcome-section-background":  "url('../assets/images/welcome-section-bg.webp')",
+        "skills-section-background":  "url('../assets/images/skills-section-bg.png')",
+        "aboutme-section-background":  "url('../assets/images/aboutme-section-bg.webp')",
       },
       keyframes: {
         slidein: {

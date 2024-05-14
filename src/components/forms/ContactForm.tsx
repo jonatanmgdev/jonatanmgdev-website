@@ -10,7 +10,7 @@ import {
 } from "..";
 import { IconCheck } from "@assets/icons";
 import { useState } from "react";
-import CustomCheckbox from "../CustomCheckbox";
+import CustomCheckbox from "../custom/CustomCheckbox";
 import dynamic from "next/dynamic";
 const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"));
 

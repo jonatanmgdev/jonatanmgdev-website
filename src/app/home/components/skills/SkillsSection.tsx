@@ -1,5 +1,4 @@
 "use server";
-import { SkillCard, SoftSkillCard } from "@/components";
 import {
   IconActiveListening,
   IconCommunication,
@@ -22,20 +21,15 @@ import {
   IconTypescript,
   IconWordpress,
 } from "@assets/icons";
+import { SkillCard, SoftSkillCard } from ".";
 
-export default async function SkillsSectionComponent() {
+async function SkillsSectionComponent() {
   return (
     <section>
-      <div>
-        <div className="flex">
-          <div className="flex w-max ">
-            <p className="overflow-hidden whitespace-nowrap text-xl font-semibold leading-7 text-primary-dark">
-              Teconologías y skills
-            </p>
-          </div>
-        </div>
-        <h2 className="my-2">Mis Habilidades</h2>
-        <p>
+      <div className="flex flex-col w-full text-center justify-center items-center md:justify-start md:items-start md:text-start">
+        <span>Teconologías y habilidades</span>
+        <h2>Mis Skills</h2>
+        <p className="mt-2">
           Dedico tiempo al aprendizaje de nuevas tecnologías, con clara
           predilección por javascript y sus frameworks.
         </p>
@@ -100,3 +94,5 @@ export default async function SkillsSectionComponent() {
     </section>
   );
 }
+
+export default SkillsSectionComponent;

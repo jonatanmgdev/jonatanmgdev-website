@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   h1 {
     @apply text-5xl font-inter font-bold text-white;
@@ -22,50 +21,80 @@
   h6 {
     @apply text-lg font-inter font-semibold text-white;
   }
-  p {
-    @apply text-base font-inter font-medium text-neutral-light;
-  }
-  a {
-    @apply text-base font-inter text-neutral-light hover:text-accent-dark;
-  }
-  li {
-    @apply text-base font-inter text-neutral-light hover:text-accent-dark;
+  p,
+  label {
+    @apply text-base font-inter text-neutral-light;
   }
   span {
-    @apply text-neutral-light;
+    @apply text-base font-inter text-primary-dark font-medium;
   }
-  button[type] {
-    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark disabled:bg-neutral-light p-4 rounded-lg;
-  }
-  button {
-    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark disabled:bg-neutral-light p-4 rounded-lg;
+  a {
+    @apply text-base font-inter text-neutral-light hover:text-accent-dark min-h-11 min-w-11 items-center;
   }
   ul {
     @apply list-disc list-inside marker:text-accent-dark;
   }
-  textarea {
-    @apply w-full p-5 border-2 border-neutral-medium focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-neutral-light placeholder-primary-dark;
+  li {
+    @apply text-base font-inter text-neutral-light hover:text-accent-dark;
   }
-  input {
-    @apply w-full p-5 border-2 border-neutral-medium focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-neutral-light placeholder-primary-dark;
+  button,
+  button[type] {
+    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark disabled:bg-neutral-light p-4 rounded-lg min-h-11 min-w-11;
+  }
+  input,
+  textarea {
+    @apply w-full p-5 border-2 border-neutral-medium focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-white placeholder-white;
   }
   html {
-    @apply bg-neutral-dark;
+    @apply bg-neutral-dark scroll-smooth;
+  }
+  body {
+    @apply min-h-screen overflow-auto;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+.card-primary {
+  @apply bg-neutral-deep rounded-lg shadow-lg;
+}
+
+/* SECTIONS */
+#welcome-section {
+  @apply bg-welcome-section-background bg-cover bg-center bg-no-repeat;
 }
 
 #skills-section {
-  background-image: url("../assets/images/contact-section-bg.png");
-  background-size: cover;
-  background-position: center;
+  @apply bg-skills-section-background bg-cover bg-center bg-no-repeat py-12 md:py-16 lg:py-24;
 }
 
-#welcome-section {
-  background-image: url("../assets/images/welcome-section-bg.webp");
-  background-size: cover;
-  background-position: center;
+#aboutme-section {
+  @apply bg-neutral-deep bg-aboutme-section-background bg-no-repeat py-12 md:py-16 lg:py-24;
+}
+
+#experience-section {
+  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+}
+
+#portfolio-section {
+  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+}
+
+#skills-section {
+  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+}
+
+#contact-section{
+  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  @apply bg-primary-deep;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-primary-deep;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent-deep;
 }

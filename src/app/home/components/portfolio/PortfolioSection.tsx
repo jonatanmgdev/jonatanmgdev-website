@@ -20,23 +20,24 @@ import {
   IconTypescript,
   IconWordpress,
 } from "@assets/icons";
-import PortfolioCard from "@/components/PortfolioCard";
+import { PortfolioCard } from ".";
 
-export default async function PortfolioSectionComponent() {
+
+async function PortfolioSectionComponent() {
   return (
     <section>
-      <div className="mx-auto px-6 max-w-6xl text-gray-500 pb-8">
-        <div className="flex">
-          <div className="flex w-full justify-center items-center ">
-            <p className="overflow-hidden whitespace-nowrap text-xl font-semibold leading-7 text-primary-dark">
-              Mis granitos de arena
+      <div className="flex align-middle justify-center mb-14">
+        <div className="text-center lg:max-w-5xl">
+          <span>Mis granitos de arena</span>
+          <h2>Últimos proyectos</h2>
+          <div className="flex flex-col py-4">
+            <p className="mt-2">
+              Estos proyectos son los más recientes que he desarrollado de forma
+              individual o en los equipos de trabajo donde he podido sumar mis
+              granitos de arena. Además puedes ver los proyectos que actualmente
+              estoy desarrollando.
             </p>
           </div>
-        </div>
-        <div className="flex w-full justify-center items-center">
-          <h2 className="justify-center mt-2">
-            Últimos proyectos
-          </h2>
         </div>
       </div>
       <div className="relative">
@@ -71,7 +72,7 @@ export default async function PortfolioSectionComponent() {
               ]}
               imageSrc={portfolioCanarybytes.src}
               url={"https://canarybytes.com"}
-              type={"WEB"}
+              type={"Web"}
             />
           </div>
           <div className="col-span-full sm:col-span-3 lg:col-span-2 overflow-hidden relative">
@@ -90,27 +91,23 @@ export default async function PortfolioSectionComponent() {
               ]}
               imageSrc={portfolioJonatanmgdev.src}
               url={"https://jonatanmg.dev"}
-              type={"WEB"}
+              type={"Web"}
             />
           </div>
           <div className="col-span-full lg:col-span-3 overflow-hidden relative">
             <Spotlight className="w-full h-full">
               <SpotlightCard className="h-full">
-                <div className="rounded-xl w-full h-full bg-neutral-medium border border-neutral-medium hover:border-primary-dark shadow-lg p-8">
+                <div className="rounded-xl w-full h-full bg-neutral-deep border border-neutral-medium hover:border-primary-dark shadow-lg p-8">
                   <div className="grid sm:grid-cols-2">
                     <div className="flex flex-col justify-between relative z-10 space-y-12 lg:space-y-6">
-                      <div className="justify-center relative aspect-square rounded-full size-8 flex border border-neutral-light">
-                        <span className="content-center h-full">
-                          {IconCode(20)}
-                        </span>
-                      </div>
-                      <div className="space-y-2">
-                        <p className="text-primary-dark font-semibold text-2xl">
+                      <div className="flex justify-center items-center gap-2 relative bg-primary-dark rounded-lg max-w-max p-2">
+                        {IconCode(20)}
+                        <p className="text-neutral-dark font-semibold text-lg">
                           En desarrollo
                         </p>
-                        <h2 className="text-lg text-white">
-                          Lesmestur.com
-                        </h2>
+                      </div>
+                      <div className="space-y-2">
+                        <h2 className="text-lg text-white">Lesmestur.com</h2>
                         <p className="text-secondary">
                           Nueva web de Lesmestur, gestión de reservas online y
                           digitalización del modelo de negocio.
@@ -134,21 +131,17 @@ export default async function PortfolioSectionComponent() {
           <div className="col-span-full lg:col-span-3 overflow-hidden relative">
             <Spotlight className="w-full h-full">
               <SpotlightCard className="h-full">
-                <div className="rounded-xl w-full h-full bg-neutral-medium border border-neutral-medium hover:border-primary-dark shadow-lg p-8">
+                <div className="rounded-xl w-full h-full bg-neutral-deep border border-neutral-medium hover:border-primary-dark shadow-lg p-8">
                   <div className="grid sm:grid-cols-2">
                     <div className="flex flex-col justify-between relative z-10 space-y-12 lg:space-y-6">
-                      <div className="justify-center relative aspect-square rounded-full size-8 flex border border-neutral-light">
-                        <span className="content-center h-full">
-                          {IconCode(20)}
-                        </span>
+                      <div className="flex justify-center items-center gap-2 relative bg-primary-dark rounded-lg max-w-max p-2">
+                        {IconCode(20)}
+                        <p className="text-neutral-dark font-semibold text-lg">
+                          En desarrollo
+                        </p>
                       </div>
                       <div className="space-y-2">
-                      <h4 className="text-primary-dark font-semibold text-2xl">
-                          En desarrollo
-                        </h4>
-                        <h2 className="text-lg text-white">
-                          Ventajon.com
-                        </h2>
+                        <h2 className="text-lg text-white">Ventajon.com</h2>
                         <p className="text-secondary">
                           Nueva web de Ventaja Europa, con una interfaz renovada
                           y mejor experiencia de usuario.
@@ -174,3 +167,5 @@ export default async function PortfolioSectionComponent() {
     </section>
   );
 }
+
+export default PortfolioSectionComponent;

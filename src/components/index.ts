@@ -1,16 +1,7 @@
-export { default as CircleIndicatorsProgress } from './CircleIndicatorsProgress';
-export { default as CustomButton } from './CustomButton';
-export { default as CustomCheckbox } from './CustomCheckbox';
-export { default as CustomInput } from './CustomInput';
-export { default as CustomModal } from './CustomModal';
-export { default as CustomTextarea } from './CustomTextarea';
-export { default as ExperienceCard } from './ExperienceCard';
 export { default as JsonCodeSimulator } from './JsonCodeSimulator';
-export { default as PortfolioCard } from './PortfolioCard';
-export { default as SkillCard } from './SkillCard';
-export { default as SoftSkillCard } from './SoftSkillCard';
 export * from './Spotlight';
 export { default as CarouselItem } from './carousel/CarouselItem';
+export * from './custom';
 export { default as EmailMessageContactForm } from './emails/EmailMessageContactForm';
 export { default as ContactForm } from './forms/ContactForm';
 export * from './layout';

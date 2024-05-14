@@ -17,12 +17,6 @@ const sourceCodePro = Source_Code_Pro({
   fallback: ['Courier New', 'Courier', 'monospace'],
 })
  
-const roboto = Roboto({
-  weight: ['100', '300', '400', '500', '700', '900'],
-  subsets: ['latin'],
-  variable: "--roboto-font",
-  fallback: ['Helvetica', 'sans-serif'],
-});
 
 export const metadata: Metadata = {
   title: "Jonatan Montesdeoca - Full Stack Developer",
@@ -36,10 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${inter.variable} ${sourceCodePro.variable} ${roboto.variable}`}>
+    <html lang="es" className={`${inter.variable} ${sourceCodePro.variable}`}>
       <body>
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
