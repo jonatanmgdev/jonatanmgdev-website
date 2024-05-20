@@ -17,7 +17,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
 
   return (
     <Spotlight>
-      <SpotlightCard className={`bg-neutral-medium p-4 shadow-lg rounded-lg ${className}`}>
+      <SpotlightCard className={`bg-neutral-medium p-4 rounded-lg ${className}`}>
         <div className="max-w-[200px]" >
           {image}
           <h5 className="pt-4">{title}</h5>

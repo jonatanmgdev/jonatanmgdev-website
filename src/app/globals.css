@@ -4,46 +4,46 @@
 
 @layer base {
   h1 {
-    @apply text-5xl font-inter font-bold text-white;
+    @apply text-5xl font-inter font-bold text-textcolor-heading;
   }
   h2 {
-    @apply text-4xl font-inter font-bold text-white;
+    @apply text-4xl font-inter font-bold text-textcolor-heading;
   }
   h3 {
-    @apply text-3xl font-inter font-semibold text-white;
+    @apply text-3xl font-inter font-semibold text-textcolor-heading;
   }
   h4 {
-    @apply text-2xl font-inter font-semibold text-white;
+    @apply text-2xl font-inter font-semibold text-textcolor-heading;
   }
   h5 {
-    @apply text-xl font-inter font-semibold text-white;
+    @apply text-xl font-inter font-semibold text-textcolor-heading;
   }
   h6 {
-    @apply text-lg font-inter font-semibold text-white;
+    @apply text-lg font-inter font-semibold text-textcolor-heading;
   }
   p,
   label {
-    @apply text-base font-inter text-neutral-light;
+    @apply text-base font-inter text-textcolor-primary;
   }
   span {
-    @apply text-base font-inter text-primary-dark font-medium;
+    @apply text-base font-inter text-textcolor-accent font-medium;
   }
   a {
-    @apply text-base font-inter text-neutral-light hover:text-accent-dark min-h-11 min-w-11 items-center;
+    @apply text-base font-inter text-textcolor-secondary hover:text-textcolor-accent min-h-11 min-w-11 items-center;
   }
   ul {
-    @apply list-disc list-inside marker:text-accent-dark;
+    @apply list-disc list-inside marker:text-textcolor-accent;
   }
   li {
-    @apply text-base font-inter text-neutral-light hover:text-accent-dark;
+    @apply text-base font-inter text-textcolor-secondary hover:text-textcolor-accent;
   }
   button,
   button[type] {
-    @apply font-inter font-semibold text-neutral-deep bg-accent-deep shadow-lg hover:shadow-inner disabled:bg-neutral-light p-4 rounded-lg min-h-11 min-w-11;
+    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-medium  disabled:bg-neutral-light p-4 rounded-lg min-h-11 min-w-11;
   }
   input,
   textarea {
-    @apply w-full p-5 border-2 border-neutral-medium hover:border-accent-dark focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-white placeholder-white;
+    @apply bg-neutral-dark w-full p-5 border-2 border-neutral-dark hover:border-accent-dark focus:border-accent-dark rounded-lg outline-none  text-white placeholder-white;
   }
   html {
     @apply bg-neutral-dark scroll-smooth;
@@ -54,7 +54,7 @@
 }
 
 .card-primary {
-  @apply bg-neutral-deep rounded-xl shadow-lg border-2 border-neutral-medium hover:border-accent-dark;
+  @apply bg-neutral-dark rounded-xl border-2 border-neutral-medium hover:border-accent-dark;
 }
 
 /* SECTIONS */
@@ -67,27 +67,23 @@
 }
 
 #aboutme-section {
-  @apply bg-neutral-deep bg-aboutme-section-background bg-no-repeat;
+  @apply bg-neutral-dark bg-aboutme-section-background bg-no-repeat;
 }
 
 #experience-section {
-  @apply bg-neutral-dark;
+  @apply bg-neutral-deep;
 }
 
 #portfolio-section {
-  @apply bg-neutral-dark;
-}
-
-.portfolioDevelopImage {
-  @apply transition-shadow duration-700 hover:shadow-[inset_0px_0px_20px_#46464620];
+  @apply bg-neutral-deep;
 }
 
 #skills-section {
-  @apply bg-neutral-dark;
+  @apply bg-neutral-deep;
 }
 
 #contact-section{
-  @apply bg-neutral-dark;
+  @apply bg-neutral-deep;
 }
 
 

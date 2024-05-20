@@ -17,7 +17,7 @@ const Popover: React.FC<PopoverProps> = ({ content, children }) => {
     >
       {children}
       {isVisible && (
-        <div className="absolute bottom-full mb-2 w-auto p-2 bg-accent-deep rounded-md shadow-lg text-sm">
+        <div className="absolute bottom-full mb-2 w-auto p-2 bg-accent-deep rounded-md text-sm">
           {content}
         </div>
       )}

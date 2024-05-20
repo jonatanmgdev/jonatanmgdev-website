@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      boxShadow: {
-          inner: 'inset 0 0px 8px 0 rgba(0, 0, 0, 1)',
-      },
       colors: {
         primary: {
           light: "#33CC99",
@@ -25,11 +22,17 @@ const config: Config = {
           deep: "#17BF95",
         },
         neutral: {
-          light: "#BDBDBD",
-          medium: "#111111",
-          dark: "#080808",
-          deep: "#040404",
+          light: "#3C3C3C",
+          medium: "#2D2D2D",
+          dark: "#1F1F1F",
+          deep: "#121212",
         },
+        textcolor: {
+          primary: "#E0E0E0",
+          secondary: "#B3B3B3",
+          heading: "#F5F5F5",
+          accent: "#00B377",
+        }
       },
       container: {
         center: true,

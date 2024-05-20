@@ -25,11 +25,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceData }) => {
           }`}
         >
           {index === experienceData.length - 1 ? (
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white group-[.is-active]:bg-primary-dark text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white group-[.is-active]:bg-primary-dark text-slate-500 group-[.is-active]:text-emerald-50 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               {IconHome(12)}
             </div>
           ) : (
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white group-[.is-active]:bg-primary-dark text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white group-[.is-active]:bg-primary-dark text-slate-500 group-[.is-active]:text-emerald-50 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               {IconCheck(12)}
             </div>
           )}
@@ -38,12 +38,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceData }) => {
               <SpotlightCard className="card-primary p-4">
                 <div className="h-full items-center justify-start">
                   <div className="w-max rounded-lg my-1 sm:mt-0">
-                    <p className="text-sm font-medium text-neutral-light">
+                    <p className="text-sm font-medium text-textcolor-accent">
                       {experience.dates} - {experience.ubication}
                     </p>
                   </div>
                   <div>
-                    <p className="font-bold text-lg text-primary-dark">
+                    <p className="font-bold text-lg text-textcolor-accent">
                       {experience.companyName}
                     </p>
                   </div>

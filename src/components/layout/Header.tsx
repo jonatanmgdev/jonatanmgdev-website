@@ -25,7 +25,7 @@ export default function Header() {
         >
           <Spotlight>
             <SpotlightCard
-              className={`bg-neutral-deep shadow-lg shadow-primary-medium/5 border-2 border-neutral-dark hover:border-primary-medium  animate-slidein rounded-full`}
+              className={`bg-neutral-deep border-2 border-neutral-dark hover:border-primary-medium  animate-slidein rounded-full`}
             >
               <div className="py-4 md:px-4 lg:px-8 xl:px-16">
                 <ul className="list-none font-semibold flex flex-row items-center lg:gap-10 md:gap-8">
@@ -36,7 +36,7 @@ export default function Header() {
           </Spotlight>
         </nav>
       </div>
-      <div className="flex justify-center w-full lg:hidden py-4 bg-neutral-deep border-b-2 border-primary-dark rounded-b-2xl shadow-lg">
+      <div className="flex justify-center w-full lg:hidden py-4 bg-neutral-deep border-b-2 border-primary-dark rounded-b-2xl">
         <LogoComponent />
       </div>
     </header>

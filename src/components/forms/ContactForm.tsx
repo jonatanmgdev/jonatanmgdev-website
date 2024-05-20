@@ -85,7 +85,6 @@ export default function ContactUsForm() {
           <CustomInput
             alt="nombre"
             id="name"
-            className="bg-neutral-deep"
             placeholder="Nombre"
             type="text"
             required={true}
@@ -95,7 +94,6 @@ export default function ContactUsForm() {
           <CustomInput
             alt="apellidos"
             id="surnames"
-            className="bg-neutral-deep"
             placeholder="Apellidos"
             type="text"
             required={true}
@@ -105,7 +103,6 @@ export default function ContactUsForm() {
           <CustomInput
             alt="email"
             id="email"
-            className="bg-neutral-deep"
             placeholder="E-mail"
             type="email"
             required={true}
@@ -115,7 +112,6 @@ export default function ContactUsForm() {
           <CustomInput
             alt="teléfono"
             id="phone"
-            className="bg-neutral-deep"
             placeholder="Teléfono"
             type="text"
             required={true}
@@ -126,7 +122,7 @@ export default function ContactUsForm() {
         <div className="grid my-4 gap-2">
           <CustomTextarea
             title="Ingrese aquí su mensaje..."
-            className="mb-4 bg-neutral-deep"
+            className="mb-4"
             placeholder={"Su mensaje..."}
             rows={4}
             required={true}
@@ -155,7 +151,7 @@ export default function ContactUsForm() {
           <CustomButton
             id="submit-btn"
             type="submit"
-            className="bg-neutral-dark mt-4"
+            className="mt-4"
             disabled={isSubmitting}
             text={"Enviar formulario"}
           />
