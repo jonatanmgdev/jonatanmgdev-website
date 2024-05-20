@@ -11,11 +11,13 @@ const SkillCard: React.FC<SkillCardProps> = ({
   svg,
 }) => {
   return (
-    <Spotlight>
-      <SpotlightCard>
-        <div className="card-primary flex flex-col items-center justify-center min-h-[140px] p-4 gap-2">
-          <div className="text-white hover:text-accent-dark">{svg}</div>
-          <p className="text-center sm:text-left text-white ml-2">
+    <Spotlight className="group">
+      <SpotlightCard className="card-primary p-4">
+        <div className="flex flex-col items-center justify-center min-h-[120px] w-full p-2 gap-2">
+          <span className="text-white group-hover:text-accent-dark">
+          {svg}
+          </span>
+          <p className="text-center text-white">
             {skillName}
           </p>
         </div>

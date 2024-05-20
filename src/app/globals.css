@@ -39,11 +39,11 @@
   }
   button,
   button[type] {
-    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-dark disabled:bg-neutral-light p-4 rounded-lg min-h-11 min-w-11;
+    @apply font-inter font-semibold text-neutral-deep bg-accent-deep shadow-lg hover:shadow-inner disabled:bg-neutral-light p-4 rounded-lg min-h-11 min-w-11;
   }
   input,
   textarea {
-    @apply w-full p-5 border-2 border-neutral-medium focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-white placeholder-white;
+    @apply w-full p-5 border-2 border-neutral-medium hover:border-accent-dark focus:border-accent-dark rounded-lg outline-none bg-neutral-deep text-white placeholder-white;
   }
   html {
     @apply bg-neutral-dark scroll-smooth;
@@ -54,7 +54,7 @@
 }
 
 .card-primary {
-  @apply bg-neutral-deep rounded-lg shadow-lg;
+  @apply bg-neutral-deep rounded-xl shadow-lg border-2 border-neutral-medium hover:border-accent-dark;
 }
 
 /* SECTIONS */
@@ -63,28 +63,33 @@
 }
 
 #skills-section {
-  @apply bg-skills-section-background bg-cover bg-center bg-no-repeat py-12 md:py-16 lg:py-24;
+  @apply bg-skills-section-background bg-cover bg-center bg-no-repeat;
 }
 
 #aboutme-section {
-  @apply bg-neutral-deep bg-aboutme-section-background bg-no-repeat py-12 md:py-16 lg:py-24;
+  @apply bg-neutral-deep bg-aboutme-section-background bg-no-repeat;
 }
 
 #experience-section {
-  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+  @apply bg-neutral-dark;
 }
 
 #portfolio-section {
-  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+  @apply bg-neutral-dark;
+}
+
+.portfolioDevelopImage {
+  @apply transition-shadow duration-700 hover:shadow-[inset_0px_0px_20px_#46464620];
 }
 
 #skills-section {
-  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+  @apply bg-neutral-dark;
 }
 
 #contact-section{
-  @apply bg-neutral-dark py-12 md:py-16 lg:py-24;
+  @apply bg-neutral-dark;
 }
+
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {

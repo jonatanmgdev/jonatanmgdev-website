@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+          inner: 'inset 0 0px 8px 0 rgba(0, 0, 0, 1)',
+      },
       colors: {
         primary: {
           light: "#33CC99",
@@ -23,21 +26,22 @@ const config: Config = {
         },
         neutral: {
           light: "#BDBDBD",
-          medium: "#0D0D0D",
-          dark: "#0F0F0F",
-          deep: "#080808",
+          medium: "#111111",
+          dark: "#080808",
+          deep: "#040404",
         },
       },
       container: {
         center: true,
         padding: {
+          DEFAULT: "1rem",
           xs: "1rem",
           sm: "1rem",
-          md: "1rem",
-          lg: "1rem",
-          xl: "1rem",
-          "2xl": "1rem",
-          "3xl": "1rem",
+          md: "0.5rem",
+          lg: "0.5rem",
+          xl: "0.5rem",
+          "2xl": "0.5rem",
+          "3xl": "0.5rem",
         },
         screens: {
           sm: "640px",
@@ -96,7 +100,7 @@ const config: Config = {
         sourceCodePro: "var(--font-source-code-pro)",
       },
       backgroundImage: {
-        "welcome-section-background":  "url('../assets/images/welcome-section-bg.webp')",
+        "welcome-section-background":  "url('../assets/images/welcome-section-background.webp')",
         "skills-section-background":  "url('../assets/images/skills-section-bg.png')",
         "aboutme-section-background":  "url('../assets/images/aboutme-section-bg.webp')",
       },

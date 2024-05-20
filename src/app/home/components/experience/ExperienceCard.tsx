@@ -1,6 +1,6 @@
 import React from "react";
 import { Spotlight, SpotlightCard } from "../../../../components/Spotlight";
-import { IconCheck, IconHome, IconLocation } from "@assets/icons";
+import { IconCheck, IconHome } from "@assets/icons";
 
 export interface ExperienceCardProps {
   experienceData: ExperienceData[];
@@ -19,8 +19,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceData }) => {
   return (
     <>
       {experienceData.map((experience, index) => (
-        <div
-          key={index}
+        <div key={index}
           className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${
             experience.isActive ? "is-active" : ""
           }`}
@@ -40,7 +39,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceData }) => {
                 <div className="h-full items-center justify-start">
                   <div className="w-max rounded-lg my-1 sm:mt-0">
                     <p className="text-sm font-medium text-neutral-light">
-                      {experience.dates}
+                      {experience.dates} - {experience.ubication}
                     </p>
                   </div>
                   <div>
@@ -48,16 +47,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceData }) => {
                       {experience.companyName}
                     </p>
                   </div>
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between sm:space-x-2 mb-1">
+                  <div className="flex flex-col items-start">
                     <div>
                       <p className="font-semibold text-md text-white leading-7">
                         {experience.position}
                       </p>
-                    </div>
-                    <div className="mt-1 sm:mt-0">
-                      <div className="flex text-neutral-light items-center justify-center gap-1">
-                      {IconLocation(15)} {experience.ubication}
-                      </div>
                     </div>
                   </div>
                   <div className="flex items-starts justify-start">
