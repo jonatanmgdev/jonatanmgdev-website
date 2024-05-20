@@ -21,25 +21,25 @@ export default function Home() {
         </Spotlight>
 
         <div id="aboutme-section">
-          <div className="container py-10 sm:py-14 md:py-16 lg:py-20">
+          <div className="container py-16 sm:py-20 md:py-24 lg:py-28">
             <AboutMeSection />
           </div>
         </div>
 
         <div id="experience-section">
-          <div className="container py-10 sm:py-14 md:py-16 lg:py-20">
+          <div className="container py-16 sm:py-20 md:py-24 lg:py-24">
             <ExperienceSection />
           </div>
         </div>
 
         <div id="portfolio-section">
-          <div className="container pb-10 sm:pb-14 md:pb-16 lg:pb-20">
+          <div className="container pb-16 sm:pb-20 md:pb-24 lg:pb-24">
             <PortfolioSection />
           </div>
         </div>
 
         <div id="skills-section">
-          <div className="container pb-10 sm:pb-14 md:pb-16 lg:pb-20">
+          <div className="container pb-16 sm:pb-20 md:pb-24 lg:pb-24">
             <SkillsSection />
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
 
       <aside>
         <div id="contact-section">
-          <div className="container py-10 sm:py-14 md:py-16 lg:py-20">
+          <div className="container pb-16 sm:pb-20 md:pb-24 lg:pb-24">
             <ContactSection />
           </div>
         </div>

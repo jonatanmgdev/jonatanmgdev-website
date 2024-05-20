@@ -1,25 +1,28 @@
 import React from "react";
-import { Spotlight, SpotlightCard } from "../../../../components/Spotlight";
 
 interface ContactCardProps {
   methodName: string;
   methodValue: string;
+  methodIcon: JSX.Element;
   url: string;
+  className?: string;
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
   methodName,
   methodValue,
+  methodIcon,
+  className,
   url,
 }) => {
   return (
-    <div className="card-primary flex flex-col items-center justify-start w-full py-4">
-      <span>
-        {methodName}
+    <div
+      className={`${className} card-primary flex flex-col items-center justify-center min-h-[60px] min-w-[180px] p-2`}
+    >
+      <span className="flex flex-wrap items-center justify-center gap-2">
+        {methodIcon} {methodName}
       </span>
-      <p className="text-center text-white">
-        {methodValue}
-      </p>
+      <p className="text-center text-white text-sm">{methodValue}</p>
     </div>
   );
 };

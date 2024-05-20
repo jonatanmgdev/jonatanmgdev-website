@@ -13,7 +13,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
   return (
     <Spotlight className="group">
       <SpotlightCard className="card-primary p-4">
-        <div className="flex flex-col items-center justify-center min-h-[120px] w-full p-2 gap-2">
+        <div className="flex flex-col items-center justify-center min-h-[100px] w-full p-2 gap-2">
           <span className="text-white group-hover:text-accent-dark">
           {svg}
           </span>
