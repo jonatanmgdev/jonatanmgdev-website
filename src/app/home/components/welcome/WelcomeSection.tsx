@@ -11,16 +11,16 @@ import { IconGithub, IconYoutube, IconLinkedin } from "@assets/icons";
  async function WelcomeSectionComponent() {
   return (
     <section>
-      <div className="flex flex-col items-center px-2 md:px-0">
-        <div className="flex flex-col text-center">
-          <span className="text-xl">¡Hola! Bienvenid@ a mi portfolio</span>
+      <div className="flex flex-col items-center">
+        <div className="flex-1 text-center lg:max-w-3xl">
+          <span className="text-xl">¡Bienvenido a mi portfolio!</span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl text-primary-dark">
             Jonatan Montesdeoca
           </h1>
-          <p className="text-2xl font-semibold text-white mt-1">
+          <p className="text-2xl font-semibold text-white">
             Desarrollador Full Stack
           </p>
-          <p className="lg:max-w-3xl my-4">
+          <p className="my-4">
             Diseño y desarrollo soluciones digitales a medida, mi enfoque se
             orienta hacia la implementación de proyectos con tecnologías basadas
             en javascript. En este portfolio obtendrás un resumen de mi

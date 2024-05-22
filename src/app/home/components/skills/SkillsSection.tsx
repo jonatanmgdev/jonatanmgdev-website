@@ -12,8 +12,6 @@ import {
   IconMaterialUI,
   IconNextJS,
   IconNodeJS,
-  IconPhotoshop,
-  IconPostgreSQL,
   IconSelfLearning,
   IconTailwindCSS,
   IconTeamWork,

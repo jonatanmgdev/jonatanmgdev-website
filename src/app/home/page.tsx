@@ -13,7 +13,7 @@ export default function Home() {
         <Spotlight>
           <SpotlightCard>
             <div id="welcome-section">
-              <div className="container py-16 sm:py-32 md:py-60">
+              <div className="container py-24 sm:py-32 md:py-48 lg:py-60">
                 <WelcomeSection />
               </div>
             </div>
@@ -25,6 +25,7 @@ export default function Home() {
             <AboutMeSection />
           </div>
         </div>
+
 
         <div id="experience-section">
           <div className="container py-16 sm:py-20 md:py-24 lg:py-24">
