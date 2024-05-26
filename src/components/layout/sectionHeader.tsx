@@ -10,7 +10,7 @@ interface sectionHeaderProps {
 export const SectionHeader: React.FC<sectionHeaderProps> = ({ title, subtitle, description, className }) => {
   return (
     <div className={`flex align-middle justify-center ${className}`}>
-      <div className="grid grid-cols-1 gap-1 text-center lg:max-w-5xl">
+      <div className="flex-1 gap-1 text-center lg:max-w-5xl">
         <span>{subtitle}</span>
         <h2>{title}</h2>
         <p>{description}</p>

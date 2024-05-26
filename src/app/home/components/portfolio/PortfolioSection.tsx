@@ -11,13 +11,12 @@ import {
   IconHTML,
   IconNextJS,
   IconPhotoshop,
-  IconPostgreSQL,
   IconTailwindCSS,
   IconTypescript,
   IconWordpress,
 } from "@assets/icons";
 import { PortfolioCard, PortfolioDevelopCard } from ".";
-import { SectionHeader } from "@/components/layout/sectionHeader";
+import { SectionHeader } from "@/components/layout/SectionHeader";
 
 async function PortfolioSectionComponent() {
   return (
@@ -39,11 +38,10 @@ async function PortfolioSectionComponent() {
               description={
                 "App desarrollada en Bitbox SL para el cliente Ventaja Europa. Permite a los usuarios de club Ventajon controlar sus gastos y ahorrar en sus compras del día a día."
               }
-              
               techIcons={[
-                {icon: IconFlutter(20), name: "Flutter"},
-                {icon: IconGithub(20), name: "Github"},
-                {icon: IconFigma(20), name: "Figma"},
+                { icon: IconFlutter(20), name: "Flutter" },
+                { icon: IconGithub(20), name: "Github" },
+                { icon: IconFigma(20), name: "Figma" },
               ]}
               imageSrc={portfolioVentajon.src}
               url={
@@ -59,9 +57,9 @@ async function PortfolioSectionComponent() {
                 "Web desarrollada con el CMS Wordpress y el theme Divi. Este sitio permite la reserva online de servicios de taxi en Las Palmas de Gran Canaria."
               }
               techIcons={[
-                {icon: IconWordpress(20), name: "Wordpress"},
-                {icon: IconPhotoshop(20), name: "Photoshop"},
-                {icon: IconGithub(20), name: "Github"},
+                { icon: IconWordpress(20), name: "Wordpress" },
+                { icon: IconPhotoshop(20), name: "Photoshop" },
+                { icon: IconGithub(20), name: "Github" },
               ]}
               imageSrc={portfolioTaxiLasPalmas.src}
               url={"https://taxilaspalmasdegrancanaria.com"}
@@ -70,23 +68,23 @@ async function PortfolioSectionComponent() {
           </div>
           <div className="col-span-full sm:col-span-3 lg:col-span-2 overflow-hidden relative">
             <PortfolioCard
-              title={"Jonatanmg.dev"}
+              title={"Radiofaycan.com"}
               description={
-                "Este portfolio está completamente desarrollado desde cero con el objetivo de mostrar mis proyectos, experiencia y skills en programación."
+                "Web desarrollada con Next.js y TailwindCSS, ofrece a sus oyentes una web donde pueden escuchar las emisoras y podcasts de radio de Faycan."
               }
               techIcons={[
-                {icon: IconGithub(20), name: "Github"},
-                {icon: IconHTML(20), name: "HTML"},
-                {icon: IconTypescript(20), name: "Typescript"},
-                {icon: IconTailwindCSS(20), name: "TailwindCSS"},
-                {icon: IconNextJS(20), name: "NextJS"},
+                { icon: IconGithub(20), name: "Github" },
+                { icon: IconHTML(20), name: "HTML" },
+                { icon: IconTypescript(20), name: "Typescript" },
+                { icon: IconTailwindCSS(20), name: "TailwindCSS" },
+                { icon: IconNextJS(20), name: "NextJS" },
               ]}
               imageSrc={portfolioJonatanmgdev.src}
               url={"https://jonatanmg.dev"}
               type={"Web"}
             />
           </div>
-          <div className="col-span-full lg:col-span-3 overflow-hidden relative">
+          <div className="col-span-full lg:col-span-3 overflow-hidden relative h-full">
             <PortfolioDevelopCard
               title={"VipCarsTransfers.com"}
               description={
@@ -96,7 +94,7 @@ async function PortfolioSectionComponent() {
               type={"Web"}
             />
           </div>
-          <div className="col-span-full lg:col-span-3 overflow-hidden relative">
+          <div className="col-span-full lg:col-span-3 overflow-hidden relative h-full">
             <PortfolioDevelopCard
               title={"Canarybytes.com"}
               description={

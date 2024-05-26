@@ -1,10 +1,16 @@
 "use client";
 import { useMemo } from "react";
-import { Spotlight, SpotlightCard } from "../Spotlight";
-import LogoComponent from "../../../public/logo/logoComponent";
 import { useScrollDirection } from "@/hooks";
 import { generateMenuItems } from "@/utils";
 import { desktopMenuItemsList } from "@/data";
+import { SpotlightWrapper } from "..";
+import LogoComponent from "./logo/LogoComponent";
+
+/**
+ * Header component of the web
+ * @returns {JSX.Element} HTML content of the component.
+ * @author Jonatan Montesdeoca González
+ **/
 
 export default function Header() {
   // Get scroll direction
@@ -23,21 +29,23 @@ export default function Header() {
             scrollDirection === "down" ? "-top-96" : "top-0"
           } transition-all duration-1000`}
         >
-          <Spotlight>
-            <SpotlightCard
-              className={`bg-neutral-deep border-2 border-neutral-dark hover:border-primary-medium  animate-slidein rounded-full`}
-            >
-              <div className="py-4 md:px-4 lg:px-8 xl:px-16">
-                <ul className="list-none font-semibold flex flex-row items-center lg:gap-10 md:gap-8">
-                  {memoizedMenuItems}
-                </ul>
-              </div>
-            </SpotlightCard>
-          </Spotlight>
+          <SpotlightWrapper spotlightCardClassName="bg-neutral-deep border-2 border-primary-dark hover:border-accent-dark rounded-full">
+            <div className="py-4 md:px-4 lg:px-8 xl:px-16">
+              <ul className="list-none font-semibold flex flex-row items-center lg:gap-10 md:gap-8">
+                {memoizedMenuItems}
+              </ul>
+            </div>
+          </SpotlightWrapper>
         </nav>
       </div>
-      <div className="flex justify-center w-full lg:hidden py-4 bg-neutral-deep border-b-2 border-primary-dark rounded-b-2xl">
-        <LogoComponent />
+      <div
+        className={`lg:hidden fixed w-full z-50 ${
+          scrollDirection === "down" ? "-top-96" : "top-0"
+        } transition-all duration-1000 flex justify-center mt-4`}
+      >
+        <div className="w-fit bg-neutral-deep border-2 border-primary-dark hover:border-accent-dark rounded-full py-2 px-8">
+          <LogoComponent />
+        </div>
       </div>
     </header>
   );

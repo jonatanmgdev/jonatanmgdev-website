@@ -9,7 +9,7 @@ import jonatanCircleAvatar from "@assets/images/jonatan-montesdeoca-circle-avata
  * @author Jonatan Montesdeoca González
  */
 
-async function AboutMeSectionComponent() {
+async function AboutMeSection() {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-8 items-center gap-4 mb-8">
@@ -52,51 +52,8 @@ async function AboutMeSectionComponent() {
           <CustomButton text="Descargar CV" href="#aboutme-section" />
         </div>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 w-full gap-4">
-        <div className="col-span-2 sm:col-span-3 lg:col-span-2 mb-4">
-          <span>Cursos y certificaciones</span>
-          <h3>Mi Formación</h3>
-          <ul className="mt-4">
-            <li>
-              FP Grado superior en desarrollo de aplicaciones multiplataforma.
-            </li>
-            <li>FP Grado medio en sistemas microninformáticos y redes.</li>
-            <li>Curso React Native con EXPO (30 Horas).</li>
-          </ul>
-        </div>
-        <div className="col-span-1 flex flex-col items-start sm:items-center lg:items-start text-left sm:text-center lg:text-left space-y-4">
-          <div>
-            <span>Ubicación</span>
-            <p>Las Palmas de G.C.</p>
-          </div>
-          <div>
-            <span>Idiomas</span>
-            <p>Español e Inglés B1</p>
-          </div>
-        </div>
-        <div className="col-span-1 flex flex-col items-start sm:items-center lg:items-start text-left sm:text-center lg:text-left space-y-4">
-          <div>
-            <span>Edad</span>
-            <p>30 años</p>
-          </div>
-          <div>
-            <span>Experiencia</span>
-            <p>Más de 2 años</p>
-          </div>
-        </div>
-        <div className="col-span-1 flex flex-col items-start sm:items-center lg:items-start text-left sm:text-center lg:text-left space-y-4">
-          <div>
-            <span>Freelance</span>
-            <p>Disponible</p>
-          </div>
-          <div>
-            <span>Email</span>
-            <p>jonatanmg94@gmail.com</p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
 
-export default AboutMeSectionComponent;
+export default AboutMeSection;

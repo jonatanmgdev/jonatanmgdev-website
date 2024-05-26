@@ -32,7 +32,7 @@ const CustomModal: React.FC<CustomModalProps> = ({
           <div className="relative p-4 w-full max-w-2xl">
             <div className="relative bg-neutral-light border-2 border-primary-dark rounded-lg">
               <div className="flex items-center justify-between p-4 border-b border-neutral-medium rounded-t text-primary-dark">
-                {icon}<h3 className="text-xl font-semibold text-white">{title}</h3>
+                {icon}<h3 className="font-semibold text-white">{title}</h3>
                 <button
                   onClick={onClose}
                   type="button"
@@ -57,7 +57,7 @@ const CustomModal: React.FC<CustomModalProps> = ({
                 </button>
               </div>
               <div className="mx-4 my-1">
-                <p className="text-base leading-relaxed">{description}</p>
+                <p className="text-base">{description}</p>
               </div>
               <div className="flex mx-4 my-2">{content}</div>
               <div className="flex items-center justify-end p-4 border-t border-neutral-medium rounded-b">

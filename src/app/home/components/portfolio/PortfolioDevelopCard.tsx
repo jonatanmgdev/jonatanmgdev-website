@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { Spotlight, SpotlightCard } from "../../../../components/Spotlight";
 import Image from "next/image";
 import { IconCode } from "@/assets/icons";
+import { SpotlightWrapper } from "@/components";
 
 export interface PortfolioDevelopData {
   title: string;
@@ -11,6 +11,17 @@ export interface PortfolioDevelopData {
   type: string;
 }
 
+
+/**
+ * Card component of the develop projects in portfolio section.
+ * @returns {JSX.Element} HTML content of the component.
+ * @param title - Title of the card.
+ * @param description - Description of the card.
+ * @param imageSrc - Image source of the card.
+ * @param type - Type of the portfolio web or app.
+ * @author Jonatan Montesdeoca González
+ **/
+
 const PortfolioDevelopCard: React.FC<PortfolioDevelopData> = ({
   title,
   description,
@@ -18,33 +29,34 @@ const PortfolioDevelopCard: React.FC<PortfolioDevelopData> = ({
   type,
 }) => {
   return (
-    <Spotlight>
-      <SpotlightCard className="card-primary p-4">
-        <div className="flex xs:flex-cols-1 sm:flex-cols-2 p-2">
-          <div className="flex flex-col justify-between relative z-10 space-y-12 lg:space-y-6">
-            <div className="bg-opacity-60 rounded-lg text-white flex justify-center items-center gap-2 relative bg-primary-dark max-w-max p-2">
-              {IconCode(20)}
-              <p className="text-white text-xs">
-                {type} - En desarrollo
-              </p>
-            </div>
-            <div className="space-y-2">
-              <h2 className="text-lg text-white">{title}</h2>
-              <p className="text-secondary">{description}</p>
-            </div>
+    <SpotlightWrapper
+      spotlightClassName="h-full"
+      spotlightCardClassName="card-primary p-4"
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-6 h-full">
+        <div className="col-span-1 order-2 lg:order-1 lg:col-span-4 flex flex-col justify-between">
+          <div className="bg-opacity-60 rounded-lg text-white flex justify-center items-center gap-2 relative bg-primary-dark max-w-max p-2 mt-4 lg:mt-0">
+            {IconCode(20)}
+            <p className="text-white text-xs">{type} - en desarrollo</p>
           </div>
-          <div className="overflow-hidden relative mt-6 sm:mt-auto h-fit -mb-[34px] -mr-[34px] sm:ml-6 p-6 rounded-tl-3xl">
-            <Image
-              src={imageSrc}
-              width={620}
-              height={620}
-              alt={`Imagen del desarrollo de ${title}`}
-              className="portfolioDevelopImage border-2 border-neutral-medium rounded-xl"
-            />
+          <div className="space-y-2">
+            <p className="text-xl sm:text-2xl font-bold text-textcolor-heading break-words">
+              {title}
+            </p>
+            <p className="text-secondary break-words">{description}</p>
           </div>
         </div>
-      </SpotlightCard>
-    </Spotlight>
+        <div className="grid col-span-1 order-1 lg:order-2 lg:col-span-2 justify-center items-center">
+          <Image
+            src={imageSrc}
+            width={250}
+            height={250}
+            alt={`Imagen del desarrollo de ${title}`}
+            className="portfolioDevelopImage border-2 border-neutral-medium rounded-xl h-fit"
+          />
+        </div>
+      </div>
+    </SpotlightWrapper>
   );
 };
 

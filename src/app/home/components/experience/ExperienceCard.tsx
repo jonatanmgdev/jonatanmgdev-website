@@ -1,7 +1,7 @@
 "use server";
 import React from "react";
-import { Spotlight, SpotlightCard } from "../../../../components/Spotlight";
 import { IconCheck, IconHome } from "@assets/icons";
+import { SpotlightWrapper } from "@/components";
 
 export type ExperienceData = {
   companyName: string;
@@ -47,33 +47,27 @@ export const ExperienceCard: React.FC<{ experienceData: ExperienceData[] }> = ({
             </div>
           )}
           <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
-            <Spotlight>
-              <SpotlightCard className="card-primary p-4">
-                <div className="h-full items-center justify-start">
-                  <div className="grid w-full grid-cols-1 md:grid-cols-2 rounded-lg my-1">
-                    <p className="text-start text-sm font-medium text-textcolor-accent">
-                      {experience.dates}
-                    </p>
-                    <p className="text-start md:text-right  text-sm font-medium text-textcolor-accent">
-                      {experience.ubication}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-lg text-textcolor-accent">
-                      {experience.companyName}
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-start">
-                    <p className="font-semibold text-md text-white leading-7">
-                      {experience.position}
-                    </p>
-                  </div>
-                  <div className="flex items-starts justify-start">
-                    {experience.description}
-                  </div>
-                </div>
-              </SpotlightCard>
-            </Spotlight>
+            <SpotlightWrapper spotlightCardClassName="card-primary p-4">
+              <div className="flex w-full my-1 gap-2">
+                <p className="md:flex-1 text-start text-sm font-medium text-textcolor-accent">
+                  {experience.dates}
+                </p>
+                <p className="md:flex-1 text-start md:text-right  text-sm font-medium text-textcolor-accent">
+                  {experience.ubication}
+                </p>
+              </div>
+              <div className="flex w-full">
+                <p className="font-bold text-lg text-textcolor-accent">
+                  {experience.companyName}
+                </p>
+              </div>
+              <div className="flex flex-col text-left">
+                <p className="font-semibold text-md text-white">
+                  {experience.position}
+                </p>
+              </div>
+              <div className="flex text-left">{experience.description}</div>
+            </SpotlightWrapper>
           </div>
         </div>
       ))}

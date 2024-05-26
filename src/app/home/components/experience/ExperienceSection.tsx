@@ -1,21 +1,21 @@
 "use server";
 import { experienceDataList } from "@/data/experienceDataList";
 import { ExperienceCard } from ".";
-import { SectionHeader } from "@/components/layout/sectionHeader";
+import { SectionHeader } from "@/components/layout/SectionHeader";
 import { Blockquote } from "@/components/blockquote/blockquote";
 
-async function ExperienceSectionComponent() {
+async function ExperienceSection() {
   return (
     <section>
       <SectionHeader
         className="pb-4"
-        title={"Mi experiencia"}
-        subtitle={"Trayectoria profesional"}
+        title="Mi experiencia"
+        subtitle="Trayectoria profesional"
         description="Busco oportunidades laborales las cuales me ofrezcan proyectos interesantes donde aprender sobre nuevas tecnologías, descubrir nuevos conceptos o pronfundizar en mi base de conocmientos."
       />
       <div className="flex flex-col w-full justify-center items-center mb-8">
         <Blockquote
-          author={`Benito Pérez Galdós`}
+          author="Benito Pérez Galdós"
           quote="Dichoso el que le gusta las dulzuras del trabajo sin ser su esclavo"
           className="text-center justify-center"
         />
@@ -27,4 +27,4 @@ async function ExperienceSectionComponent() {
   );
 }
 
-export default ExperienceSectionComponent;
+export default ExperienceSection;

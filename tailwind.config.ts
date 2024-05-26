@@ -24,14 +24,14 @@ const config: Config = {
         neutral: {
           light: "#3C3C3C",
           medium: "#2D2D2D",
-          dark: "#1F1F1F",
+          dark: "#222222",
           deep: "#121212",
         },
         textcolor: {
           primary: "#E0E0E0",
           secondary: "#B3B3B3",
           heading: "#F5F5F5",
-          accent: "#00B377",
+          accent: "#27EBBA",
         }
       },
       container: {
@@ -79,7 +79,7 @@ const config: Config = {
         '2xl': ['1.563rem', {
           lineHeight: '2rem',
           letterSpacing: '-0.01em',
-          fontWeight: '500',
+          fontWeight: '700',
         }],
         '3xl': ['1.953rem', {
           lineHeight: '2.25rem',

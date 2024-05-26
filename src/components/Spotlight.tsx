@@ -91,3 +91,25 @@ export function SpotlightCard({
     </div>
   );
 }
+
+type SpotlightWrapperProps = {
+  children: React.ReactNode;
+  spotlightClassName?: string;
+  spotlightCardClassName?: string;
+};
+
+export function SpotlightWrapper({
+  children,
+  spotlightClassName = "",
+  spotlightCardClassName= "",
+}: SpotlightWrapperProps) {
+  return (
+    <Spotlight className={`${spotlightClassName}`}>
+      <SpotlightCard className={`${spotlightCardClassName}`}>
+        {children}
+      </SpotlightCard>
+    </Spotlight>
+  );
+}
+
+

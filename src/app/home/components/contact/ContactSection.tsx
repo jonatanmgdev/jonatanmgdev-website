@@ -1,41 +1,42 @@
 "use server";
 import ContactUsForm from "@/components/forms/ContactForm";
-import { SectionHeader } from "@/components/layout/sectionHeader";
-import ContactCard from "./ContactCard";
-import { IconGithub, IconLinkedin, IconTwitter } from "@/assets/icons";
+import ContactSocialCard from "./ContactSocialCard";
+import { IconGithub, IconLinkedin, IconTwitter, IconEmail } from "@/assets/icons";
+import { SectionHeader } from "@/components/layout/SectionHeader";
 
-async function ContactSectionComponent() {
+async function ContactSection() {
   return (
     <section>
       <SectionHeader
+        className="mb-8"
         subtitle={"¿Dudas o consultas?"}
         title={"¡Contáctame!"}
         description="Puedes contactarme a través del siguiente formulario o por correo electrónico en caso de dudas o consultas. También tienes disponibles mis redes sociales donde descubrir mis publicaciones o contactar de forma más directa."
       />
       <ContactUsForm />
       <div className="w-full grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between gap-4 mt-8">
-        <ContactCard
+        <ContactSocialCard
           methodName="Email"
-          methodIcon={IconGithub(20)}
+          methodIcon={IconEmail(20)}
           methodValue="jonatanmg94@gmail.com"
           url="mailto:jonatanmg94@gmail.com"
         />
-        <ContactCard
+        <ContactSocialCard
           methodName="Github"
           methodIcon={IconGithub(20)}
-          methodValue="jonatanmg94"
+          methodValue="@jonatanmg94"
           url="https://github.com/jonatanmg94"
         />
-        <ContactCard
+        <ContactSocialCard
           methodName="Linkedin"
           methodIcon={IconLinkedin(20)}
-          methodValue="jonatanmg94"
+          methodValue="@jonatanmg94"
           url="https://www.linkedin.com/in/jonatanmg94"
         />
-        <ContactCard
+        <ContactSocialCard
           methodName="Twitter"
           methodIcon={IconTwitter(20)}
-          methodValue="jonatanmg94"
+          methodValue="@jonatanmg94"
           url="https://twitter.com/jonatanmg94"
         />
       </div>
@@ -43,4 +44,4 @@ async function ContactSectionComponent() {
   );
 }
 
-export default ContactSectionComponent;
+export default ContactSection;
