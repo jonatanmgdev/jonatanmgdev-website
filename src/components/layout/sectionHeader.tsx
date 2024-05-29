@@ -7,7 +7,7 @@ interface sectionHeaderProps {
     className?: string;
 }
 
-export const SectionHeader: React.FC<sectionHeaderProps> = ({ title, subtitle, description, className }) => {
+export default function SectionHeader({ title, subtitle, description, className } : sectionHeaderProps) {
   return (
     <div className={`flex align-middle justify-center ${className}`}>
       <div className="flex-1 gap-1 text-center lg:max-w-5xl">
