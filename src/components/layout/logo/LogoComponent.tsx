@@ -13,4 +13,5 @@ const LogoComponent = React.memo(() => {
   );
 });
 
+LogoComponent.displayName = "LogoComponent";
 export default LogoComponent;

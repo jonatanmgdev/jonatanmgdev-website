@@ -26,7 +26,7 @@ export default function Home() {
         </div>
 
         <div id="formation-section">
-          <div className="container py-16 sm:py-20 md:py-24 lg:py-28">
+          <div className="container pt-16 sm:pt-20 md:pt-24 lg:pt-24">
             <FormationSection />
           </div>
         </div>

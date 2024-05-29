@@ -31,7 +31,7 @@ const config: Config = {
           primary: "#E0E0E0",
           secondary: "#B3B3B3",
           heading: "#F5F5F5",
-          accent: "#27EBBA",
+          accent: "#00B377",
         }
       },
       container: {

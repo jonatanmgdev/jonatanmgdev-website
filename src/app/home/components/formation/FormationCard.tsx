@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { SpotlightWrapper } from "@/components";
+import { IconCertificate } from "@/assets/icons";
 
 interface PortfolioData {
   title: string;
   description: string;
-  imageSrc: string;
-  url: string;
   type: string;
 }
 
@@ -16,8 +14,6 @@ interface PortfolioData {
  * @returns {JSX.Element} HTML content of the component.
  * @param title - Title of the card.
  * @param description - Description of the card.
- * @param imageSrc - Image source of the card.
- * @param url - URL to be redirected when clicking on the card.
  * @param type - Type of the formation
  * @author Jonatan Montesdeoca González
  **/
@@ -25,36 +21,29 @@ interface PortfolioData {
 const FormationCard: React.FC<PortfolioData> = ({
   title,
   description,
-  imageSrc,
-  url,
   type,
 }) => {
   return (
     <SpotlightWrapper
       spotlightClassName="h-full"
-      spotlightCardClassName="card-primary p-4"
+      spotlightCardClassName="p-4 card-primary"
     >
-      <article className="relative flex flex-col h-full justify-between">
-        <div className="overflow-hidden rounded-xl text-white">
-          <Image
-            src={imageSrc}
-            alt={title}
-            width={450}
-            height={300}
-            className="w-full h-full object-cover"
-          />
-          <div className="!absolute top-4 right-4 p-2 bg-primary-dark bg-opacity-60 rounded-lg">
-            <p className="text-white text-center text-xs">{type}</p>
-          </div>
+      <article className="relative flex flex-col h-full">
+        <div className="w-full flex flex-wrap justify-between items-center mb-2">
+          <span className="flex text-white">{IconCertificate(50)}</span>
+          <p className="flex justify-end w-fit h-fit rounded-lg p-2 text-white  text-xs bg-primary-deep">
+            {type}
+          </p>
         </div>
-        <div className="z-10 mt-6 text-center">
-          <a
-            href={url}
-            className="text-xl sm:text-2xl font-bold text-textcolor-heading break-words"
+        <div className="flex flex-col w-full">
+          <p
+            className="text-lg font-semibold text-textcolor-accent break-words"
             aria-label={`Acceder al enlace del portfolio ${title}`}
           >
             {title}
-          </a>
+          </p>
+        </div>
+        <div>
           <p className="text-secondary break-words">{description}</p>
         </div>
       </article>

@@ -35,63 +35,53 @@ async function SkillsSection() {
         className="mb-8"
         title="Mis habilidades"
         subtitle="Conocimientos y cualidades"
-        description="Cada vez dedico más tiempo y esfuerzo en profundizar mis conocimientos. Además, considero que las soft skills son igualmente importantes, ya que me permiten integrarme mejor en los equipos de trabajo."
+        description="Tengo una gran predilección por JavaScript y sus frameworks pero siempre tengo la motivación necesaria para aprender cualquier otra tecnología. En cuanto a las soft skills no definen por completo quién soy, pero son las que destacan cuando trabajo en un equipo."
       />
       <div className="grid my-auto py-4">
         <span className="text-xl font-semibold">Tech skills</span>
-        <p>
-          Tengo una gran predilección por JavaScript y sus frameworks pero
-          siempre tengo la capacidad y motivación necesarias para aprender
-          rápido cualquier otra tecnología.
-        </p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-center items-center my-auto gap-6 mb-4">
-        <SkillCard name="React.js" svg={IconReactJS(35)} />
-        <SkillCard name="Typescript" svg={IconTypescript(35)} />
-        <SkillCard name="Next.js" svg={IconNextJS(35)} />
-        <SkillCard name="Node.js" svg={IconNodeJS(35)} />
-        <SkillCard name="Nest.js" svg={IconNestJS(35)} />
-        <SkillCard name="Tailwind CSS" svg={IconTailwindCSS(35)} />
-        <SkillCard name="Material UI" svg={IconMaterialUI(35)} />
-        <SkillCard name="Wordpress" svg={IconWordpress(35)} />
-        <SkillCard name="HTML" svg={IconHTML(35)} />
-        <SkillCard name="Flutter" svg={IconFlutter(35)} />
-        <SkillCard name="Figma" svg={IconFigma(35)} />
-        <SkillCard name="Github" svg={IconGithub(35)} />
+        <SkillCard name="React.js" svg={IconReactJS(25)} />
+        <SkillCard name="Typescript" svg={IconTypescript(25)} />
+        <SkillCard name="Next.js" svg={IconNextJS(25)} />
+        <SkillCard name="Node.js" svg={IconNodeJS(25)} />
+        <SkillCard name="Nest.js" svg={IconNestJS(25)} />
+        <SkillCard name="Tailwind CSS" svg={IconTailwindCSS(25)} />
+        <SkillCard name="Material UI" svg={IconMaterialUI(25)} />
+        <SkillCard name="Wordpress" svg={IconWordpress(25)} />
+        <SkillCard name="HTML" svg={IconHTML(25)} />
+        <SkillCard name="Flutter" svg={IconFlutter(25)} />
+        <SkillCard name="Figma" svg={IconFigma(25)} />
+        <SkillCard name="Github" svg={IconGithub(25)} />
       </div>
       <div className="grid my-auto py-4">
         <span className="text-xl font-semibold">Soft skills</span>
-        <p>
-          Estas son algunas de mis cualidades más destacables pero no definen
-          por completo quién soy. Son las que destacan cuando trabajo en un
-          equipo de desarrollo.
-        </p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-center items-center my-auto gap-6">
-        <SkillCard name="Trabajo en equipo" svg={IconTeamWork(35)} />
-        <SkillCard name="Empatía" svg={IconEmpathy(35)} />
+        <SkillCard name="Trabajo en equipo" svg={IconTeamWork(25)} />
+        <SkillCard name="Empatía" svg={IconEmpathy(25)} />
         <SkillCard
           name="Gestión emocional"
-          svg={IconEmotionalIntelligence(35)}
+          svg={IconEmotionalIntelligence(25)}
         />
         <SkillCard
           name="Comunicación efectiva"
-          svg={IconCommunication(35)}
+          svg={IconCommunication(25)}
         />
         <SkillCard
-          name="Resolución de conflictos"
-          svg={IconConflitctResolution(35)}
+          name="Resolver conflictos"
+          svg={IconConflitctResolution(25)}
         />
-        <SkillCard name="Escucha activa" svg={IconActiveListening(35)} />
+        <SkillCard name="Escucha activa" svg={IconActiveListening(25)} />
         <SkillCard
           name="Manejo del tiempo"
-          svg={IconTimeManagment(35)}
+          svg={IconTimeManagment(25)}
         />
-        <SkillCard name="Auto-aprendizaje" svg={IconSelfLearning(35)} />
-        <SkillCard name="Iniciativa propia" svg={IconIniciative(35)} />
-        <SkillCard name="Autonomía" svg={IconAutonomy(35)} />
-        <SkillCard name="Resiliencia" svg={IconResilience(35)} />
-        <SkillCard name="Organización" svg={IconOrganization(35)} />
+        <SkillCard name="Auto-aprendizaje" svg={IconSelfLearning(25)} />
+        <SkillCard name="Iniciativa propia" svg={IconIniciative(25)} />
+        <SkillCard name="Autonomía" svg={IconAutonomy(25)} />
+        <SkillCard name="Resiliencia" svg={IconResilience(25)} />
+        <SkillCard name="Organización" svg={IconOrganization(25)} />
       </div>
     </section>
   );

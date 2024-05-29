@@ -1,5 +1,6 @@
 export { default as IconActiveListening } from './IconActiveListening';
 export { default as IconAutonomy } from './IconAutonomy';
+export { default as IconCertificate } from './IconCertificate';
 export { default as IconCheck } from './IconCheck';
 export { default as IconCode } from './IconCode';
 export { default as IconCommunication } from './IconCommunication';

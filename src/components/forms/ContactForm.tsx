@@ -6,7 +6,6 @@ import {
   CustomInput,
   CustomModal,
   CustomTextarea,
-  JsonCodeSimulator,
 } from "..";
 import { IconCheck } from "@assets/icons";
 import { useState } from "react";
@@ -166,17 +165,7 @@ export default function ContactUsForm() {
         }
         aceptText="Cerrar"
         description={`Hola ${contactData.name}, muchas gracias por contactar conmigo, trataré de responderle con la mayor brevedad posible.`}
-        content={
-          <JsonCodeSimulator
-            comment="Status: 200 - JSON Sended"
-            data={[
-              { key: "name", value: contactData.name },
-              { key: "surnames", value: contactData.surnames },
-              { key: "email", value: contactData.email },
-              { key: "phone", value: contactData.phone },
-              { key: "message", value: contactData.message },
-            ]}
-          />
+        content={<></>
         }
         isOpen={isModalOpen}
         avoidClose={true}
