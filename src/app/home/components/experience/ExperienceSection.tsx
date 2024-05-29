@@ -1,8 +1,9 @@
 "use server";
 import { experienceDataList } from "@/data/experienceDataList";
 import { ExperienceCard } from ".";
-import { SectionHeader } from "@/components/layout/SectionHeader";
 import { Blockquote } from "@/components/blockquote/blockquote";
+import { SectionHeader } from "@/components/layout";
+
 
 async function ExperienceSection() {
   return (

@@ -1,5 +1,6 @@
 "use server";
-import { SectionHeader } from "@/components/layout/SectionHeader";
+
+import { SectionHeader } from "@/components/layout";
 import FormationCard from "./FormationCard";
 
 async function FormationSection() {

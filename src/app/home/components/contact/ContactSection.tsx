@@ -2,7 +2,8 @@
 import ContactUsForm from "@/components/forms/ContactForm";
 import ContactSocialCard from "./ContactSocialCard";
 import { IconGithub, IconLinkedin, IconTwitter, IconEmail } from "@/assets/icons";
-import { SectionHeader } from "@/components/layout/SectionHeader";
+import { SectionHeader } from "@/components/layout";
+
 
 async function ContactSection() {
   return (

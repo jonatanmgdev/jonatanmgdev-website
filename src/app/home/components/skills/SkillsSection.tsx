@@ -20,13 +20,13 @@ import {
   IconWordpress,
 } from "@assets/icons";
 import { SkillCard } from ".";
-import { SectionHeader } from "@/components/layout/SectionHeader";
 import IconNestJS from "@/assets/icons/IconNestJS";
 import IconReactJS from "@/assets/icons/IconReactJS";
 import IconIniciative from "@/assets/icons/IconInicitative";
 import IconResilience from "@/assets/icons/IconResilience";
 import IconAutonomy from "@/assets/icons/IconAutonomy";
 import IconOrganization from "@/assets/icons/IconOrganization";
+import { SectionHeader } from "@/components/layout";
 
 async function SkillsSection() {
   return (

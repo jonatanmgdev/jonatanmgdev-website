@@ -16,7 +16,7 @@ import {
   IconWordpress,
 } from "@assets/icons";
 import { PortfolioCard, PortfolioDevelopCard } from ".";
-import { SectionHeader } from "@/components/layout/SectionHeader";
+import { SectionHeader } from "@/components/layout";
 
 async function PortfolioSectionComponent() {
   return (
