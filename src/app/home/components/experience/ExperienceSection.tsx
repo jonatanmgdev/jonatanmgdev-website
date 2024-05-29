@@ -2,7 +2,7 @@
 import { experienceDataList } from "@/data/experienceDataList";
 import { ExperienceCard } from ".";
 import { Blockquote } from "@/components/blockquote/blockquote";
-import { SectionHeader } from "@/components/layout";
+import SectionHeader from "@/components/SectionHeader";
 
 
 async function ExperienceSection() {

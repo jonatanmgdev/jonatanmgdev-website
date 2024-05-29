@@ -26,7 +26,8 @@ import IconIniciative from "@/assets/icons/IconInicitative";
 import IconResilience from "@/assets/icons/IconResilience";
 import IconAutonomy from "@/assets/icons/IconAutonomy";
 import IconOrganization from "@/assets/icons/IconOrganization";
-import { SectionHeader } from "@/components/layout";
+import SectionHeader from "@/components/SectionHeader";
+
 
 async function SkillsSection() {
   return (
