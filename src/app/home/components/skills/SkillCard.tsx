@@ -21,7 +21,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, svg }) => {
       spotlightCardClassName="card-primary p-2"
     >
       <div className="flex flex-row items-center justify-center w-full gap-2">
-        <span className="text-white group-hover:text-accent-dark">{svg}</span>
+        <span className="text-white group-hover:text-primary-dark">{svg}</span>
         <p className="text-center text-white">{name}</p>
       </div>
     </SpotlightWrapper>

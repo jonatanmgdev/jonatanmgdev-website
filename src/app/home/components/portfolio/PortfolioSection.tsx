@@ -18,7 +18,6 @@ import {
 import { PortfolioCard, PortfolioDevelopCard } from ".";
 import SectionHeader from "@/components/SectionHeader";
 
-
 async function PortfolioSectionComponent() {
   return (
     <section>
@@ -27,9 +26,7 @@ async function PortfolioSectionComponent() {
         title="Últimos proyectos"
         subtitle="Mis granitos de arena"
         description="Estos proyectos son los más recientes que he desarrollado de forma
-      individual o en los equipos de trabajo donde he podido sumar mis
-      granitos de arena. Además puedes ver los proyectos que actualmente
-      estoy desarrollando."
+      individual o colaborando en los equipos de trabajo. Sólo brindo acceso en Github a mis proyectos individuales."
       />
       <div className="relative">
         <div className="relative z-10 grid gap-4 grid-cols-6">

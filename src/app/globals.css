@@ -28,7 +28,7 @@
   }
   p,
   label {
-    @apply text-base font-inter text-textcolor-primary;
+    @apply text-base font-inter text-textcolor-secondary;
   }
   span {
     @apply text-base font-inter text-textcolor-accent font-medium;
@@ -44,14 +44,14 @@
   }
   button,
   button[type] {
-    @apply font-inter font-semibold text-neutral-deep bg-accent-deep hover:bg-accent-medium  disabled:bg-neutral-light p-4 rounded-lg min-h-11 min-w-11;
+    @apply font-inter font-semibold text-neutral-deep bg-primary-dark hover:bg-primary-light  disabled:bg-neutral-light px-4 py-2 rounded-lg min-h-11 min-w-11;
   }
   input,
   textarea {
-    @apply bg-neutral-dark w-full p-5 border-2 border-neutral-dark hover:border-accent-dark focus:border-accent-dark rounded-lg outline-none  text-white placeholder-white;
+    @apply bg-neutral-dark w-full p-5 border border-neutral-dark hover:border-primary-dark focus:border-primary-dark rounded-lg outline-none  text-white placeholder-white;
   }
   html {
-    @apply bg-neutral-dark scroll-smooth;
+    @apply bg-neutral-deep scroll-smooth;
   }
   body {
     @apply min-h-screen overflow-auto;
@@ -59,16 +59,12 @@
 }
 
 .card-primary {
-  @apply bg-neutral-dark rounded-xl border-2 border-neutral-medium hover:border-accent-dark;
+  @apply bg-neutral-dark rounded-xl border border-neutral-medium hover:border-primary-dark;
 }
 
 /* SECTIONS */
 #welcome-section {
   @apply bg-welcome-section-background bg-cover bg-center bg-no-repeat;
-}
-
-#skills-section {
-  @apply bg-skills-section-background bg-cover bg-center bg-no-repeat;
 }
 
 #aboutme-section {
@@ -105,5 +101,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-accent-deep;
+  @apply bg-primary-deep;
 }

@@ -6,6 +6,7 @@ import { IconCertificate } from "@/assets/icons";
 interface PortfolioData {
   title: string;
   description: string;
+  hours: number;
   type: string;
 }
 
@@ -14,6 +15,7 @@ interface PortfolioData {
  * @returns {JSX.Element} HTML content of the component.
  * @param title - Title of the card.
  * @param description - Description of the card.
+ * @param hours - Number of hours of the formation.
  * @param type - Type of the formation
  * @author Jonatan Montesdeoca González
  **/
@@ -21,6 +23,7 @@ interface PortfolioData {
 const FormationCard: React.FC<PortfolioData> = ({
   title,
   description,
+  hours,
   type,
 }) => {
   return (
@@ -30,14 +33,19 @@ const FormationCard: React.FC<PortfolioData> = ({
     >
       <article className="relative flex flex-col h-full">
         <div className="w-full flex flex-wrap justify-between items-center mb-2">
-          <span className="flex text-white">{IconCertificate(50)}</span>
-          <p className="flex justify-end w-fit h-fit rounded-lg p-2 text-white  text-xs bg-primary-deep">
-            {type}
-          </p>
+          <span className="flex text-primary-dark bg-neutral-deep rounded-lg p-2">
+            {IconCertificate(30)}
+          </span>
+          <div className="flex flex-col items-end justify-end">
+            <p className="w-fit h-fit bg-neutral-deep rounded-lg p-2 mb-1 text-white text-xs">
+              {type}
+            </p>
+            <p className="font-semibold text-sm">{hours} horas</p>
+          </div>
         </div>
         <div className="flex flex-col w-full">
           <p
-            className="text-lg font-semibold text-textcolor-accent break-words"
+            className="text-lg font-semibold text-textcolor-accent break-words pb-1"
             aria-label={`Acceder al enlace del portfolio ${title}`}
           >
             {title}

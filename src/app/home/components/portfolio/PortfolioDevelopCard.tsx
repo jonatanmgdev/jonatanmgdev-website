@@ -33,9 +33,9 @@ const PortfolioDevelopCard: React.FC<PortfolioDevelopData> = ({
       spotlightClassName="h-full"
       spotlightCardClassName="card-primary p-4"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-6 h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 h-full">
         <div className="col-span-1 order-2 lg:order-1 lg:col-span-4 flex flex-col justify-between">
-          <div className="bg-opacity-60 rounded-lg text-white flex justify-center items-center gap-2 relative bg-primary-dark max-w-max p-2 mt-4 lg:mt-0">
+          <div className="bg-opacity-60 rounded-lg text-white flex justify-center items-center gap-2 relative bg-primary-dark max-w-max p-2 my-2 lg:mt-0">
             {IconCode(20)}
             <p className="text-white text-xs">{type} - en desarrollo</p>
           </div>
@@ -52,7 +52,7 @@ const PortfolioDevelopCard: React.FC<PortfolioDevelopData> = ({
             width={250}
             height={250}
             alt={`Imagen del desarrollo de ${title}`}
-            className="portfolioDevelopImage border-2 border-neutral-medium rounded-xl h-fit"
+            className="portfolioDevelopImage border border-neutral-medium rounded-xl h-fit"
           />
         </div>
       </div>

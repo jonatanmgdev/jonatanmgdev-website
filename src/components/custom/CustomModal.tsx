@@ -30,13 +30,13 @@ const CustomModal: React.FC<CustomModalProps> = ({
       {isOpen && (
         <div className="fixed top-0 right-0 left-0 bottom-0 z-50 flex items-center justify-center bg-[#000000] bg-opacity-80">
           <div className="relative p-4 w-full max-w-2xl">
-            <div className="relative bg-neutral-light border-2 border-primary-dark rounded-lg">
+            <div className="relative bg-neutral-light border border-primary-dark rounded-lg">
               <div className="flex items-center justify-between p-4 border-b border-neutral-medium rounded-t text-primary-dark">
                 {icon}<h3 className="font-semibold text-white">{title}</h3>
                 <button
                   onClick={onClose}
                   type="button"
-                  className="text-white bg-primary-dark hover:bg-white hover:text-gray-900 border-2 border-primary-dark rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  className="text-white bg-primary-dark hover:bg-white hover:text-gray-900 border border-primary-dark rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                 >
                   <svg
                     className="w-3 h-3"

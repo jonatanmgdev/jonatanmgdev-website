@@ -12,7 +12,7 @@ import jonatanCircleAvatar from "@assets/images/jonatan-montesdeoca-circle-avata
 async function AboutMeSection() {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-8 items-center gap-4 mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-8 items-center gap-2">
         <div className="col-span-1 lg:col-span-2 flex justify-center mb-4 lg:mb-0">
           <Image
             width={400}
@@ -49,7 +49,6 @@ async function AboutMeSection() {
               desarrollador Full Stack.
             </p>
           </div>
-          <CustomButton text="Descargar CV" href="#aboutme-section" />
         </div>
       </div>
     </section>

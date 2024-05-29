@@ -2,7 +2,7 @@ import { IconGithub, IconLinkedin, IconYoutube } from "@/assets/icons";
 
 export default function Footer() {
   return (
-    <footer className="flex bg-neutral-deep border-t-2 border-primary-dark ">
+    <footer className="flex bg-neutral-deep border-t border-primary-dark ">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex">
@@ -36,21 +36,21 @@ export default function Footer() {
           </p>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-4">
             <a
-              className="text-neutral-light hover:text-accent-dark"
+              className="text-neutral-light hover:text-primary-dark"
               href="https://www.youtube.com/@jonatanmgdev"
             >
               {IconYoutube(20)}
               <span className="sr-only">Mi cuenta en Youtube</span>
             </a>
             <a
-              className="text-neutral-light hover:text-accent-dark"
+              className="text-neutral-light hover:text-primary-dark"
               href="https://github.com/jonatanmgdev"
             >
               {IconGithub(20)}
               <span className="sr-only">Mi cuenta en GitHub</span>
             </a>
             <a
-              className="text-neutral-light hover:text-accent-dark"
+              className="text-neutral-light hover:text-primary-dark"
               href="https://www.linkedin.com/in/jonatanmgdev/"
             >
               {IconLinkedin(20)}

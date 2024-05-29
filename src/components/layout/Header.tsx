@@ -29,7 +29,7 @@ export default function Header() {
             scrollDirection === "down" ? "-top-96" : "top-0"
           } transition-all duration-1000`}
         >
-          <SpotlightWrapper spotlightCardClassName="bg-neutral-deep border-2 border-primary-dark hover:border-accent-dark rounded-full">
+          <SpotlightWrapper spotlightCardClassName="bg-neutral-deep border border-neutral-light hover:border-primary-dark rounded-full">
             <div className="py-4 md:px-4 lg:px-8 xl:px-16">
               <ul className="list-none font-semibold flex flex-row items-center lg:gap-10 md:gap-8">
                 {memoizedMenuItems}
@@ -43,7 +43,7 @@ export default function Header() {
           scrollDirection === "down" ? "-top-96" : "top-0"
         } transition-all duration-1000 flex justify-center mt-4`}
       >
-        <div className="w-fit bg-neutral-deep border-2 border-primary-dark hover:border-accent-dark rounded-full py-2 px-8">
+        <div className="w-fit bg-neutral-deep border border-primary-dark hover:border-primary-dark rounded-full py-2 px-8">
           <LogoComponent />
         </div>
       </div>

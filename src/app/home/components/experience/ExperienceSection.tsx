@@ -9,10 +9,10 @@ async function ExperienceSection() {
   return (
     <section>
       <SectionHeader
-        className="pb-4"
+        className="mb-4"
         title="Mi experiencia"
         subtitle="Trayectoria profesional"
-        description="Busco oportunidades laborales las cuales me ofrezcan proyectos interesantes donde aprender sobre nuevas tecnologías, descubrir nuevos conceptos o pronfundizar en mi base de conocmientos."
+        description="Busco oportunidades laborales en las cuales encuentre proyectos interesantes y un entorno de trabajo adecuado para seguir creciendo."
       />
       <div className="flex flex-col w-full justify-center items-center mb-8">
         <Blockquote

@@ -36,7 +36,7 @@ async function SkillsSection() {
         className="mb-8"
         title="Mis habilidades"
         subtitle="Conocimientos y cualidades"
-        description="Tengo una gran predilección por JavaScript y sus frameworks pero siempre tengo la motivación necesaria para aprender cualquier otra tecnología. En cuanto a las soft skills no definen por completo quién soy, pero son las que destacan cuando trabajo en un equipo."
+        description="Tengo una gran predilección por JavaScript y sus frameworks pero puedo aprender cualquier otra tecnología. En cuanto a las soft skills estas son las que destacan cuando trabajo en un equipo."
       />
       <div className="grid my-auto py-4">
         <span className="text-xl font-semibold">Tech skills</span>

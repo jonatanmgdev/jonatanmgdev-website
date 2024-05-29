@@ -15,17 +15,20 @@ async function FormationSection() {
         <FormationCard
           type="Formación Profesional"
           title="Grado superior en desarrollo de aplicaciones multiplataforma"
-          description="Esta formación me permitió adquirir conocimientos para poder desarrollar, implantar, documentar y mantener aplicaciones informáticas multiplataforma, utilizando tecnologías y entornos de desarrollo específicos."
+          hours={2000}
+          description="Desarrollo, implantación, documentación y mantenimiento de aplicaciones informáticas multiplataforma."
         />
         <FormationCard
           type="Formación Profesional"
           title="Grado medio en sistemas microninformáticos y redes"
-          description="Durante este ciclo formativo aprendí a instalar, configurar y mantener sistemas microinformáticos, aislados o en red, así como redes locales en pequeños entornos y asegurando su funcionalidad."
+          hours={2000}
+          description="Instalación, configuración y mantenimiento de sistemas microinformáticos, aislados o en red, así como redes locales en pequeños entornos."
         />
         <FormationCard
           type="Curso online"
-          title="Curso React Native con EXPO (30 Horas)"
-          description="En este curso online realizado en la plataforma Udemy aprendí las bases de React Native junto a EXPO y el acceso a elementos nativos del móvil, como puede ser la cámara o el sistema de ficheros de fotos."
+          title="Curso React Native con EXPO Udemy"
+          hours={30}
+          description="Las bases de React Native junto a EXPO y el acceso a elementos nativos del móvil, como puede ser la cámara o el sistema de ficheros."
         />
       </div>
     </section>

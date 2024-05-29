@@ -15,12 +15,6 @@ const config: Config = {
           dark: "#00B377",
           deep: "#00764F",
         },
-        accent: {
-          light: "#7FFFDF",
-          medium: "#33FFCC",
-          dark: "#27EBBA",
-          deep: "#17BF95",
-        },
         neutral: {
           light: "#3C3C3C",
           medium: "#2D2D2D",
@@ -104,7 +98,6 @@ const config: Config = {
       },
       backgroundImage: {
         "welcome-section-background":  "url('../assets/images/welcome-section-background.webp')",
-        "skills-section-background":  "url('../assets/images/skills-section-bg.png')",
         "aboutme-section-background":  "url('../assets/images/aboutme-section-bg.webp')",
       },
       keyframes: {

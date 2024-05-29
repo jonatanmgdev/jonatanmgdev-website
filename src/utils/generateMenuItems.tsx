@@ -7,7 +7,7 @@ export function generateMenuItems<FC>(menuItems: MenuItem[]): JSX.Element[] {
       <li key={index} >
         <a
           href={item.href}
-          className="flex hover:text-accent-dark"
+          className="flex hover:text-primary-dark"
         >
           {item.label}
         </a>

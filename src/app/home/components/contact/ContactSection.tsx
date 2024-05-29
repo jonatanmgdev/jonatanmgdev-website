@@ -13,7 +13,7 @@ async function ContactSection() {
         className="mb-8"
         subtitle={"¿Dudas o consultas?"}
         title={"¡Contáctame!"}
-        description="Puedes contactarme a través del siguiente formulario o por correo electrónico en caso de dudas o consultas. También tienes disponibles mis redes sociales donde descubrir mis publicaciones o contactar de forma más directa."
+        description="Puedes contactarme rellenado este formulario y resolveré tus dudas o consultas."
       />
       <ContactUsForm />
       <div className="w-full grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between gap-4 mt-8">

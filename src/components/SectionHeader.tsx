@@ -9,8 +9,8 @@ interface sectionHeaderProps {
 
 export default function SectionHeader({ title, subtitle, description, className } : sectionHeaderProps) {
   return (
-    <div className={`flex align-middle justify-center ${className}`}>
-      <div className="flex-1 gap-1 text-center lg:max-w-5xl">
+    <div className={`flex w-full align-middle justify-center ${className}`}>
+      <div className="flex flex-col gap-1 text-center lg:max-w-5xl">
         <span>{subtitle}</span>
         <h2>{title}</h2>
         <p>{description}</p>
