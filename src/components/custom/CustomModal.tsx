@@ -32,7 +32,7 @@ const CustomModal: React.FC<CustomModalProps> = ({
           <div className="relative p-4 w-full max-w-2xl">
             <div className="relative bg-neutral-light border border-primary-dark rounded-lg">
               <div className="flex items-center justify-between p-4 border-b border-neutral-medium rounded-t text-primary-dark">
-                {icon}<h3 className="font-semibold text-white">{title}</h3>
+                {icon}<h3>{title}</h3>
                 <button
                   onClick={onClose}
                   type="button"

@@ -49,12 +49,9 @@ export const ExperienceCard: React.FC<{ experienceData: ExperienceData[] }> = ({
           <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
             <SpotlightWrapper spotlightCardClassName="card-primary p-4">
               <div className="flex w-full my-1 gap-2">
-                <p className="md:flex-1 text-start text-sm font-medium text-textcolor-accent">
-                  {experience.dates}
-                </p>
-                <p className="md:flex-1 text-start md:text-right  text-sm font-medium text-textcolor-accent">
-                  {experience.ubication}
-                </p>
+                <span className="text-sm">
+                  {experience.dates} - {experience.ubication}
+                </span>
               </div>
               <div className="flex w-full">
                 <p className="font-bold text-lg text-textcolor-accent">

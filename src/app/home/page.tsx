@@ -5,6 +5,7 @@ import { PortfolioSection } from "./components/portfolio";
 import { SkillsSection } from "./components/skills";
 import { WelcomeSection } from "./components/welcome";
 import FormationSection from "./components/formation/FormationSection";
+import { ContactUsContextProvider } from "@/context/ContextProvider";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         </div>
 
         <div className="m-4 md:m-0">
-          <div id="aboutme-section" className="container bg-neutral-dark rounded-3xl py-8 px-4">
+          <div className="container">
             <AboutMeSection />
           </div>
         </div>
@@ -50,7 +51,9 @@ export default function Home() {
       <aside>
         <div id="contact-section">
           <div className="container pb-16 pt-8 sm:pt-10 sm:pb-20 md:pt-12 md:pb-24 lg:pt-16 lg:pb-32">
+          <ContactUsContextProvider>
             <ContactSection />
+          </ContactUsContextProvider>
           </div>
         </div>
       </aside>

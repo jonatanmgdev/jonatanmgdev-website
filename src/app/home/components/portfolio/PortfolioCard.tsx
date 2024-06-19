@@ -43,17 +43,20 @@ const PortfolioCard: React.FC<PortfolioData> = ({
       spotlightClassName="h-full"
       spotlightCardClassName="card-primary p-4"
     >
-      <article className="relative flex flex-col h-full justify-between">
-        <div className="overflow-hidden rounded-xl text-white">
-          <Image
-            src={imageSrc}
-            alt={title}
-            width={450}
-            height={300}
-            className="w-full h-full object-cover"
-          />
-          <div className="!absolute top-4 right-4 p-2 bg-primary-dark bg-opacity-60 rounded-lg">
+      <article className="flex flex-col h-full">
+        <div className="relative justify-between">
+          <div className="!absolute top-4 right-4 p-2 bg-primary-dark rounded-lg">
             <p className="text-white text-center text-xs">{type}</p>
+          </div>
+          <div className="overflow-hidden rounded-lg text-white">
+            <Image
+              src={imageSrc}
+              alt={title}
+              width={450}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+            <div className="rounded-lg absolute inset-0 bg-gradient-to-t from-neutral-dark to-transparent"></div>
           </div>
         </div>
         <div className="z-10 mt-6 text-center">
@@ -66,15 +69,14 @@ const PortfolioCard: React.FC<PortfolioData> = ({
           </a>
           <p className="text-secondary break-words">{description}</p>
         </div>
-        <div className="flex flex-col z-10 mt-6">
-          <span>Desarrollado con:</span>
-          <div className="mt-2 inline-flex flex-row items-center gap-3">
+        <div className="flex flex-col z-10 mt-4">
+          <div className="mt-2 inline-flex flex-row items-center gap-2">
             {/* Se itera sobre el array de iconos */}
             {techIcons.map((icon, iconIndex) => (
               <Popover key={iconIndex} content={`${icon.name}`}>
                 <span
                   key={iconIndex}
-                  className="cursor-pointer rounded-full text-primary-dark text-opacity-60 hover:text-[#00bb86] border border-[#00bb86] border-opacity-20 hover:border-[#00bb86] hover:border-opacity-20 bg-[#00bb86] bg-opacity-5 hover:bg-[#38b349] hover:bg-opacity-15  p-3 transition-colors"
+                  className="cursor-pointer rounded-full text-primary-dark text-opacity-60 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-15  p-3 transition-colors"
                 >
                   {icon.icon}
                 </span>

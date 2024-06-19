@@ -46,10 +46,6 @@
   button[type] {
     @apply font-inter font-semibold text-neutral-deep bg-primary-dark hover:bg-primary-light  disabled:bg-neutral-light px-4 py-2 rounded-lg min-h-11 min-w-11;
   }
-  input,
-  textarea {
-    @apply bg-neutral-dark w-full p-5 border border-neutral-dark hover:border-primary-dark focus:border-primary-dark rounded-lg outline-none  text-white placeholder-white;
-  }
   html {
     @apply bg-neutral-deep scroll-smooth;
   }
@@ -59,7 +55,7 @@
 }
 
 .card-primary {
-  @apply bg-neutral-dark rounded-xl border border-neutral-medium hover:border-primary-dark;
+  @apply bg-neutral-dark rounded-lg border border-neutral-medium hover:border-primary-dark;
 }
 
 /* SECTIONS */
@@ -101,5 +97,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary-deep;
+  @apply bg-primary-light;
 }

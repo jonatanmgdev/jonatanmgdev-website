@@ -14,10 +14,10 @@ async function WelcomeSectionComponent() {
       <div className="flex flex-col items-center">
         <div className="flex-1 text-center lg:max-w-3xl">
           <span className="text-xl text-textcolor-secondary">¡Bienvenido a mi portfolio!</span>
-          <h1 className="xl:text-6xl text-primary-dark">Jonatan Montesdeoca</h1>
-          <p className="text-2xl tracking-wide font-medium text-primary-dark mt-1">
-            Desarrollador Full Stack
-          </p>
+          <h1 className="xl:text-6xl">Jonatan Montesdeoca</h1>
+          <h2 className="md:font-medium text-primary-dark mt-1">
+            Frontend Developer
+          </h2>
           <p className="mt-4">
             Diseño y desarrollo soluciones digitales a medida, en este portfolio
             obtendrás un resumen de mi trayectoria profesional, formación y

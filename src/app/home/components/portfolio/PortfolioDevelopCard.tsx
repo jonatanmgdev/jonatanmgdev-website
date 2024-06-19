@@ -52,7 +52,7 @@ const PortfolioDevelopCard: React.FC<PortfolioDevelopData> = ({
             width={250}
             height={250}
             alt={`Imagen del desarrollo de ${title}`}
-            className="portfolioDevelopImage border border-neutral-medium rounded-xl h-fit"
+            className="portfolioDevelopImage border border-neutral-medium rounded-lg h-fit"
           />
         </div>
       </div>

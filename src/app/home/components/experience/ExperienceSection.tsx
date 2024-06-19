@@ -8,12 +8,14 @@ import SectionHeader from "@/components/SectionHeader";
 async function ExperienceSection() {
   return (
     <section>
-      <SectionHeader
-        className="mb-4"
-        title="Mi experiencia"
-        subtitle="Trayectoria profesional"
-        description="Busco oportunidades laborales en las cuales encuentre proyectos interesantes y un entorno de trabajo adecuado para seguir creciendo."
-      />
+      <div className="flex w-full justify-center">
+        <SectionHeader
+          className="mb-4 justify-center text-center"
+          title="Mi experiencia"
+          subtitle="Trayectoria profesional"
+          description="Busco oportunidades laborales en las cuales encuentre proyectos interesantes y un entorno de trabajo adecuado para seguir creciendo."
+        />
+      </div>
       <div className="flex flex-col w-full justify-center items-center mb-8">
         <Blockquote
           author="Benito Pérez Galdós"

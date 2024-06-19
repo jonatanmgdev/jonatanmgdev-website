@@ -29,7 +29,7 @@ export default function Header() {
             scrollDirection === "down" ? "-top-96" : "top-0"
           } transition-all duration-1000`}
         >
-          <SpotlightWrapper spotlightCardClassName="bg-neutral-deep border border-neutral-light hover:border-primary-dark rounded-full">
+          <SpotlightWrapper spotlightCardClassName="bg-neutral-deep border-2 border-neutral-light hover:border-primary-dark rounded-full">
             <div className="py-4 md:px-4 lg:px-8 xl:px-16">
               <ul className="list-none font-semibold flex flex-row items-center lg:gap-10 md:gap-8">
                 {memoizedMenuItems}

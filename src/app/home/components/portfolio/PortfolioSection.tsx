@@ -1,18 +1,14 @@
 "use server";
-import portfolioJonatanmgdev from "@assets/images/portfolio-web-jonatanmgdev.jpg";
+import portfolioMaestroFlorido from "@assets/images/portfolio-web-maestroflorido.webp";
 import portfolioTaxiLasPalmas from "@assets/images/portfolio-web-taxilaspalmas.webp";
-import portfolioLogoCanarybytes from "@assets/images/canarybytes-portfolio-logo.png";
+import portfolioLogoAirproradio from "@assets/images/Airproradio-portfolio-logo.png";
 import portfolioLogoVipCarsTransfers from "@assets/images/vipcarstransfers-portfolio-logo.png";
 import portfolioVentajon from "@assets/images/portfolio-app-ventajon.jpg";
 import {
   IconFigma,
   IconFlutter,
   IconGithub,
-  IconHTML,
-  IconNextJS,
   IconPhotoshop,
-  IconTailwindCSS,
-  IconTypescript,
   IconWordpress,
 } from "@assets/icons";
 import { PortfolioCard, PortfolioDevelopCard } from ".";
@@ -52,7 +48,7 @@ async function PortfolioSectionComponent() {
             <PortfolioCard
               title={"Taxilaspalmasdegrancanaria.com"}
               description={
-                "Web desarrollada con el CMS Wordpress y el theme Divi. Este sitio permite la reserva online de servicios de taxi en Las Palmas de Gran Canaria."
+                "Este sitio permite la reserva online de servicios de taxi en Las Palmas de Gran Canaria desde un formulario o mediante otros métodos de contacto."
               }
               techIcons={[
                 { icon: IconWordpress(20), name: "Wordpress" },
@@ -66,18 +62,16 @@ async function PortfolioSectionComponent() {
           </div>
           <div className="col-span-full sm:col-span-3 lg:col-span-2 overflow-hidden relative">
             <PortfolioCard
-              title={"Radiofaycan.com"}
+              title={"Maestroflorido.com"}
               description={
-                "Web desarrollada con Next.js y TailwindCSS, ofrece a sus oyentes una web donde pueden escuchar las emisoras y podcasts de radio de Faycan."
+                "Web oficial del humorista canario Maestro Florido, ofrece al visitante sus próximas actuaciones, biografía, videos y métodos de contacto con el artista."
               }
               techIcons={[
+                { icon: IconWordpress(20), name: "Wordpress" },
+                { icon: IconPhotoshop(20), name: "Photoshop" },
                 { icon: IconGithub(20), name: "Github" },
-                { icon: IconHTML(20), name: "HTML" },
-                { icon: IconTypescript(20), name: "Typescript" },
-                { icon: IconTailwindCSS(20), name: "TailwindCSS" },
-                { icon: IconNextJS(20), name: "NextJS" },
               ]}
-              imageSrc={portfolioJonatanmgdev.src}
+              imageSrc={portfolioMaestroFlorido.src}
               url={"https://jonatanmg.dev"}
               type={"Web"}
             />
@@ -94,11 +88,11 @@ async function PortfolioSectionComponent() {
           </div>
           <div className="col-span-full lg:col-span-3 overflow-hidden relative h-full">
             <PortfolioDevelopCard
-              title={"Canarybytes.com"}
+              title={"AirProRadio.com"}
               description={
-                "Landing page con todos los servicios que ofrece la empresa y un amplio portfolio de trabajos realizados a sus clientes."
+                "Landing page con todos los features que ofrece el software de radiodifusión de Air Pro Radio el cual es uno de mis side projects."
               }
-              imageSrc={portfolioLogoCanarybytes.src}
+              imageSrc={portfolioLogoAirproradio.src}
               type={"Web"}
             />
           </div>
