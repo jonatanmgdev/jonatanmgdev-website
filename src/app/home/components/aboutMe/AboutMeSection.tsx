@@ -1,8 +1,7 @@
 "use server";
 import Image from "next/image";
 import jonatanCircleAvatar from "@assets/images/jonatan-montesdeoca-circle-avatar.png";
-import SectionHeader from "@/components/SectionHeader";
-import IconHandShake from '../../../../assets/icons/IconHandShake';
+import IconHandShake from '../../../../components/svgIcons/IconHandShake';
 
 /**
  * Component of the about me section.

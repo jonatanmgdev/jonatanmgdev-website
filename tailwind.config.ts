@@ -26,70 +26,82 @@ const config: Config = {
           secondary: "#B3B3B3",
           heading: "#F5F5F5",
           accent: "#00B377",
-        }
+        },
       },
       container: {
-        center: true,
-        padding: {
-          DEFAULT: "1rem",
-          xs: "1rem",
-          sm: "1rem",
-          md: "0.5rem",
-          lg: "0.5rem",
-          xl: "0.5rem",
-          "2xl": "0.5rem",
-          "3xl": "0.5rem",
-        },
         screens: {
+          xs: "460px",
           sm: "640px",
           md: "768px",
           lg: "1024px",
           xl: "1280px",
-          "2xl": "1536px",
+          "2xl": "1440px",
           "3xl": "1600px",
+          "4xl": "1920px",
         },
-      },
-      screens: {
-        xs: "320px",
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-        "3xl": "1600px",
+        padding: {
+          DEFAULT: "1rem",
+          xs: "1rem",
+          sm: "2rem",
+          md: "3rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+          "3xl": "8rem",
+          "4xl": "10rem", 
+        },
+        center: true,
       },
       fontSize: {
-        sm: ["0.8rem", {
-          lineHeight: '1.5rem',
-          letterSpacing: '-0.01em',
-          fontWeight: '500',
-        }],
-        base: ["1rem", {
-          lineHeight: '1.5rem',
-          letterSpacing: '-0.01em',
-          fontWeight: '500',
-        }],
+        sm: [
+          "0.8rem",
+          {
+            lineHeight: "1.5rem",
+            letterSpacing: "-0.01em",
+            fontWeight: "500",
+          },
+        ],
+        base: [
+          "1rem",
+          {
+            lineHeight: "1.5rem",
+            letterSpacing: "-0.01em",
+            fontWeight: "500",
+          },
+        ],
         xl: "1.25rem",
-        '2xl': ['1.563rem', {
-          lineHeight: '2rem',
-          letterSpacing: '-0.01em',
-          fontWeight: '700',
-        }],
-        '3xl': ['1.953rem', {
-          lineHeight: '2.25rem',
-          letterSpacing: '-0.02em',
-          fontWeight: '700',
-        }],
-        '4xl': ['2.441rem', {
-          lineHeight: '2.5rem',
-          letterSpacing: '-0.02em',
-          fontWeight: '700',
-        }],
-        '5xl': ['3.052rem', {
-          lineHeight: '1',
-          letterSpacing: '-0.02em',
-          fontWeight: '700',
-        }],
+        "2xl": [
+          "1.563rem",
+          {
+            lineHeight: "2rem",
+            letterSpacing: "-0.01em",
+            fontWeight: "700",
+          },
+        ],
+        "3xl": [
+          "1.953rem",
+          {
+            lineHeight: "2.25rem",
+            letterSpacing: "-0.02em",
+            fontWeight: "700",
+          },
+        ],
+        "4xl": [
+          "2.441rem",
+          {
+            lineHeight: "2.5rem",
+            letterSpacing: "-0.02em",
+            fontWeight: "700",
+          },
+        ],
+        "5xl": [
+          "3.052rem",
+          {
+            lineHeight: "1",
+            letterSpacing: "-0.02em",
+            fontWeight: "700",
+          },
+        ],
       },
       fontFamily: {
         inter: "var(--font-inter)",
@@ -97,8 +109,10 @@ const config: Config = {
         sourceCodePro: "var(--font-source-code-pro)",
       },
       backgroundImage: {
-        "welcome-section-background":  "url('../assets/images/welcome-section-background.webp')",
-        "aboutme-section-background":  "url('../assets/images/aboutme-section-bg.webp')",
+        "welcome-section-background":
+          "url('/assets/images/welcome-section-background.webp')",
+        "aboutme-section-background":
+          "url('/assets/images/aboutme-section-bg.webp')",
       },
       keyframes: {
         slidein: {

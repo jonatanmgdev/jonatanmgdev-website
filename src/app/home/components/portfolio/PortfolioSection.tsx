@@ -10,7 +10,7 @@ import {
   IconGithub,
   IconPhotoshop,
   IconWordpress,
-} from "@assets/icons";
+} from "@/components/svgIcons";
 import { PortfolioCard, PortfolioDevelopCard } from ".";
 import SectionHeader from "@/components/SectionHeader";
 

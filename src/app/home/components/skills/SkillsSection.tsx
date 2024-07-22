@@ -24,14 +24,14 @@ import {
   IconPostman,
   IconPhotoshop,
   IconFirebase,
-} from "@assets/icons";
+} from "@/components/svgIcons";
 import { SkillCard } from ".";
-import IconNestJS from "@/assets/icons/IconNestJS";
-import IconReactJS from "@/assets/icons/IconReactJS";
-import IconIniciative from "@/assets/icons/IconInicitative";
-import IconResilience from "@/assets/icons/IconResilience";
-import IconAutonomy from "@/assets/icons/IconAutonomy";
-import IconOrganization from "@/assets/icons/IconOrganization";
+import IconNestJS from "@/components/svgIcons/IconNestJS";
+import IconReactJS from "@/components/svgIcons/IconReactJS";
+import IconIniciative from "@/components/svgIcons/IconInicitative";
+import IconResilience from "@/components/svgIcons/IconResilience";
+import IconAutonomy from "@/components/svgIcons/IconAutonomy";
+import IconOrganization from "@/components/svgIcons/IconOrganization";
 import SectionHeader from "@/components/SectionHeader";
 
 async function SkillsSection() {

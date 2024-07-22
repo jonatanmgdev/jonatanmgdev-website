@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { IconCode } from "@/assets/icons";
+import { IconCode } from "@/components/svgIcons";
 import { SpotlightWrapper } from "@/components";
 
 export interface PortfolioDevelopData {

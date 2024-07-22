@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
 import { SpotlightWrapper } from "@/components";
-import { IconCertificate } from "@/assets/icons";
+import { IconCertificate } from "@/components/svgIcons";
 
 interface PortfolioData {
   title: string;
   description: string;
   hours: number;
   type: string;
+  isActive?: boolean;
 }
 
 /**
@@ -17,6 +18,7 @@ interface PortfolioData {
  * @param description - Description of the card.
  * @param hours - Number of hours of the formation.
  * @param type - Type of the formation
+ * @param isActive - The card is active or not.
  * @author Jonatan Montesdeoca González
  **/
 
@@ -25,16 +27,17 @@ const FormationCard: React.FC<PortfolioData> = ({
   description,
   hours,
   type,
+  isActive = false,
 }) => {
   return (
     <SpotlightWrapper
-      spotlightClassName="h-full"
-      spotlightCardClassName="p-4 card-primary"
+      spotlightClassName={"h-full"}
+      spotlightCardClassName={"p-4 card-primary"}
     >
       <article className="relative flex flex-col h-full">
         <div className="w-full flex flex-wrap justify-between items-center mb-2">
-          <span className="flex text-primary-dark bg-neutral-deep rounded-lg p-2">
-            {IconCertificate(30)}
+          <span className="flex text-primary-dark bg-neutral-deep rounded-lg items-center font-bold p-2 gap-2">
+            {IconCertificate(30)} {isActive && "En curso"}
           </span>
           <div className="flex flex-col items-end justify-end">
             <p className="w-fit h-fit bg-neutral-deep rounded-lg p-2 mb-1 text-white text-xs">

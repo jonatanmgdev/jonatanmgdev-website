@@ -1,6 +1,6 @@
 "use server";
 import CustomButton from "@/components/custom/CustomButton";
-import { IconGithub, IconYoutube, IconLinkedin, IconTwitter } from "@assets/icons";
+import { IconGithub, IconYoutube, IconLinkedin, IconTwitter } from "@/components/svgIcons";
 
 /**
  * Component of the welcome section.
@@ -25,7 +25,7 @@ async function WelcomeSectionComponent() {
           </p>
         </div>
         <div className="flex flex-wrap w-full justify-center gap-2 py-4">
-        <CustomButton className="px-4 py-2 w-auto" text="Descargar CV" href="#aboutme-section" />
+        <CustomButton className="px-4 py-2 w-auto" text="Descargar CV"  href="/assets/pdf/Jonatanmgdev-resume.pdf" />
         <CustomButton className="px-4 py-2 w-auto bg-neutral-light/50 text-white hover:text-neutral-deep" text="Sobre mí" href="#aboutme-section" />
         </div>
         <div className="flex flex-col items-center pt-4">
@@ -66,8 +66,8 @@ async function WelcomeSectionComponent() {
             <li>
               <a
                 className="flex justify-center"
-                aria-label="Acceder a mi cuenta en Linkedin"
-                href="https://www.linkedin.com/in/jonatanmgdev/"
+                aria-label="Acceder a mi cuenta en Twitter"
+                href="https://x.com/jonatanmgdev"
               >
                 {IconTwitter(35)}
                 <span className="sr-only">Mi cuenta en Twitter</span>

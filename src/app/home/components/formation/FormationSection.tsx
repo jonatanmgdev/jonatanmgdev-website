@@ -13,6 +13,13 @@ async function FormationSection() {
       />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <FormationCard
+          isActive={true}
+          type="Curso Especialización FP"
+          title="Curso de especialización en IA y Big Data"
+          hours={600}
+          description="Aplicar IA en funcionalidades, procesos y sistemas empresariales. Modelos, programación y sistemas de aprendizaje automático de IA y Big Data."
+        />
+        <FormationCard
           type="Formación Profesional"
           title="Grado superior en desarrollo de aplicaciones multiplataforma"
           hours={2000}
@@ -41,12 +48,6 @@ async function FormationSection() {
           title="Principios SOLID y Clean code"
           hours={7}
           description="Aprendí sobre que son los principios SOLID, cómo escribir un código limpio, la deuda técnica y los 6 codesmells principales y otros no tan comunes."
-        />
-        <FormationCard
-          type="Curso Devtalles.com"
-          title="Nest: Desarrollo backend escalable con Node"
-          hours={25}
-          description="Nest con Typescript, creación de Restful APIS robustas y seguras, Nest Guards, interceptors, pipes, controllers, decorators, services, filters, modules y middleware."
         />
       </div>
     </section>

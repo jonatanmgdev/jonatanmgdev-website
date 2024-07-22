@@ -1,5 +1,5 @@
-export { default as CustomButton } from './CustomButton';
-export { default as CustomCheckbox } from './CustomCheckbox';
+export * from './CustomButton';
+export * from './CustomCheckbox';
 export * from './CustomInput';
-export { default as CustomModal } from './CustomModal';
-export { default as CustomTextarea } from './CustomTextarea';
+export * from './CustomModal';
+export * from './CustomTextarea';

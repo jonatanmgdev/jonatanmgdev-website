@@ -1,4 +1,4 @@
-import { IconGithub, IconLinkedin, IconYoutube } from "@/assets/icons";
+import { IconGithub, IconLinkedin, IconYoutube } from "@/components/svgIcons";
 
 export default function Footer() {
   return (

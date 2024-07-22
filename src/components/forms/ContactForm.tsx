@@ -1,12 +1,12 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { CustomButton, CustomModal, CustomTextarea } from "..";
-import { IconCheck } from "@assets/icons";
-import { useContext, useState } from "react";
+import { IconCheck } from "@/components/svgIcons";
+import { useEffect, useState } from "react";
 import CustomCheckbox from "../custom/CustomCheckbox";
 import dynamic from "next/dynamic";
-import ContactUsContext from "@/context/Context";
-import { CustomInput } from "../custom/CustomInput";
+import { CustomTextarea, CustomInput } from "../custom";
+import CustomButton from "../custom/CustomButton";
+import CustomModal from "../custom/CustomModal";
 const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"));
 
 type ContactFormInput = {
@@ -26,17 +26,18 @@ export default function ContactUsForm(className?: contactUsFormProps) {
   const {
     register,
     handleSubmit,
-    formState: { isSubmitting, errors },
+    formState: { isSubmitting, errors, isValid },
     getValues,
     setValue,
     reset,
   } = useForm<ContactFormInput>({
-    mode: "onChange",
+    mode: "onSubmit",
   });
-  const { setFormValue } = useContext(ContactUsContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [captcha, setCaptcha] = useState<string | null>();
+  const [recaptchaError, setRecaptchaError] = useState(false);
   const [recaptchaNeeded, setRecaptchaNeeded] = useState(false);
+  const [terms, setTerms] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -46,41 +47,46 @@ export default function ContactUsForm(className?: contactUsFormProps) {
     setIsModalOpen(false);
   };
 
-  const handleFormValuesChanges = (fieldName: keyof ContactFormInput) => {
-    if (!recaptchaNeeded) {
-      setRecaptchaNeeded(true);
-    }
-    const formValues = getValues();
-
-    switch (fieldName) {
-      case "name":
-        setFormValue("name", formValues.name);
-        break;
-      case "surnames":
-        setFormValue("surnames", formValues.surnames);
-        break;
-      case "email":
-        setFormValue("email", formValues.email);
-        break;
-      case "message":
-        setFormValue("message", formValues.message);
-        break;
-      case "phone":
-        setFormValue("phone", formValues.phone);
-        break;
-      case "termsAccepted":
-        setFormValue("termsAccepted", String(formValues.termsAccepted));
-        break;
-      default:
-        break;
-    }
+  const handleCaptchaExpired = () => {
+    setCaptcha(null);
+    setRecaptchaError(true);
   };
 
+  const isFormValidated = () : boolean => {
+    let isValidForm = false;
+
+    // Check recaptcha
+    if (!captcha) {
+      setRecaptchaError(true);
+      isValidForm = false;
+    } else {
+      setRecaptchaError(false);
+    }
+
+    // Check terms
+    if (!getValues("termsAccepted")) {
+      isValidForm = false;
+    }
+
+    // Check isValid form state
+    isValid === false ? (isValidForm = false) : (isValidForm = true);
+
+    // Check formState
+    return isValidForm;
+  };
+
+
+  useEffect(() => {
+    if (isValid) {
+      setRecaptchaNeeded(true);
+    }
+  }, [isValid]);
+  
+
   async function onSubmit(formData: ContactFormInput) {
-    handleOpenModal();
-    if (captcha) {
-      console.log("Recaptcha verificado");
-      console.log(formData);
+
+    if(isFormValidated()) {
+      handleOpenModal();
     }
     //  setContactData(formData);
     //  await fetch("/api/send", {
@@ -172,12 +178,12 @@ export default function ContactUsForm(className?: contactUsFormProps) {
                 message: "Por favor, introduzca su email",
               },
               minLength: {
-                value: 3,
-                message: "El nombre debe tener al menos 3 caracteres",
+                value: 4,
+                message: "El email debe tener al menos 4 caracteres",
               },
               maxLength: {
-                value: 40,
-                message: "El nombre debe tener menos de 40 caracteres",
+                value: 60,
+                message: "El email debe tener menos de 60 caracteres",
               },
             }}
             register={register}
@@ -191,6 +197,20 @@ export default function ContactUsForm(className?: contactUsFormProps) {
             placeholder="Introduzca su telefono..."
             type="text"
             errors={errors.phone}
+            rules={{
+              required: {
+                value: true,
+                message: "Por favor, introduzca su teléfono",
+              },
+              minLength: {
+                value: 6,
+                message: "El teléfono debe tener al menos 6 caracteres",
+              },
+              maxLength: {
+                value: 15,
+                message: "El teléfono debe tener menos de 15 caracteres",
+              },
+            }}
             errorsClasses="text-red-400"
             register={register}
             inputVariant="SOLID"
@@ -198,11 +218,27 @@ export default function ContactUsForm(className?: contactUsFormProps) {
         </div>
         <div className="grid my-4 gap-2">
           <CustomTextarea
+            id="message"
+            name="message"
             title="Mensaje"
             placeholder={"Introduzca su mensaje..."}
             rows={4}
             errors={errors.message}
             errorsClasses="text-red-400"
+            rules={{
+              required: {
+                value: true,
+                message: "Por favor, introduzca su mensaje",
+              },
+              minLength: {
+                value: 4,
+                message: "El mensaje debe tener al menos 10 caracteres",
+              },
+              maxLength: {
+                value: 400,
+                message: "El mensaje debe tener menos de 400 caracteres",
+              },
+            }}
             register={register}
             inputVariant="SOLID"
           />
@@ -216,14 +252,19 @@ export default function ContactUsForm(className?: contactUsFormProps) {
                 .
               </p>
             }
-            isChecked={true}
+            isChecked={terms}
             className="my-4"
           />
           {recaptchaNeeded && (
+            <>            
             <ReCAPTCHA
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
               onChange={setCaptcha}
+              onExpired={handleCaptchaExpired}
+              
             />
+            {recaptchaError && <p className="text-red-400">Debe realizar el proceso de reCAPTCHA</p>}
+            </>
           )}
           <CustomButton
             id="submit-btn"
