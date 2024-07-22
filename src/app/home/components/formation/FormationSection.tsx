@@ -1,6 +1,7 @@
 "use server";
 import SectionHeader from "@/components/SectionHeader";
-import FormationCard from "./FormationCard";
+import { FormationCard } from ".";
+
 
 async function FormationSection() {
   return (
@@ -9,7 +10,7 @@ async function FormationSection() {
         className="mb-8"
         title="Mi formación"
         subtitle="Cursos y certificaciones"
-        description="Formarse es una necesidad en esta profesión y es por ello que trato de mantenerme actualizado realizando formaciones continuamente."
+        description="Formarse es una necesidad en esta profesión, así que siempre trato de mantenerme al día haciendo cursos continuamente."
       />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <FormationCard

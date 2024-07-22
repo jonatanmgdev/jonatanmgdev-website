@@ -1,7 +1,7 @@
 "use server";
 import Image from "next/image";
 import jonatanCircleAvatar from "@assets/images/jonatan-montesdeoca-circle-avatar.png";
-import IconHandShake from '../../../../components/svgIcons/IconHandShake';
+import IconHandShake from "../../../../components/svgIcons/IconHandShake";
 
 /**
  * Component of the about me section.
@@ -11,12 +11,9 @@ import IconHandShake from '../../../../components/svgIcons/IconHandShake';
 
 async function AboutMeSection() {
   return (
-    <section
-      id="aboutme-section"
-      className="bg-neutral-dark rounded-lg py-2 px-4"
-    >
-      <div className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 items-center gap-2">
-        <div className="col-span-1 md:col-span-3 lg:col-span-3 xl:col-span-3 flex justify-center">
+    <section id="aboutme-section-bg" className="rounded-lg p-6">
+      <div className="lg:flex gap-2">
+        <div className="lg:flex-none flex items-center justify-center">
           <Image
             width={300}
             height={300}
@@ -26,32 +23,32 @@ async function AboutMeSection() {
             priority
           />
         </div>
-        <div className="col-span-1 md:col-span-5 lg:col-span-9 xl:col-span-9">
-          <div className="flex flex-col my-4">
+        <div className="lg:flex-grow">
+          <div className="flex flex-col my-4 gap-1">
             <div className="flex flex-wrap align-middle gap-1">
               <span>{IconHandShake(40)}</span>
-              <h3>¡Hola! Soy jony</h3> 
+              <h3>¡Hola! Soy jony</h3>
             </div>
             <span>Según Typescript y mis amigos soy un buen tipo...</span>
           </div>
           <div className="flex flex-col mb-4">
             <p className="mb-4">
-              Mi nombre completo es Jonatan Montesdeoca, tengo 30 años y soy de Las Palmas de Gran Canaria. Comencé en el
-              desarrollo web creando foros con phpBB, tenía 13 años. Hoy formo
-              parte de un equipo colaborando en el desarrollo de webs y apps
-              móviles.
+              Me llamo Jonatan Montesdeoca, tengo 30 años y vivo en Las Palmas
+              de Gran Canaria. Mi viaje en el mundo del desarrollo web comenzó
+              cuando tenía 13 años, trasteando con foros en phpBB. Hoy en día,
+              formo parte de un equipo, colaborando en el desarrollo de sitios
+              web y apps móviles.
             </p>
             <p className="mb-4">
-              Cuento con experiencia desarrollando aplicaciones móviles con
-              Flutter y webs con React.JS, Next.JS, Wordpress o Prestashop.
-              Tengo una evidente predilección por Javascript y sus frameworks.
-              Además de todo esto cuento con una buena base de conocimientos para crear interfaces de
-              usuario y diseños que funcionen bien en cualquier dispositivo.
+              Tengo experiencia trabajando con React.JS, Next.JS, Wordpress, y
+              Prestashop. También me he metido de lleno en el desarrollo de
+              aplicaciones móviles con Flutter y React Native. Me encanta crear
+              interfaces intuitivas y atractivas que ofrezcan una gran
+              experiencia de usuario.
             </p>
             <p>
-              Actualmente dedico bastante tiempo en mi formación para
-              convertirme en desarrollador fullstack y certificando mi nivel de
-              inglés.
+              Actualmente dedico bastante tiempo a mi formación en frontend, IA,
+              Big Data y certificando mi inglés.
             </p>
           </div>
         </div>

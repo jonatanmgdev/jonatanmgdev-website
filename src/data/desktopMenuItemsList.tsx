@@ -2,8 +2,8 @@ import { MenuItem } from "@/types";
 import LogoComponent from "../components/layout/logo/LogoComponent";
 
 export const desktopMenuItemsList: MenuItem[] = [
-  { label: "Inicio", href: "#welcome-section" },
   { label: "Sobre mi", href: "#aboutme-section" },
+  { label: "Formación", href: "#formation-section" },
   { label: "Experiencia", href: "#experience-section" },
   {
     label: <LogoComponent />,

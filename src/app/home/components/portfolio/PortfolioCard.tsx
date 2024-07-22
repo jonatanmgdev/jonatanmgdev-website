@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Popover from "@/components/popover/Popover";
 import { SpotlightWrapper } from "@/components";
+import { IconGithub } from "@/components/svgIcons";
 
 type techIcon = {
   icon: JSX.Element;
@@ -14,8 +15,9 @@ interface PortfolioData {
   description: string;
   techIcons: techIcon[];
   imageSrc: string;
-  url: string;
   type: string;
+  url: string;
+  gitHubUrl?: string;
 }
 
 /**
@@ -35,8 +37,9 @@ const PortfolioCard: React.FC<PortfolioData> = ({
   description,
   imageSrc,
   techIcons,
-  url,
   type,
+  url,
+  gitHubUrl,
 }) => {
   return (
     <SpotlightWrapper
@@ -44,9 +47,11 @@ const PortfolioCard: React.FC<PortfolioData> = ({
       spotlightCardClassName="card-primary p-4"
     >
       <article className="flex flex-col h-full">
-        <div className="relative justify-between">
-          <div className="!absolute top-4 right-4 p-2 bg-primary-dark rounded-lg">
-            <p className="text-white text-center text-xs">{type}</p>
+        <div className="relative flex-grow">
+          <div className="!absolute flex top-4 right-4">
+            <div className="flex flex-col p-2 bg-primary-dark rounded-lg w-fit h-fit">
+              <p className="text-white text-center text-xs">{type}</p>
+            </div>
           </div>
           <div className="overflow-hidden rounded-lg text-white">
             <Image
@@ -59,24 +64,32 @@ const PortfolioCard: React.FC<PortfolioData> = ({
             <div className="rounded-lg absolute inset-0 bg-gradient-to-t from-neutral-dark to-transparent"></div>
           </div>
         </div>
-        <div className="z-10 mt-6 text-center">
+        <div className="z-10 mt-6 text-center flex-grow">
           <a
             href={url}
-            className="text-xl sm:text-2xl font-bold text-textcolor-heading break-words"
+            className="text-lg sm:text-xl font-bold text-textcolor-heading break-words"
             aria-label={`Acceder al enlace del portfolio ${title}`}
           >
             {title}
           </a>
           <p className="text-secondary break-words">{description}</p>
         </div>
-        <div className="flex flex-col z-10 mt-4">
-          <div className="mt-2 inline-flex flex-row items-center gap-2">
-            {/* Se itera sobre el array de iconos */}
+        <div className="flex flex-wrap z-10 items-center gap-2 mt-4">
+          <div className="flex flex-wrap items-center gap-2 w-full">
+            {gitHubUrl && (
+              <button
+                onClick={() => window.open(gitHubUrl, "_blank")}
+                className="flex flex-row w-fit px-5 items-center justify-center gap-2 text-primary-dark text-opacity-60 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-80 p-2 transition-colors"
+              >
+                {IconGithub(20)}
+                code
+              </button>
+            )}
             {techIcons.map((icon, iconIndex) => (
-              <Popover key={iconIndex} content={`${icon.name}`}>
+              <Popover key={iconIndex} content={`Uso de ${icon.name}`}>
                 <span
                   key={iconIndex}
-                  className="cursor-pointer rounded-full text-primary-dark text-opacity-60 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-15  p-3 transition-colors"
+                  className="cursor-pointer rounded-full text-primary-dark text-opacity-60 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-15 p-3 transition-colors"
                 >
                   {icon.icon}
                 </span>

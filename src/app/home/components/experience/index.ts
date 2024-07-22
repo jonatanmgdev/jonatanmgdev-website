@@ -1,2 +1,1 @@
-export * from './ExperienceCard';
-export { default as ExperienceSection } from './ExperienceSection';
+export { ExperienceCard } from './ExperienceCard';

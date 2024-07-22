@@ -41,7 +41,7 @@ async function SkillsSection() {
         className="mb-8"
         title="Mis habilidades"
         subtitle="Conocimientos y cualidades"
-        description="Tengo una gran predilección por JavaScript y sus frameworks pero puedo aprender cualquier otra tecnología. En cuanto a las soft skills estas son las que destacan cuando trabajo en un equipo."
+        description="Soy un apasionado de JavaScript y sus frameworks. Cuando se trata de frontend, mis puntos fuertes son Next.js y Tailwind CSS. Para el backend, mis preferidos son Nest.js y Node.js. Aunque tengo más experiencia y habilidades en el frontend, siempre estoy dispuesto a aprender cualquier cosa que se ponga por delante. En cuanto a las soft skills, en un equipo, soy esa persona que siempre está lista para colaborar, aportar ideas frescas y echar una mano cuando se necesita."
       />
       <div className="grid my-auto py-4">
         <h4>Tech skills</h4>

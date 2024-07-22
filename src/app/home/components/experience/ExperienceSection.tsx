@@ -1,8 +1,8 @@
 "use server";
-import { experienceDataList } from "@/data/experienceDataList";
-import { ExperienceCard } from ".";
 import { Blockquote } from "@/components/blockquote/blockquote";
 import SectionHeader from "@/components/SectionHeader";
+import { experienceDataList } from "@/data/experienceDataList";
+import { ExperienceCard } from ".";
 
 
 async function ExperienceSection() {
@@ -13,7 +13,7 @@ async function ExperienceSection() {
           className="mb-4 justify-center text-center"
           title="Mi experiencia"
           subtitle="Trayectoria profesional"
-          description="Busco oportunidades laborales en las cuales encuentre proyectos interesantes y un entorno de trabajo adecuado para seguir creciendo."
+          description="Busco oportunidades laborales donde haya proyectos interesantes y un buen ambiente para seguir creciendo."
         />
       </div>
       <div className="flex flex-col w-full justify-center items-center mb-8">

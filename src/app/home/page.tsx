@@ -1,23 +1,25 @@
-import { AboutMeSection } from "./components/aboutMe";
-import { ContactSection } from "./components/contact";
-import { ExperienceSection } from "./components/experience";
-import { PortfolioSection } from "./components/portfolio";
-import { SkillsSection } from "./components/skills";
-import { WelcomeSection } from "./components/welcome";
-import FormationSection from "./components/formation/FormationSection";
+import {
+  WelcomeSection,
+  AboutMeSection,
+  FormationSection,
+  ExperienceSection,
+  PortfolioSection,
+  SkillsSection,
+  ContactSection,
+} from "./components";
 
 export default function Home() {
   return (
     <>
       <main>
         <div id="welcome-section">
-          <div className="container py-32 sm:py-40 md:py-52 lg:py-60">
+          <div className="container pt-32 pb-8 sm:pt-40 sm:pb-10 md:pt-52 md:pb-12 lg:pt-60 lg:pb-14">
             <WelcomeSection />
           </div>
         </div>
 
-        <div className="m-4 md:m-0">
-          <div className="container">
+        <div id="aboutme-section">
+          <div className="container pt-10 pb-3 sm:pb-6 sm:pt-12 md:pb-6 md:pt-24 lg:pb-8 lg:pt-32">
             <AboutMeSection />
           </div>
         </div>

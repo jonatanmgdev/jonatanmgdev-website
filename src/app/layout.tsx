@@ -19,9 +19,9 @@ const sourceCodePro = Source_Code_Pro({
  
 
 export const metadata: Metadata = {
-  title: "Jonatan Montesdeoca - Full Stack Developer",
+  title: "Jonatan Montesdeoca - Frontend Developer",
   description:
-    "Portfolio de Jonatan Montesdeoca, Full Stack Developer con varios años de experiencia en el desarrollo de aplicaciones web y móviles.",
+    "Portfolio de Jonatan Montesdeoca, Frontend Developer con varios años de experiencia en el desarrollo de aplicaciones web y móviles.",
 };
 
 export default function RootLayout({
