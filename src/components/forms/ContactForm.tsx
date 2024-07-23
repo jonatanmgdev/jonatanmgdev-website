@@ -83,7 +83,7 @@ export default function ContactUsForm() {
             <h1 className="text-textcolor-accent">¡Recibido!</h1>
             <p> Muchas gracias por ponerte en contacto.</p>
             <p>
-              Los emails los suelo leer "al golpito", por lo que si necesitas algo
+              Los emails los suelo leer con frecuencia, pero si necesitas algo
               urgente, no dudes en escribirme en Linkedin.
             </p>
           </div>
