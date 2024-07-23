@@ -39,13 +39,13 @@ const ContactFormEmailTemplate = ({
               </strong>
             </Heading>
             <Text className="text-black text-[14px] leading-[24px]">
-              ¡Hola {name}! ¡Gracias por ponerte en contacto conmigo a través de
-              mi página web, jonatanmg.dev! Te aseguro que te responderé tan
+              ¡Hola {name}! Muchas gracias por ponerte en contacto conmigo a través de
+              mi página web. Te aseguro que te responderé tan
               pronto como pueda.
             </Text>
             <Hr className="my-[16px] mx-0 w-full" />
             <Heading className="text-black text-[20px] font-normal text-left">
-              <strong>Le resumo su mensaje:</strong>
+              <strong>Esta es una copia del mensaje que he recibido:</strong>
             </Heading>
             <Text className="text-black text-[14px] leading-[24px]">
               nombre: {name}
@@ -55,9 +55,7 @@ const ContactFormEmailTemplate = ({
             </Text>
             <Hr className="my-[16px] mx-0 w-full" />
             <Text className="text-[#666666] text-[12px]">
-              ¡No dudes en seguir explorando mi página web y descubrir más sobre
-              lo que hago! ¡Gracias de nuevo por tu interés y espero poder
-              hablar contigo pronto!
+              Gracias de nuevo por tu interés y espero poder estar en contacto contigo pronto.
             </Text>
             <Text className="text-[#666666] text-[12px]">
               👉 Sígueme en mi perfil de LinkedIn:{" "}

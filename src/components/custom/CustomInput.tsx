@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { RegisterOptions, UseFormRegister } from "react-hook-form";
 
 type BaseInputAttributes = React.ComponentPropsWithoutRef<"input">;
@@ -8,6 +9,7 @@ interface CommonInputProps extends BaseInputAttributes {
   label: string;
   type: string;
   value?: any;
+  autocomplete?: string;
   inputVariant?: keyof typeof InputStyles;
   hidden?: boolean;
   className?: string;
@@ -17,27 +19,28 @@ interface CommonInputProps extends BaseInputAttributes {
   register?: UseFormRegister<any>;
   onchange?: (event: React.ChangeEvent<any>) => void;
   defaultValue?: string;
-  adornment?: JSX.Element | null;
+  adornment?: React.ReactNode | null;
   errors?: any;
   errorsClasses?: string;
 }
 
 enum InputStyles {
-  OUTLINED = "block px-2.5 py-4 w-full bg-transparent border-b-2 border-neutral-medium focus:border-primary-dark text-white focus:placeholder-neutral-light focus:outline-none peer placeholder-transparent focus:placeholder-neutral-dark focus:outline-none outline-none",
-  SOLID = "block px-2.5 py-4 w-full bg-neutral-light/20 text-white focus:placeholder-textcolor-secondary focus:outline-none peer placeholder-transparent focus:placeholder-neutral-dark focus:outline-none outline-none transition-all duration-300",
+  OUTLINED = "block px-2.5 py-4 w-full bg-transparent border-b-2 border-neutral-medium focus:border-primary-dark text-white focus:placeholder-neutral-light focus:outline-none peer placeholder-transparent focus:placeholder-neutral-dark focus:outline-none outline-none rounded-lg",
+  SOLID = "block px-2.5 py-4 w-full bg-neutral-light/20 text-white focus:placeholder-textcolor-secondary focus:outline-none peer placeholder-transparent focus:placeholder-neutral-dark focus:outline-none outline-none transition-all duration-300 rounded-lg",
 }
 
-export const CustomInput = (props: CommonInputProps) => {
+const CustomInput = (props: CommonInputProps) => {
   const {
     id,
     name = "",
     label,
+    type,
+    autocomplete = "",
     placeholder,
     register = () => {},
     rules,
     errors,
     errorsClasses,
-    type,
     defaultValue,
     className,
     inputVariant = "OUTLINED",
@@ -49,7 +52,6 @@ export const CustomInput = (props: CommonInputProps) => {
     ...rest
   } = props;
 
-
   const inputStyle = InputStyles[inputVariant] || InputStyles.OUTLINED;
 
   return (
@@ -60,15 +62,20 @@ export const CustomInput = (props: CommonInputProps) => {
           {...rest}
           id={id}
           name={name}
+          autoComplete={autocomplete}
           type={type}
           hidden={hidden}
           defaultValue={defaultValue}
           placeholder={placeholder || " "}
           value={value}
-          className={`${inputClassName} ${inputStyle} border-b-2 border-neutral-medium ${errors ? "focus:border-red-400" : 'focus:border-primary-dark' }`}
+          className={`${inputClassName} ${inputStyle} border-b-2 border-neutral-medium ${
+            errors ? "focus:border-red-400" : "focus:border-primary-dark"
+          }`}
         />
         {adornment && (
-          <div className="absolute inset-y-0 right-0 pr-3 flex items-center">{adornment}</div>
+          <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+            {adornment}
+          </div>
         )}
         <label
           htmlFor={id}
@@ -85,3 +92,5 @@ export const CustomInput = (props: CommonInputProps) => {
     </div>
   );
 };
+
+export default CustomInput;

@@ -1,5 +1,6 @@
-import React, { forwardRef, TextareaHTMLAttributes } from "react";
-import { UseFormRegisterReturn, UseFormRegister, RegisterOptions } from "react-hook-form";
+"use client";
+import React, { TextareaHTMLAttributes } from "react";
+import { UseFormRegister, RegisterOptions } from "react-hook-form";
 
 interface CustomTextareaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {
@@ -20,11 +21,11 @@ interface CustomTextareaProps
 }
 
 enum InputStyles {
-  OUTLINED = "block px-2.5 py-4 w-full border-b-2 border-neutral-medium focus:border-primary-dark peer placeholder-transparent text-white focus:placeholder-neutral-dark focus:outline-none outline-none",
-  SOLID = "block px-2.5 py-4 w-full bg-neutral-light/20 border-b-2 border-neutral-medium focus:border-primary-dark text-white focus:placeholder-textcolor-secondary focus:outline-none outline-none peer placeholder-transparent focus:placeholder-neutral-dark transition-all",
+  OUTLINED = "block px-2.5 py-4 w-full border-b-2 border-neutral-medium focus:border-primary-dark peer placeholder-transparent text-white focus:placeholder-neutral-dark focus:outline-none outline-none rounded-lg",
+  SOLID = "block px-2.5 py-4 w-full bg-neutral-light/20 border-b-2 border-neutral-medium focus:border-primary-dark text-white focus:placeholder-textcolor-secondary focus:outline-none outline-none peer placeholder-transparent focus:placeholder-neutral-dark transition-all rounded-lg",
 }
 
-export const CustomTextarea = (props: CustomTextareaProps) => {  
+const CustomTextarea = (props: CustomTextareaProps) => {  
   const {
     placeholder,
     name,
@@ -73,3 +74,6 @@ export const CustomTextarea = (props: CustomTextareaProps) => {
     </div>
   );
 };
+
+
+export default CustomTextarea;

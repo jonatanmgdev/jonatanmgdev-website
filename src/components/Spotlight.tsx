@@ -36,7 +36,7 @@ export function Spotlight({
 
   useEffect(() => {
     onMouseMove();
-  }, [mousePosition]);
+  });
 
   const initContainer = () => {
     if (containerRef.current) {
