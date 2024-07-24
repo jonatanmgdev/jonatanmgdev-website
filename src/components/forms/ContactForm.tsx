@@ -41,7 +41,8 @@ export default function ContactUsForm() {
   }, []);
 
   const isFormValidated = useCallback((): boolean => {
-    const isValidForm = isValid && captcha !== null;
+    console.log(isValid, captcha);
+    const isValidForm = isValid && captcha !== null && captcha !== undefined;
     setRecaptchaError(!isValidForm);
     return isValidForm;
   }, [isValid, captcha]);
@@ -66,7 +67,8 @@ export default function ContactUsForm() {
           email: formData.email,
           message: formData.message,
         }),
-      }).then(() => {
+      }).then(( response ) => {
+        console.log(response);
         setSended(true);
       });
     }
@@ -248,8 +250,8 @@ export default function ContactUsForm() {
                   message: "El mensaje debe tener al menos 10 caracteres",
                 },
                 maxLength: {
-                  value: 400,
-                  message: "El mensaje debe tener menos de 400 caracteres",
+                  value: 800,
+                  message: "El mensaje debe tener menos de 800 caracteres",
                 },
                 pattern: {
                   value: /^[a-zA-ZñÑáéíóúü\s!?,.:;()_\-]+$/,

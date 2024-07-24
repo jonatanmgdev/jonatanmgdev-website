@@ -13,7 +13,6 @@ async function WelcomeSectionComponent() {
     <section>
       <div className="flex flex-col items-center">
         <div className="flex-1 text-center lg:max-w-3xl">
-          <span className="text-xl text-textcolor-secondary">¡Bienvenido a mi portfolio!</span>
           <h1 className="xl:text-6xl">Jonatan Montesdeoca</h1>
           <h2 className="md:font-medium text-primary-dark mt-1">
             Frontend Developer
@@ -23,6 +22,7 @@ async function WelcomeSectionComponent() {
             obtendrás un resumen de mi trayectoria profesional, formación y
             proyectos realizados.
           </p>
+          <span className="text-xl text-textcolor-secondary">¡Bienvenido a mi portfolio!</span>
         </div>
         <div className="flex flex-wrap w-full justify-center gap-2 py-4">
         <CustomButton className="px-4 py-2 w-auto" text="Descargar CV"  href="/assets/pdf/Jonatanmgdev-resume.pdf" />
