@@ -1,6 +1,11 @@
 "use server";
 import CustomButton from "@/components/custom/CustomButton";
-import { IconGithub, IconYoutube, IconLinkedin, IconTwitter } from "@/components/svgIcons";
+import {
+  IconGithub,
+  IconYoutube,
+  IconLinkedin,
+  IconTwitter,
+} from "@/components/svgIcons";
 
 /**
  * Component of the welcome section.
@@ -17,16 +22,28 @@ async function WelcomeSectionComponent() {
           <h2 className="md:font-medium text-primary-dark mt-1">
             Frontend Developer
           </h2>
-          <p className="mt-4">
-            Diseño y desarrollo soluciones digitales a medida, en este portfolio
-            obtendrás un resumen de mi trayectoria profesional, formación y
-            proyectos realizados.
-          </p>
-          <span className="text-xl text-textcolor-secondary">¡Bienvenido a mi portfolio!</span>
+          <div className="mt-4">
+            <span className="text-xl text-textcolor-secondary">
+              ¡Bienvenido a mi portfolio!
+            </span>
+            <p>
+              Diseño y desarrollo soluciones digitales a medida, en este
+              portfolio obtendrás un resumen de mi trayectoria profesional,
+              formación y proyectos realizados.
+            </p>
+          </div>
         </div>
         <div className="flex flex-wrap w-full justify-center gap-2 py-4">
-        <CustomButton className="px-4 py-2 w-auto" text="Descargar CV"  href="/assets/pdf/Jonatanmgdev-resume.pdf" />
-        <CustomButton className="px-4 py-2 w-auto bg-neutral-light/50 text-white hover:text-neutral-deep" text="Sobre mí" href="#aboutme-section" />
+          <CustomButton
+            className="px-4 py-2 w-auto"
+            text="Descargar CV"
+            href="/assets/pdf/Jonatanmgdev-resume.pdf"
+          />
+          <CustomButton
+            className="px-4 py-2 w-auto bg-neutral-light/50 text-white hover:text-neutral-deep"
+            text="Sobre mí"
+            href="#aboutme-section"
+          />
         </div>
         <div className="flex flex-col items-center pt-4">
           <span className="text-sm text-textcolor-secondary">
