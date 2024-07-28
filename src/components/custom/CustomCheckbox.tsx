@@ -5,7 +5,7 @@ import { RegisterOptions, UseFormRegister } from "react-hook-form";
 interface CustomCheckboxProps {
   id: string;
   isChecked: boolean;
-  labelText: JSX.Element;
+  labelText: React.ReactNode;
   register?: UseFormRegister<any>;
   rules?: RegisterOptions;
   errors?: any;

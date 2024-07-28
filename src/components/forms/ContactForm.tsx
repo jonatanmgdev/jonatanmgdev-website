@@ -9,6 +9,8 @@ import CustomButton from "../custom/CustomButton";
 import IconEmailSended from "../svgIcons/IconEmailSended";
 import ProfileCard from "../profileCard/ProfileCard";
 import jonatanAvatar from "@assets/images/jonatanmgdev-profile-avatar.jpg";
+import Link from "next/link";
+import { RoutePaths } from "@/core/config/router/routes";
 
 const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"));
 
@@ -67,7 +69,7 @@ export default function ContactUsForm() {
           email: formData.email,
           message: formData.message,
         }),
-      }).then(( response ) => {
+      }).then((response) => {
         console.log(response);
         setSended(true);
       });
@@ -266,11 +268,12 @@ export default function ContactUsForm() {
               id="termsAccepted"
               labelText={
                 <p>
-                  Acepto los{" "}
-                  <a href="https://www.tusitio.com/términos-y-condiciones">
-                    términos y condiciones
-                  </a>
-                  .
+                  Acepto el&nbsp;
+                  <Link href={RoutePaths.LegalAdvice}>aviso legal</Link>
+                  &nbsp;y la&nbsp;
+                  <Link href={RoutePaths.PrivacyPolicy}>
+                    Política de privacidad
+                  </Link>
                 </p>
               }
               register={register}
