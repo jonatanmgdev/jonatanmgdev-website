@@ -49,7 +49,7 @@ async function WelcomeSectionComponent() {
           <span className="text-sm text-textcolor-secondary">
             ¡Sígueme en mis redes sociales!
           </span>
-          <ul className="flex list-none sm:max-w-lg mt-4 md:mt-3 lg:ml-0 flex-wrap items-center justify-center gap-1 xs:gap-2 sm:flex-nowrap">
+          <ul className="flex list-none sm:max-w-lg mt-4 md:mt-3 lg:ml-0 flex-wrap items-center justify-center gap-2 sm:flex-nowrap">
             <li>
               <a
                 className="flex justify-center"
