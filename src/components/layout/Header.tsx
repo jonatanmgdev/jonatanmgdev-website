@@ -5,6 +5,10 @@ import { generateMenuItems } from "@/utils";
 import { desktopMenuItemsList } from "@/data";
 import { SpotlightWrapper } from "..";
 import LogoComponent from "./logo/LogoComponent";
+import IconMenu from "../svgIcons/IconMenu";
+import MobileMenu from "./menu/MobileMenu";
+import { IconClose } from "../svgIcons";
+
 
 /**
  * Header component of the web
@@ -39,13 +43,11 @@ export default function Header() {
         </nav>
       </div>
       <div
-        className={`lg:hidden fixed w-full z-50 ${
+        className={`lg:hidden fixed w-full z-50 gap-2 ${
           scrollDirection === "down" ? "-top-96" : "top-0"
         } transition-all duration-1000 flex justify-center mt-4`}
       >
-        <div className="w-fit bg-neutral-deep border border-primary-dark hover:border-primary-dark rounded-full py-2 px-8">
-          <LogoComponent />
-        </div>
+        <MobileMenu items={desktopMenuItemsList} openIcon={IconMenu(24)} closeIcon={IconClose(24)} />
       </div>
     </header>
   );

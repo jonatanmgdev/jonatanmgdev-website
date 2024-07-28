@@ -1,16 +1,17 @@
 import { MenuItem } from "@/types";
 import LogoComponent from "../components/layout/logo/LogoComponent";
-
+import { RoutePaths } from "@/core/config/router/routes";
 export const desktopMenuItemsList: MenuItem[] = [
-  { label: "Sobre mi", href: "#aboutme-section" },
-  { label: "Formación", href: "#formation-section" },
-  { label: "Experiencia", href: "#experience-section" },
+  { label: "Sobre mi", href: RoutePaths.Home+"#aboutme-section" },
+  { label: "Formación", href: RoutePaths.Home+"#formation-section" },
+  { label: "Experiencia", href: RoutePaths.Home+"#experience-section" },
   {
     label: <LogoComponent />,
-    href: "https://jonatanmg.dev",
+    href: RoutePaths.Home,
     applyStyles: false,
+    hiddenMobile: true
   },
-  { label: "Portfolio", href: "#portfolio-section" },
-  { label: "Skills", href: "#skills-section" },
-  { label: "Contacto", href: "#contact-section" },
+  { label: "Portfolio", href: RoutePaths.Home+"#portfolio-section" },
+  { label: "Skills", href: RoutePaths.Home+"#skills-section" },
+  { label: "Contacto", href: RoutePaths.Home+"#contact-section" },
 ];

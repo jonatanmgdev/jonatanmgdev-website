@@ -34,7 +34,7 @@
     @apply text-base font-inter text-textcolor-accent font-medium;
   }
   a {
-    @apply text-base font-inter text-textcolor-secondary hover:text-textcolor-accent min-h-11 min-w-11 items-center;
+    @apply text-base font-inter text-textcolor-secondary hover:text-textcolor-accent items-center;
   }
   ul {
     @apply list-disc list-inside marker:text-textcolor-accent;

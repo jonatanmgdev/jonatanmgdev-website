@@ -1,4 +1,6 @@
 import { IconGithub, IconLinkedin, IconYoutube } from "@/components/svgIcons";
+import { RoutePaths } from "@/core/config/router/routes";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -6,26 +8,20 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex">
-            <p className="font-semibold text-2xl text-white">
-              Jonatanmg
-            </p>
-            <p className="font-bold text-2xl text-primary-dark">
-              .
-            </p>
-            <p className="font-normal text-2xl text-primary-dark">
-              dev
-            </p>
+            <p className="font-semibold text-2xl text-white">Jonatanmg</p>
+            <p className="font-bold text-2xl text-primary-dark">.</p>
+            <p className="font-normal text-2xl text-primary-dark">dev</p>
           </div>
-          <ul className="list-none flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          <ul className="list-none flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 mt-3 sm:mt-0">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <Link href={RoutePaths.PrivacyPolicy} className="hover:underline mr-2">
                 Política de privacidad
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <Link href={RoutePaths.LegalAdvice} className="hover:underline">
                 Aviso legal
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
