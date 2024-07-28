@@ -38,3 +38,4 @@ export { default as IconExpress } from './IconExpress';
 export { default as IconNPM } from './IconNPM';
 export { default as IconPostman } from './IconPostman';
 export { default as IconFirebase } from './IconFirebase';
+export { default as IconClose } from './IconClose';
