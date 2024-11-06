@@ -27,9 +27,9 @@ async function AboutMeSection() {
           <div className="flex flex-col my-4 gap-1">
             <div className="flex flex-wrap align-middle gap-1">
               <span>{IconHandShake(40)}</span>
-              <h3>¡Hola! Soy jony</h3>
+              <h3>¡Hola!</h3>
             </div>
-            <span>Según Typescript y mis amigos soy un buen tipo...</span>
+            <span>Conoce mi historia y lo que me impulsa cada día.</span>
           </div>
           <div className="flex flex-col mb-4">
             <p className="mb-4">

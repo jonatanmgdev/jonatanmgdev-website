@@ -10,6 +10,7 @@ const nextConfig = {
         pathname: "/image/**",
       },
     ],
+    unoptimized: true,
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -17,16 +18,7 @@ const nextConfig = {
       use: ["@svgr/webpack"],
     });
     return config;  
-  },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/home",
-        permanent: true,
-      },
-    ];
-  },
+  }
 };
 
 export default nextConfig;

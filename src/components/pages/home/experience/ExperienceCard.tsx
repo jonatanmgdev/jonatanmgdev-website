@@ -1,4 +1,3 @@
-"use server";
 import React from "react";
 import { IconCheck, IconHome } from "@/components/svgIcons";
 import { SpotlightWrapper } from "@/components";

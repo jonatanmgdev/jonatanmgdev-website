@@ -1,18 +1,10 @@
-import {
-  WelcomeSection,
-  AboutMeSection,
-  FormationSection,
-  ExperienceSection,
-  PortfolioSection,
-  SkillsSection,
-  ContactSection,
-} from "./components";
+import { AboutMeSection, ContactSection, ExperienceSection, FormationSection, PortfolioSection, SkillsSection, WelcomeSection } from "@/components/pages/home";
 
 export default function Home() {
   return (
     <>
       <main>
-        <div id="welcome-section">
+        <div id="welcome-section" rel="preload">
           <div className="container pt-32 pb-8 sm:pt-40 sm:pb-10 md:pt-52 md:pb-12 lg:pt-60 lg:pb-14">
             <WelcomeSection />
           </div>
