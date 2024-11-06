@@ -12,7 +12,7 @@ export default function Home() {
             alt="Fondo de la sección de bienvenida"
             fill={true}
             quality={75}
-            priority={true}
+            priority
             style={{ objectFit: 'cover' }} 
             className="z-0"
           />
