@@ -27,7 +27,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, svg, background, className,
       <span className={`${inactiveColor} ${activeColor}`}>
         {svg}
       </span>
-      <p className={`${inactiveColor} ${activeColor}`}>
+      <p className={`${inactiveColor} ${activeColor} font-semibold`}>
         {name}
       </p>
     </div>

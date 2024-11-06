@@ -44,7 +44,7 @@ async function SkillsSection() {
         description="Soy un apasionado de JavaScript y sus frameworks. Cuando se trata de frontend, mis puntos fuertes son Next.js y Tailwind CSS. Para el backend, mis preferidos son Nest.js y Node.js. Aunque tengo más experiencia y habilidades en el frontend, siempre estoy dispuesto a aprender cualquier cosa que se ponga por delante. En cuanto a las soft skills, en un equipo, soy esa persona que siempre está lista para colaborar, aportar ideas frescas y echar una mano cuando se necesita."
       />
       <div className="grid my-auto py-4">
-        <h4>Tech skills</h4>
+        <h3>Tech skills</h3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-4">
         <div className="flex flex-col w-full border-2 border-neutral-light rounded-lg p-4">
@@ -203,7 +203,7 @@ async function SkillsSection() {
         </div>
       </div>
       <div className="grid my-auto py-4">
-        <h4>Soft skills</h4>
+        <h3>Soft skills</h3>
       </div>
       <div className="flex flex-wrap w-full border-2 border-neutral-light rounded-lg p-4 gap-2">
         <SkillCard

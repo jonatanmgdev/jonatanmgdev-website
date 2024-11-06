@@ -79,7 +79,7 @@ const PortfolioCard: React.FC<PortfolioData> = ({
             {gitHubUrl && (
               <button
                 onClick={() => window.open(gitHubUrl, "_blank")}
-                className="flex flex-row w-fit px-5 items-center justify-center gap-2 text-primary-dark text-opacity-60 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-80 p-2 transition-colors"
+                className="flex flex-row w-fit px-5 items-center justify-center gap-2 text-primary-dark text-opacity-90 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-80 p-2 transition-colors"
               >
                 {IconGithub(20)}
                 code
@@ -89,7 +89,7 @@ const PortfolioCard: React.FC<PortfolioData> = ({
               <Popover key={iconIndex} content={`Uso de ${icon.name}`}>
                 <span
                   key={iconIndex}
-                  className="cursor-pointer rounded-full text-primary-dark text-opacity-60 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-15 p-3 transition-colors"
+                  className="cursor-pointer rounded-full text-primary-dark text-opacity-90 hover:text-white border border-[#00bb86] border-opacity-20 hover:border-white hover:border-opacity-20 bg-neutral-deep hover:bg-neutral-deep hover:bg-opacity-15 p-3 transition-colors"
                 >
                   {icon.icon}
                 </span>

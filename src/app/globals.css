@@ -59,10 +59,6 @@
 }
 
 /* SECTIONS */
-#welcome-section {
-  @apply bg-welcome-section-background bg-cover bg-center bg-no-repeat;
-}
-
 #aboutme-section-bg {
   @apply bg-neutral-dark bg-aboutme-section-background bg-no-repeat;
 }

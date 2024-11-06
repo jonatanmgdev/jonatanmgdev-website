@@ -1,10 +1,21 @@
 import { AboutMeSection, ContactSection, ExperienceSection, FormationSection, PortfolioSection, SkillsSection, WelcomeSection } from "@/components/pages/home";
+import Image from "next/image";
+import welcomeBg from "@assets/images/welcome-section-background.webp";
 
 export default function Home() {
   return (
     <>
       <main>
-        <div id="welcome-section" rel="preload">
+        <div id="welcome-section" className="relative overflow-hidden">
+          <Image
+            src={welcomeBg.src}
+            alt="Fondo de la sección de bienvenida"
+            fill={true}
+            quality={75}
+            priority={true}
+            style={{ objectFit: 'cover' }} 
+            className="z-0"
+          />
           <div className="container pt-32 pb-8 sm:pt-40 sm:pb-10 md:pt-52 md:pb-12 lg:pt-60 lg:pb-14">
             <WelcomeSection />
           </div>

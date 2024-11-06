@@ -9,7 +9,7 @@ async function ExperienceSection() {
     <section>
       <div className="flex w-full justify-center">
         <SectionHeader
-          className="mb-4 justify-center text-center"
+          className="mb-8 justify-center text-center"
           title="Mi experiencia"
           subtitle="Trayectoria profesional"
           description="Busco oportunidades laborales donde haya proyectos interesantes y un buen ambiente para seguir creciendo."

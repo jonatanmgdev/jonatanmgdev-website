@@ -1,6 +1,6 @@
 "use server";
 import Image from "next/image";
-import jonatanCircleAvatar from "@assets/images/jonatan-montesdeoca-circle-avatar.png";
+import jonatanCircleAvatar from "@assets/images/jonatan-montesdeoca-circle-avatar.webp";
 import IconHandShake from "../../../../components/svgIcons/IconHandShake";
 
 /**

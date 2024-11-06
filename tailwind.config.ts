@@ -109,8 +109,6 @@ const config: Config = {
         sourceCodePro: "var(--font-source-code-pro)",
       },
       backgroundImage: {
-        "welcome-section-background":
-          "url('/assets/images/welcome-section-background.webp')",
         "aboutme-section-background":
           "url('/assets/images/aboutme-section-bg.webp')",
       },
