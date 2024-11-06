@@ -16,7 +16,7 @@ export default function Home() {
             style={{ objectFit: 'cover' }} 
             className="z-0"
           />
-          <div className="container pt-32 pb-8 sm:pt-40 sm:pb-10 md:pt-52 md:pb-12 lg:pt-60 lg:pb-14">
+          <div className="container relative  pt-32 pb-8 sm:pt-40 sm:pb-10 md:pt-52 md:pb-12 lg:pt-60 lg:pb-14">
             <WelcomeSection />
           </div>
         </div>
