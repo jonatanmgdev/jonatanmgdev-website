@@ -1,4 +1,5 @@
-import { ExperienceData } from "@/app/home/components/experience/ExperienceCard";
+import { ExperienceData } from "@/components/pages/home/experience/ExperienceCard";
+
 
 export const experienceDataList: ExperienceData[] = [
   {
