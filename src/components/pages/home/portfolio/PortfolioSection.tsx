@@ -1,9 +1,9 @@
 "use server";
 import portfolioJonatanmgdev from "@assets/images/jonatanmgdev-portfolio-web.webp";
 import portfolioTaxiLasPalmas from "@assets/images/portfolio-web-taxilaspalmas.webp";
-import portfolioLogoAirproradio from "@assets/images/Airproradio-portfolio-logo.png";
-import portfolioLogoVipCarsTransfers from "@assets/images/vipcarstransfers-portfolio-logo.png";
-import portfolioVentajon from "@assets/images/portfolio-app-ventajon.jpg";
+import portfolioLogoAirproradio from "@assets/images/Airproradio-portfolio-logo.webp";
+import portfolioLogoVipCarsTransfers from "@assets/images/vipcarstransfers-portfolio-logo.webp";
+import portfolioVentajon from "@assets/images/portfolio-app-ventajon.webp";
 import {
   IconFigma,
   IconFlutter,

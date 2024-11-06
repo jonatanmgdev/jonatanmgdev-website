@@ -8,7 +8,7 @@ import { CustomTextarea, CustomInput } from "../custom";
 import CustomButton from "../custom/CustomButton";
 import IconEmailSended from "../svgIcons/IconEmailSended";
 import ProfileCard from "../profileCard/ProfileCard";
-import jonatanAvatar from "@assets/images/jonatanmgdev-profile-avatar.jpg";
+import jonatanAvatar from "@assets/images/jonatanmgdev-profile-avatar.webp";
 import Link from "next/link";
 import { RoutePaths } from "@/core/config/router/routes";
 
