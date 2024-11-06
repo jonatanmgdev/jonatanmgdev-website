@@ -20,7 +20,7 @@ const MobileMenu: React.FC<MenuProps> = ({ openIcon, closeIcon, items }) => {
 
   return (
     <div className="flex container w-full mx-6 py-4 md:px-4 lg:px-8 xl:px-16 bg-neutral-deep border-2 border-neutral-light hover:border-primary-dark rounded-full">
-      <div className="flex flex-row w-full items-center justify-center cursor-pointer gap-4">
+      <div className="flex flex-row w-full items-center justify-between mx-6 cursor-pointer gap-4">
         <span onClick={() => setIsOpen(true)} className="text-white">{openIcon}</span><Link className="h-fit" href={RoutePaths.Home}><LogoComponent /></Link>
       </div>
       <div
